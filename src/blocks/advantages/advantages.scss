@@ -1,0 +1,65 @@
+$advantages: advantage1-img, advantage2-img, advantage3-img,advantage4-img,advantage5-img,advantage6-img, advantage7-img,advantage8-img;
+@mixin advantage-mix($advantageID) {
+  div.#{$advantageID} {
+    background: url("./advantage.images/#{$advantageID}.png") no-repeat;
+    width: 50px;
+    height: 40px;
+  }
+}
+article#advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  height: 721px;
+  width: 100%;
+  h2.advantage-header {
+    font-family: "Open Sans";
+    font-size: 47px;
+    color: #28363d;
+    font-weight: normal;
+    letter-spacing: 7px;
+  }
+
+  p.advantage-header-describe {
+    font-family: "Open Sans";
+    font-size: 17px;
+    width: 770px;
+    text-align: center;
+    color: #8198a0;
+  }
+  section.advantages {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    width: 1266px;
+    height: 405px;
+    article.advantage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 173px;
+      width: 288px;
+      background-color: #fff;
+      @each $advantage in $advantages {
+        @include advantage-mix($advantage)
+      }
+      h3 {
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: bold;
+        color: #28363d;
+      }
+      p {
+        height: 72px;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: normal;
+        text-align: center;
+        color: #8198a0;
+      }
+    }
+  }
+}

@@ -1,0 +1,351 @@
+$DesktopsLaptop: ( min: 1225px, max: 1399px );
+
+
+$Laptop: ( min: 1025px, max: 1224px );
+
+$tablet: ( min: 769px, max: 1024px );
+
+$tabletMobile: ( min: 321px, max: 1024px );
+
+$iphone6:  ( min: 375px, max: 736px );
+
+$iphone5: ( min: 320px, max: 568px );
+
+@mixin device($device){
+  @media only screen and (min-width:map_get($device, min)) and (max-width:map_get($device, max)) {
+    @content;
+  }
+}
+@include device($DesktopsLaptop) {
+  div#fullpage {
+    div.section {
+      main#main {
+        .bombit-slide {
+          height: 1000px;
+        }
+        section.wrapper {
+          width: 100%;
+          article.main-content {
+            width: 1225px;
+            div.slider-nav {
+              width: 1100px;
+              button.left-button {
+                transform: rotate(180deg);
+                background-size: 80px 80px;
+              }
+              button.right-button {
+                background-size: 80px 80px;
+              }
+            }
+            label#feedback-button {
+              width: 400px;
+              height: 80px;
+            }
+            section#nav-bar {
+              height: 18px;
+              width: 138px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include device($Laptop) {
+  div#fullpage {
+    div.section {
+      main#main {
+        .bombit-slide {
+          height: 1000px;
+        }
+        section.wrapper {
+          width: 100%;
+          article.main-content {
+
+            width: 1025px;
+            div.slider-nav {
+              width: 900px;
+              button.left-button {
+                transform: rotate(180deg);
+                background-size: 80px 80px;
+              }
+              button.right-button {
+                background-size: 80px 80px;
+              }
+            }
+            label#feedback-button {
+              width: 300px;
+              height: 70px;
+            }
+            section#nav-bar {
+              height: 18px;
+              width: 138px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include device($tablet) {
+  div#fullpage {
+    div.section {
+      main#main {
+        .bombit-slide {
+          height: 700px;
+        }
+        section.wrapper {
+          width: 100%;
+          article.main-content {
+            width: 769px;
+            h1 {
+              font-size: 40px;
+              letter-spacing: 13px;
+            }
+            div.delimiter {
+              height: 16px;
+              width: 740px;
+              background-size: 740px;
+            }
+            div.slider-nav {
+              width: 700px;
+              button.left-button {
+                transform: rotate(180deg);
+                background-size: 80px 80px;
+              }
+              button.right-button {
+                background-size: 80px 80px;
+              }
+            }
+            label#feedback-button {
+              width: 300px;
+              height: 80px;
+            }
+            section#nav-bar {
+              height: 18px;
+              width: 138px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include device($tabletMobile) {
+  div#fullpage {
+    div.section {
+      main#main {
+        .bombit-slide {
+          height: 400px;
+        }
+        section.wrapper {
+          width: 100%;
+          height: 400px;
+          article.main-content {
+            width: 320px;
+            height: 400px;
+            h1 {
+              font-size: 25px;
+              letter-spacing: 0;
+            }
+            div.delimiter {
+              height: 16px;
+              width: 300px;
+              background-size: 300px;
+            }
+            div.slider-nav {
+              height: 60px;
+              width: 320px;
+              padding: 0;
+              margin: 0;
+              button.left-button {
+                transform: rotate(180deg);
+                background-size: 60px 60px;
+                width: 60px;
+                height: 60px;
+              }
+              button.right-button {
+                background-size: 60px 60px;
+                width: 60px;
+                height: 60px;
+              }
+            }
+            h3 {
+              width: 320px;
+              font-size: 10px;
+              font-weight: normal;
+              position: relative;
+            }
+
+            .modal {
+              label#feedback-button {
+                width: 320px;
+                height: 60px;
+                border-radius: 0;
+                font-size: 25px;
+                font-weight: bold;
+              }
+            }
+            section#nav-bar {
+              height: 18px;
+              width: 138px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include device($iphone6) {
+  div#fullpage {
+    div.section {
+      main#main {
+        .bombit-slide {
+          height: 400px;
+        }
+        section.wrapper {
+          width: 100%;
+          height: 400px;
+          article.main-content {
+            width: 375px;
+            height: 400px;
+            h1 {
+              font-size: 25px;
+              letter-spacing: 0;
+            }
+            div.delimiter {
+              height: 16px;
+              width: 300px;
+              background-size: 300px;
+            }
+            div.slider-nav {
+              height: 60px;
+              width: 375px;
+              padding: 0;
+              margin: 0;
+              button.left-button {
+                transform: rotate(180deg);
+                background-size: 60px 60px;
+                width: 60px;
+                height: 60px;
+              }
+              button.right-button {
+                background-size: 60px 60px;
+                width: 60px;
+                height: 60px;
+              }
+            }
+            h3 {
+              width: 375px;
+              font-size: 10px;
+              font-weight: normal;
+              position: relative;
+            }
+            section#nav-bar {
+              height: 18px;
+              width: 138px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include device($iphone5) {
+  div#fullpage {
+    div.section {
+      main#main {
+        .bombit-slide {
+          height: 400px;
+        }
+        section.wrapper {
+
+          width: 100%;
+          height: 400px;
+          article.main-content {
+            width: 320px;
+            height: 400px;
+            h1 {
+              font-size: 25px;
+              letter-spacing: 0;
+            }
+            div.delimiter {
+              height: 16px;
+              width: 300px;
+              background-size: 300px;
+            }
+            div.slider-nav {
+              height: 50px;
+              width: 320px;
+              padding: 0;
+              margin: 0;
+              button.left-button {
+                transform: rotate(180deg);
+                background-size: 50px 50px;
+                width: 50px;
+                height: 50px;
+              }
+              button.right-button {
+                background-size: 50px 50px;
+                width: 50px;
+                height: 50px;
+              }
+            }
+            h3 {
+              width: 320px;
+              font-size: 10px;
+              font-weight: normal;
+              position: relative;
+            }
+            label#feedback-button {
+              width: 100%;
+              height: 60px;
+              border-radius: 0;
+              font-size: 25px;
+              font-weight: bold;
+            }
+            section#nav-bar {
+              height: 18px;
+              width: 138px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//--------slider-------
+//.fp-slidesContainer {
+//  width: 100%!important;
+//  transform: none!important;
+//}
+//
+//.fp-slide {
+//  width: 100%!important;
+//  position: absolute;
+//  left: 0;
+//  top: 0;
+//  visibility: hidden;
+//  opacity: 0;
+//  z-index: 0;
+//  transition: all .7s ease-in-out;
+//  &[data-anchor="slide1"] {
+//    background: url("./main.images/bg-1.jpg");
+//  }
+//  &[data-anchor="slide2"] {
+//    background: url("./main.images/bg-2.jpg");
+//  }
+//  &[data-anchor="slide3"] {
+//    background: url("./main.images/bg-3.jpg");
+//  }
+//  &[data-anchor="slide4"] {
+//    background: url("./main.images/bg-4.jpg");
+//  }
+//}
+//
+//.fp-slide.active {
+//  visibility: visible;
+//  opacity: 1;
+//  z-index: 1;
+//}

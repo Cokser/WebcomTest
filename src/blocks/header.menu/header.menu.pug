@@ -1,0 +1,32 @@
+//
+   Created by valeriy on 29/06/17.
+
+- var menuItems = [["главная","firstPage"],["портфолио","secondPage"],["преимущества","thirdPage"],["схема работы",""],["отзывы","fourthPage"],["контакты","fifthPage"]];
+header#header-menu
+  div.logo
+  nav#nav-menu
+    ul
+      for menuItem in menuItems
+        li(data-menuanchor=menuItem[1]).item
+          a(href="#"+menuItem[1])= menuItem[0].toUpperCase()
+  div.phones
+    a(href="href")="+375(29)123-45-67"
+    a(href="href")="+375(29)123-45-67"
+
+  .container.container-hamburger
+    .hamburger-wrapper
+      .hamburger
+        div#menu-button
+      .hamburger-menu
+        ul.main-links
+          for menuItem, i in menuItems
+            li(data-menuanchor=menuItem[1]).delay
+              a(href="#" + menuItem[1])= menuItem[0].toUpperCase()
+        .secondary-links
+          .row
+            a(href="#") instagram
+            a(href="#") twitter
+            a(href="#") facebook
+          .row
+            p copyright © 2015 | Webcom Media
+

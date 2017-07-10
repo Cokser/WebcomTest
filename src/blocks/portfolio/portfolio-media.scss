@@ -1,0 +1,331 @@
+
+$DesktopsLaptop: ( min: 1225px, max: 1399px );
+
+
+$Laptop: ( min: 1025px, max: 1224px );
+
+$tablet: ( min: 769px, max: 1024px );
+
+$tabletMobile: ( min: 321px, max: 1024px );
+
+$iphone6:  ( min: 375px, max: 736px );
+
+$iphone5: ( min: 320px, max: 568px );
+
+@mixin device($device){
+  @media only screen and (min-width:map_get($device, min)) and (max-width:map_get($device, max)) {
+    @content;
+  }
+}
+@include device($DesktopsLaptop) {
+  div#fullpage {
+    div.section {
+      div#portfolio {
+        article {
+          h2.portfolio-caption {
+            height: 33px;
+            font-size: 50px;
+            letter-spacing: 7px;
+          }
+          p.portfolio-descriptions {
+            width: 780px;
+            font-size: 16px;
+          }
+        }
+        div.products {
+          display: flex;
+          align-items: center;
+          align-content: space-between;
+          justify-content: space-between;
+          flex-flow: row wrap;
+          height: 640px;
+          width: 1215px;
+          div.product {
+            height: 320px;
+            width: 405px;
+            background-size: 60px 46px, cover;
+            div#invise {
+              display: none;
+              width: 100%;
+              article#card {
+                width: 100%;
+                height: 100px;
+                h3 {
+                  font-size: 18px;
+                }
+                p {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+          div.product:hover {
+            #invise {
+              width: 405px;
+              display: block;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+@include device($Laptop) {
+  div#fullpage {
+    div.section {
+      div#portfolio {
+        width: 100%;
+        article {
+          height: 700px;
+          h2.portfolio-caption {
+            height: 33px;
+            font-size: 50px;
+            letter-spacing: 7px;
+          }
+          p.portfolio-descriptions {
+            width: 780px;
+            font-size: 16px;
+          }
+        }
+        div.products {
+          height: 500px;
+          width: 1014px;
+          div.product {
+            height: 250px;
+            width: 338px;
+            background-size: 60px 46px, cover;
+            div#invise {
+              display: none;
+              width: 338px;
+              article#card {
+                width: 338px;
+                height: 90px;
+                h3 {
+                  font-size: 18px;
+                }
+                p {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+          div.product:hover {
+            #invise {
+              width: 338px;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include device($tablet) {
+  div#fullpage {
+    div.section {
+      div#portfolio {
+        width: 100%;
+        article {
+          height: 700px;
+          h2.portfolio-caption {
+            height: 33px;
+            font-size: 50px;
+            letter-spacing: 7px;
+          }
+          p.portfolio-descriptions {
+            width: 700px;
+            font-size: 16px;
+          }
+        }
+        div.products {
+          width: 768px;
+          height: 400px;
+
+          div.product {
+            height: 200px;
+            width: 256px;
+            background-size: 60px 46px, cover;
+            div#invise {
+              display: none;
+              width: 256px;
+              article#card {
+                width: 256px;
+                height: 60px;
+                h3 {
+                  font-size: 17px;
+                }
+                p {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+          div.product:hover {
+            #invise {
+              width: 256px;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include device($tabletMobile) {
+    div#fullpage {
+      div.section {
+        div#portfolio {
+          width: 100%;
+          article {
+            height: 700px;
+            h2.portfolio-caption {
+              height: 33px;
+              font-size: 30px;
+              letter-spacing: 4px;
+            }
+            p.portfolio-descriptions {
+              width: 300px;
+              font-size: 15px;
+            }
+          }
+          div.products {
+            width: 310px;
+            height: 450px;
+
+            div.product {
+              height: 150px;
+              width: 155px;
+              background-size: 60px 46px, cover;
+              div#invise {
+                display: none;
+                width: 155px;
+                article#card {
+                  width: 155px;
+                  height: 60px;
+                  h3 {
+                    font-size: 13px;
+                  }
+                  p {
+                    font-size: 10px;
+                  }
+                }
+              }
+            }
+            div.product:hover {
+              #invise {
+                width: 155px;
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+@include device($iphone6) {
+  div#fullpage {
+    div.section {
+      div#portfolio {
+        width: 100%;
+        article {
+          height: 700px;
+          h2.portfolio-caption {
+            height: 33px;
+            font-size: 30px;
+            letter-spacing: 4px;
+          }
+          p.portfolio-descriptions {
+            width: 350px;
+            font-size: 15px;
+          }
+        }
+        div.products {
+          width: 364px;
+          height: 450px;
+
+          div.product {
+            height: 150px;
+            width: 182px;
+            background-size: 60px 46px, cover;
+            div#invise {
+              display: none;
+              width: 182px;
+              article#card {
+                width: 182px;
+                height: 50px;
+                h3 {
+                  font-size: 13px;
+                  font-weight: normal;
+                }
+                p {
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+          div.product:hover {
+            #invise {
+              width: 182px;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include device($iphone5) {
+  div#fullpage {
+    div.section {
+      div#portfolio {
+        width: 100%;
+        article {
+          width: 100%;
+          height: 568px;
+          h2.portfolio-caption {
+            height: 33px;
+            font-size: 30px;
+            letter-spacing: 4px;
+          }
+          p.portfolio-descriptions {
+            width: 300px;
+            font-size: 15px;
+            display: none;
+          }
+        }
+        div.products {
+          width: 320px;
+          height: 450px;
+          div.product {
+            height: 150px;
+            width: 160px;
+            background-size: 60px 46px, cover;
+            div#invise {
+              display: none;
+              width: 160px;
+              article#card {
+                width: 160px;
+                height: 50px;
+                h3 {
+                  font-size: 13px;
+                  font-weight: normal;
+                }
+                p {
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+          div.product:hover {
+            #invise {
+              width: 160px;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

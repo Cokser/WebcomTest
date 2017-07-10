@@ -1,0 +1,224 @@
+$height: 120px;
+
+div#header {
+  display: flex;
+  justify-content: center;
+  background-color: #28363d;
+  transition: all 0.2s ease-in-out;
+  header#header-menu {
+    width: 1398px;
+    height: 120px;;
+    display: flex;
+    align-items: center;
+    div.logo {
+      background: url("../../images/logo.png") no-repeat;
+      width: 229px;
+      height: 40px;
+    }
+
+    nav#nav-menu {
+      width: 940px;
+      height: 120px;
+      ul {
+        display: flex;
+        flex-wrap: nowrap;
+        list-style: none;
+        justify-content: space-between;
+
+        li.item {
+          a {
+            align-items: center;
+            justify-content: space-around;
+            height: 120px;
+            display: flex;
+            width: 140px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            font-family: "Open Sans";
+            font-weight: bold;
+            border-bottom: 4px solid transparent;
+            box-sizing: border-box;
+            &:hover {
+              border-bottom: 4px solid #ff8207;
+              box-sizing: border-box;
+            }
+          }
+        }
+      }
+    }
+    div.phones {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 229px;
+      height: 120px;
+      a {
+        text-decoration: none;
+        font-family: "Open Sans";
+        font-size: 25px;
+        font-weight: bold;
+        color: #ff8207;
+      }
+    }
+  }
+}
+
+/*----HAMBURGER SIDE----*/
+
+.hamburger {
+
+  background: url("./header.images/menu.png");
+  background-size: 32px 32px;
+  display: none;
+  position: fixed;
+  box-sizing: border-box;
+  right: 0;
+  top: 0;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  transition: 0.5s ease right;
+
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  &:hover #menu-button {
+
+  }
+}
+
+.hamburger-active {
+  .hamburger {
+    right: 300px;
+  }
+  .hamburger div#menu-button{
+    display: block;
+    background: url("./header.images/menu.png");
+    height: 32px;
+    width: 32px;
+    background-size: 32px 32px;
+  }
+
+}
+
+.hamburger-menu {
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #28363d;
+  height: 100%;
+  position: fixed;
+  right: -300px;
+  top: 0;
+  width: 300px;
+  overflow: auto;
+  transition: 0.5s ease right;
+  z-index: 100;
+}
+
+.hamburger-active .hamburger-menu {
+  right: 0;
+}
+
+.hamburger-menu {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+  }
+  .main-links li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 300px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    border-bottom: 1px solid #333;
+    letter-spacing: 4px;
+    font-weight: bold;
+    opacity: 0;
+    transition: 0.5s ease all;
+    transition-delay: inherit;
+    transform: translateY(20px);
+    position: relative;
+    z-index: 2;
+    font-family: "Open Sans";
+    &:after {
+      background-color: #fff;
+      width: 100%;
+      overflow: hidden;
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 0;
+      content: "";
+      z-index: 1;
+      border-radius: 50%;
+      opacity: 0;
+      transition: all 0.5s ease;
+    }
+    &:hover {
+      &:after {
+        opacity: .05;
+        height: 100%;
+        border-radius: 0;
+      }
+      color: #FFF;
+    }
+  }
+}
+
+.hamburger-active .main-links li a {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hamburger-menu .secondary-links {
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 0;
+  transition: all 0.5s ease;
+  transform: translateX(-60px);
+  opacity: 0;
+}
+
+.hamburger-active .secondary-links {
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: 0.6s;
+}
+
+.hamburger-menu .secondary-links {
+  a, p {
+    display: inline-block;
+    padding: 10px 3px;
+    color: #fff;
+    margin: 2px;
+    transition: all 0.5s ease;
+  }
+  a:hover {
+    color: #fff;
+  }
+}
+
+/*---ANIMATION DELAYS---*/
+
+.delay {
+  transition-delay: 0.1s;
+}
+
+
+
+//------------------header

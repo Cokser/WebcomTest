@@ -1,0 +1,294 @@
+$advantages: advantage1-img, advantage2-img, advantage3-img,advantage4-img,advantage5-img,advantage6-img, advantage7-img,advantage8-img;
+
+@mixin advantage-mix($advantageID) {
+  div.#{$advantageID} {
+    background: url("./advantage.images/#{$advantageID}.png") no-repeat;
+    @content
+  }
+}
+
+
+
+$DesktopsLaptop: ( min: 1225px, max: 1399px );
+
+$Laptop: ( min: 1025px, max: 1224px );
+
+$tablet: ( min: 769px, max: 1024px );
+
+$tabletMobile: ( min: 321px, max: 1024px );
+
+$iphone6:  ( min: 375px, max: 736px );
+
+$iphone5: ( min: 320px, max: 568px );
+
+@mixin device($device){
+  @media only screen and (min-width:map_get($device, min)) and (max-width:map_get($device, max)) {
+    @content;
+  }
+}
+
+
+
+@include device($DesktopsLaptop) {
+  div#fullpage {
+    div.section {
+      article#advantages {
+        height: 721px;
+        width: 100%;
+        h2.advantage-header {
+          font-size: 47px;
+          letter-spacing: 7px;
+        }
+        p.advantage-header-describe {
+          font-size: 17px;
+          width: 721px;
+        }
+        section.advantages {
+          justify-content: space-around;
+          width: 1225px;
+          height: 405px;
+          article.advantage {
+            height: 173px;
+            width: 288px;
+            @each $advantage in $advantages {
+              @include advantage-mix($advantage){
+                width: 50px;
+                height: 40px;
+              }
+            }
+            h3 {
+              font-size: 16px;
+              font-weight: bold;
+            }
+            p {
+              height: 72px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include device($Laptop) {
+  div#fullpage {
+    div.section {
+      article#advantages {
+        height: 721px;
+        width: 100%;
+        h2.advantage-header {
+          font-size: 47px;
+          letter-spacing: 7px;
+        }
+        p.advantage-header-describe {
+          font-size: 17px;
+          width: 721px;
+        }
+        section.advantages {
+          justify-content: space-between;
+          width: 1016px;
+          height: 405px;
+          article.advantage {
+            height: 173px;
+            width: 254px;
+            @each $advantage in $advantages {
+              @include advantage-mix($advantage){
+                width: 50px;
+                height: 40px;
+              }
+            }
+            h3 {
+              font-size: 16px;
+              font-weight: bold;
+            }
+            p {
+              height: 72px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include device($tablet) {
+  div#fullpage {
+    div.section {
+      article#advantages {
+        height: 721px;
+        width: 100%;
+        h2.advantage-header {
+          font-size: 47px;
+          letter-spacing: 7px;
+        }
+        p.advantage-header-describe {
+          font-size: 17px;
+          width: 721px;
+        }
+        section.advantages {
+          justify-content: space-between;
+          width: 759px;
+          height: 405px;
+          article.advantage {
+            height: 173px;
+            width: 189px;
+            @each $advantage in $advantages {
+              @include advantage-mix($advantage){
+                width: 50px;
+                height: 40px;
+              }
+            }
+            h3 {
+              font-size: 16px;
+              font-weight: bold;
+            }
+            p {
+              width: 182px;
+              height: 72px;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include device($tabletMobile) {
+  div#fullpage {
+    div.section {
+      article#advantages {
+        height: 1008px;
+        width: 100%;
+        h2.advantage-header {
+          font-size: 30px;
+          letter-spacing: 5px;
+        }
+        p.advantage-header-describe {
+          font-size: 13px;
+          width: 300px;
+        }
+        section.advantages {
+          justify-content: space-between;
+          width: 310px;
+          height: 692px;
+          article.advantage {
+            height: 173px;
+            width: 150px;
+            @each $advantage in $advantages {
+              @include advantage-mix($advantage){
+                width: 50px;
+                height: 40px;
+              }
+            }
+            h3 {
+              font-size: 16px;
+              font-weight: bold;
+            }
+            p {
+              width: 182px;
+              height: 72px;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include device($iphone6) {
+  div#fullpage {
+    div.section {
+      article#advantages {
+        height: 850px;
+        width: 100%;
+        h2.advantage-header {
+          font-size: 30px;
+          letter-spacing: 5px;
+        }
+        p.advantage-header-describe {
+          font-size: 13px;
+          width: 340px;
+        }
+        section.advantages {
+          justify-content: space-between;
+          width: 365px;
+          height: 692px;
+          article.advantage {
+            height: 173px;
+            width: 180px;
+            @each $advantage in $advantages {
+              @include advantage-mix($advantage){
+                width: 50px;
+                height: 40px;
+              }
+            }
+            h3 {
+              font-size: 16px;
+              font-weight: bold;
+            }
+            p.advantage-describe {
+              width: 182px;
+              height: 72px;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include device($iphone5) {
+  div#fullpage {
+    div.section {
+      article#advantages {
+        height: 568px;
+        width: 100%;
+        justify-content: space-around;
+        h2.advantage-header {
+          font-size: 30px;
+          letter-spacing: 5px;
+        }
+        p.advantage-header-describe {
+          font-size: 13px;
+          width: 300px;
+          display: none;
+        }
+        section.advantages {
+          justify-content: space-around;
+          width: 310px;
+          height: 400px;
+          article.advantage {
+            justify-content: space-around;
+            height: 100px;
+            width: 155px;
+            &:hover {
+              .advantage-describe {
+                display: block;
+                position: absolute;
+              }
+            }
+            @each $advantage in $advantages {
+              @include advantage-mix($advantage){
+                width: 50px;
+                height: 40px;
+              }
+            }
+            h3 {
+              font-size: 16px;
+              font-weight: bold;
+            }
+            p.advantage-describe {
+              align-self: center;
+              background-color: #fff;
+              display: none;
+              text-align: center;
+              width: 155px;
+              height: 100px;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

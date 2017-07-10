@@ -1,0 +1,109 @@
+@mixin info-block($align) {
+  display: flex;
+  flex-direction: column;
+  align-items: $align;
+  justify-content: space-around;
+  width: 197px;
+  height: 115px;
+  flex-wrap: wrap;
+}
+footer#footer {
+  width: 100%;
+  height: 312px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  div.footer-info {
+    background-color: #28363d;
+    height: 250px;
+  }
+  div.footer-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 62px;
+    background-color: #1e292f;
+
+    border-bottom: 2px solid #ff8207;
+    box-sizing: border-box;
+    width: 100%;
+    small.copyright {
+      font-size: 19px;
+      font-family: "Open Sans";
+      color: #fff;
+      font-weight: normal;
+    }
+  }
+}
+div.footer-box {
+  width: 1400px;
+  height: 234px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  article.left-info-block {
+    @include info-block( flex-start);
+  }
+  article.center-info-block {
+    @include info-block( center);
+  }
+  article.right-info-block {
+    @include info-block( flex-end);
+  }
+}
+a.footer-logo {
+  background-color: white;
+  width: 162px;
+  height: 40px;
+  background: url("../../images/logo.png") no-repeat;
+
+}
+p.disclaimer {
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: normal;
+  color: #fff;
+}
+@mixin social($icon) {
+  height: 26px;
+  width: 26px;
+  background-color: white;
+  background: url($icon) no-repeat;
+  background-size: 26px 26px;
+}
+h4.social {
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: bold;
+  color: #fff;
+}
+div.social-links {
+  height: 26px;
+  width: 115px;
+  display: flex;
+  justify-content: space-between;
+  a.instagram {
+    @include social("./footer.images/instagram.png");
+  }
+  a.twitter {
+    @include social("./footer.images/twitter.png");
+  }
+  a.facebook {
+    @include social("./footer.images/facebook.png");
+  }
+}
+h4.info-block-address {
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: bold;
+  color: #fff;
+}
+a.address-map {
+  text-decoration: none;
+  text-align: end;
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: normal;
+  color: #fff;
+}

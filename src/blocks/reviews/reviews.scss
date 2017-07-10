@@ -1,0 +1,149 @@
+label {
+  color: #28363d;
+  font-size: 24px;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+.inp {
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: italic;
+  border: 0;
+  border-bottom: 1px solid #c0c0c0;
+  width: 540px;
+  & {
+    outline: none;
+  }
+}
+input#captcha-code {
+  width: 302px;
+}
+article#reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  height: 940px;
+  width: 100%;
+  h2.reviews-header {
+    display : inline-block;
+    color: #28363d;
+    font-size: 50px;
+    font-weight: normal;
+    letter-spacing: 7px;
+    font-family: "Open Sans";
+  }
+  p.reviews-header-describe {
+    text-align: center;
+    width: 780px;
+    color: #8198a0;
+    font-family: "Open Sans";
+    font-size: 16px;
+  }
+  section.reviews-contacts {
+    height: 607px;
+    width: 940px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    div#contacts {
+      height: 215px;
+      width: 320px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      article#contact {
+        display: flex;
+        align-content: flex-start;
+        flex-direction: column;
+        height: 67px;
+        h4.contact-header {
+          height: 37px;
+          font-family: "Open Sans";
+          font-size: 20px;
+          font-weight: bold;
+          color: #ff8207;
+        }
+        a.contact-link {
+          font-family: "Open Sans";
+          font-size: 16px;
+          font-weight: normal;
+          color: #999;
+          text-decoration: none;
+        }
+      }
+    }
+    div.reviews {
+      background-color: #fff;
+      form#review {
+        width: 540px;
+        height: 607px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        div.fieldset {
+          border: 0;
+        }
+        div.fieldset-img-button {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 130px;
+          #file-upload {
+            display: none;
+          }
+          & #custom-file-upload {
+            display: block;
+            background: url("./reviews.images/plus.png") no-repeat center center, #ff8207;
+            width: 48px;
+            height: 60px;
+            border-radius: 9px;
+
+          }
+        }
+
+        div.fieldset-submit-button {
+          display: flex;
+          align-items: center;
+          align-content: center;
+          justify-content: space-between;
+          width: 540px;
+          img#captcha {
+            width: 137px;
+            height: 41px;
+            background: url("./reviews.images/captcha.png") no-repeat;
+
+          }
+          button {
+            color: #fff;
+            font-family: "Open Sans";
+            font-size: 18px;
+            background-color: #ff8207;
+            border: 0;
+            border-radius: 9px;
+            outline: 0;
+            width: 220px;
+            height: 60px;
+
+          }
+        }
+      }
+    }
+  }
+  div#pg-up {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 1398px;
+    & a#scroll-up {
+      height: 60px;
+      width: 69px;
+      background: url("./reviews.images/pgup.png") no-repeat;
+
+    }
+  }
+}

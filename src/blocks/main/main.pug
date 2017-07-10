@@ -1,0 +1,53 @@
+//
+   Created by valeriy on 29/06/17.
+main#main
+  section.wrapper
+    div#bomit-slider
+      div.bombit-slide.bg-1#active-slide
+      div.bombit-slide.bg-2
+      div.bombit-slide.bg-3
+      div.bombit-slide.bg-4
+    article.main-content
+      h1="Главный Заголовок".toUpperCase()
+      div.delimiter
+      h3="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua".toUpperCase()
+      div.slider-nav
+        button( type='button' class='nav-button left-button' id='left-button-click')
+        button( type='button' class='nav-button right-button' id='right-button-click')
+      .modal
+        input#modal.modal-trigger(type='checkbox')
+        label.modal-overlay(for='modal')
+        label#feedback-button(for='modal')="оформить заявку".toUpperCase()
+        .modal-container
+          .card
+            .card-header
+              h3.card-title
+                | Оформление заявки
+            .card-body
+              form( action="#" name="add-request", method="post")#review
+                label(for "name")="ваше имя".toUpperCase()
+                input( type="text" name="name" class="inp" placeholder="Иван Иванов" required)
+                label(for "email")="e-mail".toUpperCase()
+                input( type="email" name="email" class="inp" placeholder="example@mysite.com" required)
+                label(for "position")="ваша должность".toUpperCase()
+                input( type="text" name="position" class="inp" placeholder="Должность")
+                label(for "message")="отзыв".toUpperCase()
+                textarea( rows="5" name="msg-box" class="inp" placeholder="ваше сообщение" required)
+                div.fieldset-img-button
+                  input(type="file" name="upload-img" accept="image/*")#file-upload
+                  label( for="file-upload")#custom-file-upload
+                  label( for="file-upload")="фото".toUpperCase()
+                label(for "code")="введите код с картинки".toUpperCase()
+                input( type="text" name="code" class="inp" required)#captcha-code
+                div.fieldset-submit-button
+                  img#captcha
+                  button( type="submit" name="submit" )="отправить".toUpperCase()
+            .card-footer
+              label.item.action(for='modal')
+                | Close
+      section#nav-bar
+        button.slider-nav-button.bombit-nav-button-click#active-button
+        button.slider-nav-button.bombit-nav-button-click
+        button.slider-nav-button.bombit-nav-button-click
+        button.slider-nav-button.bombit-nav-button-click
+      a#scroll-below(href="#portfolio")

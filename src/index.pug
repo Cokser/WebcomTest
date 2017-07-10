@@ -1,0 +1,24 @@
+//
+   Created by valeriy on 28/06/17.
+
+doctype html
+html
+  head
+  meta(charset = 'utf-8')
+  meta(name="viewport", content="width=device-width, initial-scale=1")
+  //meta(name='viewport', content="initial-scale=1.0, width=device-width")
+  title Webcom Media
+  body
+    div#fullpage
+      div.section#header
+        include blocks/header.menu/header.menu.pug
+      div.section
+        include blocks/main/main.pug
+      div.section
+        include blocks/portfolio/portfolio.pug
+      div.section
+        include blocks/advantages/advantages.pug
+      div.section
+        include blocks/reviews/reviews.pug
+      div.section
+        include blocks/footer/footer.pug

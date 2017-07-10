@@ -1,0 +1,92 @@
+
+
+div#portfolio {
+  background: url("./portfolio.images/effect.jpg") -6px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  article {
+    display: flex;
+    height: 977px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    h2.portfolio-caption {
+      display : inline-block;
+      height: 33px;
+      color: #28363d;
+      font-size: 50px;
+      font-weight: normal;
+      letter-spacing: 7px;
+      font-family: "Open Sans";
+    }
+    p.portfolio-descriptions {
+      text-align: center;
+      width: 780px;
+      color: #8198a0;
+      font-family: "Open Sans";
+      font-size: 16px;
+    }
+  }
+  div.products {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    height: 654px;
+    width: 1420px;
+
+    div.product {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      height: 320px;
+      width: 460px;
+      background: url("./portfolio.images/photo134.png") no-repeat center, #28363d;
+      background-size: 60px 46px, cover;
+      div#invise {
+
+        display: none;
+        width: 100%;
+        article#card {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-around;
+          flex-direction: column;
+          width: 100%;
+          height: 100px;
+          background-color: #fff;
+          animation-name: cardFadeIn;
+          animation-duration: 1s;
+          animation-fill-mode: both;
+
+          h3 {
+            font-family: "Open Sans";
+            font-size: 18px;
+          }
+
+          p {
+
+            font-family: "Open Sans";
+            font-size: 16px;
+          }
+          @keyframes cardFadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 0.8;}
+          }
+
+        }
+      }
+    }
+    div.product:hover {
+      #invise {
+        display: block;
+      }
+
+    }
+  }
+}

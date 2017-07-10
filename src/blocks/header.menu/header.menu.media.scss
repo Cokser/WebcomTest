@@ -1,0 +1,258 @@
+
+$DesktopsLaptop: ( min: 1225px, max: 1399px );
+
+
+$Laptop: ( min: 1025px, max: 1224px );
+
+$tablet: ( min: 768px, max: 1024px );
+
+$tabletMobile: ( min: 320px, max: 1024px );
+
+$iphone6:  ( min: 375px, max: 736px );
+
+
+$iphone5: ( min: 320px, max: 568px );
+
+div#header {
+  display: flex;
+  justify-content: center;
+  background-color: #28363d;
+}
+
+@mixin device($device){
+  @media only screen and (min-width:map_get($device, min)) and (max-width:map_get($device, max)) {
+    @content;
+  }
+}
+@include device($DesktopsLaptop) {
+  div#fullpage{
+    div.section#header{
+      header#header-menu {
+        width: 1224px;
+        height: 110px;
+        div.logo{
+          width: 229px;
+        }
+        nav#nav-menu {
+          width: 800px;
+          height: 120px;
+          li.item {
+            a {
+              //width: 120px !important;
+              font-size: 15px;
+              font-weight: bold;
+            }
+          }
+        }
+        div.phones {
+          width: 229px;
+
+          a {
+            font-size: 18px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+@include device($Laptop) {
+  div#fullpage{
+    div.section#header{
+      header#header-menu {
+        width: 1024px;
+        height: 100px;
+        div.logo{
+          width: 160px;
+        }
+        nav#nav-menu {
+          width: 714px;
+          height: 100px;
+          li.item {
+            a {
+              font-size: 14px;
+              font-weight: bold;
+              width: 144px;
+              height: 100px;
+            }
+          }
+        }
+        div.phones {
+          display: none;
+          width: 150px;
+
+          a {
+            font-size: 17px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+@include device($tablet) {
+  div#fullpage{
+    div.section#header{
+
+      width: 100%;
+      header#header-menu {
+        width: 768px;
+        height: 60px;
+        flex-direction: row;
+        div.logo{
+          width: 160px;
+        }
+        .hamburger {
+          display: block;
+        }
+        nav#nav-menu {
+          display: none;
+          width: 608px;
+          height: 60px;
+          flex-wrap: wrap;
+          li.item {
+            a {
+              font-size: 14px;
+              font-weight: bold;
+              width: 144px;
+              height: 80px;
+            }
+          }
+        }
+        div.phones {
+          display: none;
+          width: 150px;
+
+          a {
+            font-size: 17px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+@include device($tabletMobile) {
+  div#fullpage{
+    div.section#header{
+
+      width: 100%;
+      header#header-menu {
+        width: 320px;
+        height: 60px;
+        flex-direction: row;
+        div.logo{
+          width: 160px;
+        }
+        .hamburger {
+          display: block;
+        }
+        nav#nav-menu {
+          display: none;
+          width: 608px;
+          height: 60px;
+          flex-wrap: wrap;
+          li.item {
+            a {
+              font-size: 14px;
+              font-weight: bold;
+              width: 144px;
+              height: 80px;
+            }
+          }
+        }
+        div.phones {
+          display: none;
+          width: 150px;
+
+          a {
+            font-size: 17px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+@include device($iphone6) {
+  div#fullpage{
+    div.section#header{
+
+      width: 100%;
+      header#header-menu {
+        width: 320px;
+        height: 60px;
+        flex-direction: row;
+        div.logo{
+          width: 160px;
+        }
+        .hamburger {
+          display: block;
+        }
+        nav#nav-menu {
+          display: none;
+          width: 608px;
+          height: 60px;
+          flex-wrap: wrap;
+          li.item {
+            a {
+              font-size: 14px;
+              font-weight: bold;
+              width: 144px;
+              height: 80px;
+            }
+          }
+        }
+        div.phones {
+          display: none;
+          width: 150px;
+
+          a {
+            font-size: 17px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+@include device($iphone5) {
+  div#fullpage{
+    div.section#header{
+      header#header-menu {
+        width: 320px;
+        height: 60px;
+        flex-direction: row;
+        div.logo{
+          width: 160px;
+        }
+        .hamburger {
+          display: block;
+        }
+        nav#nav-menu {
+          display: none;
+          width: 608px;
+          height: 60px;
+          flex-wrap: wrap;
+          li.item {
+            a {
+              font-size: 14px;
+              font-weight: bold;
+              width: 144px;
+              height: 80px;
+            }
+          }
+        }
+        div.phones {
+          display: none;
+          width: 150px;
+
+          a {
+            font-size: 17px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

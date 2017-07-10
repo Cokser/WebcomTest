@@ -1,0 +1,18 @@
+//
+   Created by valeriy on 29/06/17.
+
+- var advantages = ["advantage1","advantage2","advantage3","advantage4","advantage5","advantage6", "advantage7","advantage8"];
+
+mixin advantages(advantageID)
+  article.advantage
+    div(class = advantageID + "-img")
+    h3.advantage-header=advantageID.toUpperCase()
+    p.advantage-describe="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium"
+
+article#advantages
+  h2.advantage-header="почему мы".toUpperCase()
+  div.separator
+  p.advantage-header-describe="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut."
+  section.advantages
+    for advantage in advantages
+      +advantages(advantage)
