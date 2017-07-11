@@ -1,6 +1,3 @@
-/**
- * Created by valeriy on 29/06/17.
- */
 module.exports = function(paths) {
   return {
     module: {

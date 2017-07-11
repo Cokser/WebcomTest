@@ -7,8 +7,6 @@ $advantages: advantage1-img, advantage2-img, advantage3-img,advantage4-img,advan
   }
 }
 
-
-
 $DesktopsLaptop: ( min: 1225px, max: 1399px );
 
 $Laptop: ( min: 1025px, max: 1224px );
@@ -26,8 +24,6 @@ $iphone5: ( min: 320px, max: 568px );
     @content;
   }
 }
-
-
 
 @include device($DesktopsLaptop) {
   div#fullpage {

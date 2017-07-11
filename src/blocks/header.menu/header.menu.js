@@ -1,6 +1,3 @@
-/**
- * Created by valeriy on 29/06/17.
- */
 import "./header.menu.scss"
 import "./header.menu.media.scss"
 import "./header.menu.pug"
@@ -9,7 +6,6 @@ import "fullpage.js"
 
 $(document).ready(function() {
   $('#fullpage').fullpage({
-    //Navigation
     menu: '#menu',
     lockAnchors: false,
     anchors:['firstPage', 'secondPage','thirdPage', 'fourthPage','fifthPage','sixthPage'],

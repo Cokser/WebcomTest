@@ -1,5 +1,4 @@
 ﻿{
-
 	function Slider() {
 	  this.interval = 5000;
 		this.currentSlide = document.getElementById('active-slide');
@@ -33,7 +32,6 @@
         for ( var j = 0; j < bombitSlider.navigators.length; j++ ) {
           if ( clickedButton === bombitSlider.prevousButton ) {
             if( bombitSlider.buttons[i] !== bombitSlider.buttons[0] ){
-              console.log( clickedButton, 'minus' ,bombitSlider.buttons[i] !== bombitSlider.buttons[0]);
               bombitSlider.currentButton = bombitSlider.buttons[i - 1];
               return bombitSlider.currentButton;
             } else {
@@ -42,7 +40,6 @@
             }
           } else if ( clickedButton === bombitSlider.nextButton ) {
             if( bombitSlider.buttons[i] !== bombitSlider.buttons[bombitSlider.buttons.length-1] ) {
-              console.log( i, clickedButton, 'plus', bombitSlider.buttons[i] !== bombitSlider.buttons[bombitSlider.buttons.length-1] );
               bombitSlider.currentButton = bombitSlider.buttons[i + 1];
               return bombitSlider.currentButton;
             } else {
@@ -50,7 +47,6 @@
               return bombitSlider.currentButton;
             }
           } else {
-            console.log( clickedButton, 'buttons' );
             bombitSlider.currentButton = clickedButton;
             return bombitSlider.currentButton;
           }

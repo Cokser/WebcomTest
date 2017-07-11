@@ -1,6 +1,5 @@
 $DesktopsLaptop: ( min: 1225px, max: 1399px );
 
-
 $Laptop: ( min: 1025px, max: 1224px );
 
 $tablet: ( min: 769px, max: 1024px );
@@ -314,38 +313,3 @@ $iphone5: ( min: 320px, max: 568px );
     }
   }
 }
-
-//--------slider-------
-//.fp-slidesContainer {
-//  width: 100%!important;
-//  transform: none!important;
-//}
-//
-//.fp-slide {
-//  width: 100%!important;
-//  position: absolute;
-//  left: 0;
-//  top: 0;
-//  visibility: hidden;
-//  opacity: 0;
-//  z-index: 0;
-//  transition: all .7s ease-in-out;
-//  &[data-anchor="slide1"] {
-//    background: url("./main.images/bg-1.jpg");
-//  }
-//  &[data-anchor="slide2"] {
-//    background: url("./main.images/bg-2.jpg");
-//  }
-//  &[data-anchor="slide3"] {
-//    background: url("./main.images/bg-3.jpg");
-//  }
-//  &[data-anchor="slide4"] {
-//    background: url("./main.images/bg-4.jpg");
-//  }
-//}
-//
-//.fp-slide.active {
-//  visibility: visible;
-//  opacity: 1;
-//  z-index: 1;
-//}
