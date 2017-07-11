@@ -14,8 +14,6 @@ const webpack = require('webpack');
 const uglifyJS = require('./config/webpcak.js-uglify');
 const images = require('./config/webpack.images');
 
-
-// const prodserver = require('./config/webpack.prod');
 process.noDeprecation = true;
 
 const PATHS = {
@@ -44,7 +42,7 @@ const common = merge([
       new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery'
-      })
+      }),
     ]
   },
   pug(),
@@ -57,7 +55,7 @@ module.exports = function(env) {
     return merge([
       common,
       extractCss(),
-      uglifyJS()
+      uglifyJS(),
     ]);
   }
   if (env === 'development') {

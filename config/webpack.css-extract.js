@@ -2,6 +2,7 @@
  * Created by valeriy on 29/06/17.
  */
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ExtractTextPluginMin = require('extract-text-webpack-plugin');
 
 module.exports = function(paths) {
   return {
@@ -37,10 +38,32 @@ module.exports = function(paths) {
             use: ExtractTextPlugin.extract([ 'css-loader', 'postcss-loader' ]),
           }),
         },
+        // {
+        //   test: /\.css$/,
+        //   include: paths,
+        //   use: ExtractTextPluginMin.extract({
+        //     fallback: 'style-loader',
+        //     use: ExtractTextPluginMin.extract([ 'css-loader', 'postcss-loader' ]),
+        //   }),
+        // },
+        {
+          test: /\.css$/,
+          include: paths,
+          use: ExtractTextPluginMin.extract({
+            fallback: 'style-loader',
+            use:[
+              { loader: 'css-loader', options: { minimize: true } },
+              "postcss-loader"
+            ],
+          }),
+        }
       ],
     },
     plugins: [
       new ExtractTextPlugin('./css/[name].css'),
+      new ExtractTextPluginMin({
+        filename: './css/[name].min.css',
+      })
     ],
   };
 };
