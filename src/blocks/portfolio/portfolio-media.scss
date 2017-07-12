@@ -17,21 +17,21 @@ $iphone5: ( min: 320px, max: 568px );
   }
 }
 @include device($DesktopsLaptop) {
-  div#fullpage {
-    div.section {
-      div#portfolio {
-        article {
-          h2.portfolio-caption {
+  #fullpage {
+    .section {
+      #portfolio {
+        .portfolio_article {
+          .portfolio_caption {
             height: 33px;
             font-size: 50px;
             letter-spacing: 7px;
           }
-          p.portfolio-descriptions {
+          .portfolio_descriptions {
             width: 780px;
             font-size: 16px;
           }
         }
-        div.products {
+        .products {
           display: flex;
           align-items: center;
           align-content: space-between;
@@ -39,27 +39,27 @@ $iphone5: ( min: 320px, max: 568px );
           flex-flow: row wrap;
           height: 640px;
           width: 1215px;
-          div.product {
+          .product {
             height: 320px;
             width: 405px;
             background-size: 60px 46px, cover;
-            div#invise {
+            .invise_block {
               display: none;
               width: 100%;
-              article#card {
+              .product_card {
                 width: 100%;
                 height: 100px;
-                h3 {
+                .product_title {
                   font-size: 18px;
                 }
-                p {
+                .product_descriptions {
                   font-size: 16px;
                 }
               }
             }
           }
-          div.product:hover {
-            #invise {
+          .product:hover {
+            .invise_block {
               width: 405px;
               display: block;
             }
@@ -71,46 +71,46 @@ $iphone5: ( min: 320px, max: 568px );
   }
 }
 @include device($Laptop) {
-  div#fullpage {
-    div.section {
-      div#portfolio {
+  #fullpage {
+    .section {
+      #portfolio {
         width: 100%;
-        article {
+        .portfolio_article {
           height: 700px;
-          h2.portfolio-caption {
+          .portfolio_caption {
             height: 33px;
             font-size: 50px;
             letter-spacing: 7px;
           }
-          p.portfolio-descriptions {
+          .portfolio_descriptions {
             width: 780px;
             font-size: 16px;
           }
         }
-        div.products {
+        .products {
           height: 500px;
           width: 1014px;
-          div.product {
+          .product {
             height: 250px;
             width: 338px;
             background-size: 60px 46px, cover;
-            div#invise {
+            .invise_block {
               display: none;
               width: 338px;
-              article#card {
+              .product_card {
                 width: 338px;
                 height: 90px;
-                h3 {
+                .product_title {
                   font-size: 18px;
                 }
-                p {
+                .product_descriptions {
                   font-size: 16px;
                 }
               }
             }
           }
-          div.product:hover {
-            #invise {
+          .product:hover {
+            .invise_block {
               width: 338px;
               display: block;
             }
@@ -121,47 +121,47 @@ $iphone5: ( min: 320px, max: 568px );
   }
 }
 @include device($tablet) {
-  div#fullpage {
-    div.section {
-      div#portfolio {
+  #fullpage {
+    .section {
+      #portfolio {
         width: 100%;
-        article {
+        .portfolio_article {
           height: 700px;
-          h2.portfolio-caption {
+          .portfolio_caption {
             height: 33px;
             font-size: 50px;
             letter-spacing: 7px;
           }
-          p.portfolio-descriptions {
+          .portfolio_descriptions {
             width: 700px;
             font-size: 16px;
           }
         }
-        div.products {
+        .products {
           width: 768px;
           height: 400px;
 
-          div.product {
+          .product {
             height: 200px;
             width: 256px;
             background-size: 60px 46px, cover;
-            div#invise {
+            .invise_block {
               display: none;
               width: 256px;
-              article#card {
+              .product_card {
                 width: 256px;
                 height: 60px;
-                h3 {
+                .product_title {
                   font-size: 17px;
                 }
-                p {
+                .product_descriptions {
                   font-size: 16px;
                 }
               }
             }
           }
-          div.product:hover {
-            #invise {
+          .product:hover {
+            .invise_block {
               width: 256px;
               display: block;
             }
@@ -172,47 +172,47 @@ $iphone5: ( min: 320px, max: 568px );
   }
 }
 @include device($tabletMobile) {
-    div#fullpage {
-      div.section {
-        div#portfolio {
+    #fullpage {
+      .section {
+        #portfolio {
           width: 100%;
-          article {
+          .portfolio_article {
             height: 700px;
-            h2.portfolio-caption {
+            .portfolio_caption {
               height: 33px;
               font-size: 30px;
               letter-spacing: 4px;
             }
-            p.portfolio-descriptions {
+            .portfolio_descriptions {
               width: 300px;
               font-size: 15px;
             }
           }
-          div.products {
+          .products {
             width: 310px;
             height: 450px;
 
-            div.product {
+            .product {
               height: 150px;
               width: 155px;
               background-size: 60px 46px, cover;
-              div#invise {
+              .invise_block {
                 display: none;
                 width: 155px;
-                article#card {
+                .product_card {
                   width: 155px;
                   height: 60px;
-                  h3 {
+                  .product_title {
                     font-size: 13px;
                   }
-                  p {
+                  .product_descriptions {
                     font-size: 10px;
                   }
                 }
               }
             }
-            div.product:hover {
-              #invise {
+            .product:hover {
+              .invise_block {
                 width: 155px;
                 display: block;
               }
@@ -223,48 +223,48 @@ $iphone5: ( min: 320px, max: 568px );
     }
   }
 @include device($iphone6) {
-  div#fullpage {
-    div.section {
-      div#portfolio {
+  #fullpage {
+    .section {
+      #portfolio {
         width: 100%;
-        article {
+        .portfolio_article {
           height: 700px;
-          h2.portfolio-caption {
+          .portfolio_caption {
             height: 33px;
             font-size: 30px;
             letter-spacing: 4px;
           }
-          p.portfolio-descriptions {
+          .portfolio_descriptions {
             width: 350px;
             font-size: 15px;
           }
         }
-        div.products {
+        .products {
           width: 364px;
           height: 450px;
 
-          div.product {
+          .product {
             height: 150px;
             width: 182px;
             background-size: 60px 46px, cover;
-            div#invise {
+            .invise_block {
               display: none;
               width: 182px;
-              article#card {
+              .product_card {
                 width: 182px;
                 height: 50px;
-                h3 {
+                .product_title {
                   font-size: 13px;
                   font-weight: normal;
                 }
-                p {
+                .product_descriptions {
                   font-size: 10px;
                 }
               }
             }
           }
-          div.product:hover {
-            #invise {
+          .product:hover {
+            .invise_block {
               width: 182px;
               display: block;
             }
@@ -275,49 +275,49 @@ $iphone5: ( min: 320px, max: 568px );
   }
 }
 @include device($iphone5) {
-  div#fullpage {
-    div.section {
-      div#portfolio {
+  #fullpage {
+    .section {
+      #portfolio {
         width: 100%;
-        article {
+        .portfolio_article {
           width: 100%;
           height: 568px;
-          h2.portfolio-caption {
+          .portfolio_caption {
             height: 33px;
             font-size: 30px;
             letter-spacing: 4px;
           }
-          p.portfolio-descriptions {
+          .portfolio_descriptions {
             width: 300px;
             font-size: 15px;
             display: none;
           }
         }
-        div.products {
+        .products {
           width: 320px;
           height: 450px;
-          div.product {
+          .product {
             height: 150px;
             width: 160px;
             background-size: 60px 46px, cover;
-            div#invise {
+            .invise_block {
               display: none;
               width: 160px;
-              article#card {
+              .product_card {
                 width: 160px;
                 height: 50px;
-                h3 {
+                .product_title {
                   font-size: 13px;
                   font-weight: normal;
                 }
-                p {
+                .product_descriptions {
                   font-size: 10px;
                 }
               }
             }
           }
-          div.product:hover {
-            #invise {
+          .product:hover {
+            .invise_block {
               width: 160px;
               display: block;
             }

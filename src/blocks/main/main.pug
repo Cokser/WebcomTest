@@ -1,27 +1,27 @@
 main#main
-  section.wrapper
-    div#bomit-slider
-      img(src=require('./main.images/bg-1.jpg')).bombit-slide#active-slide
-      img(src=require('./main.images/bg-2.jpg')).bombit-slide
-      img(src=require('./main.images/bg-3.jpg')).bombit-slide
-      img(src=require('./main.images/bg-4.jpg')).bombit-slide
-    article.main-content
-      h1="Главный Заголовок".toUpperCase()
+  section.slider_wrapper
+    div#bomit_slider
+      img(src=require('./main.images/bg-1.jpg')).bombit_slide#active_slide
+      img(src=require('./main.images/bg-2.jpg')).bombit_slide
+      img(src=require('./main.images/bg-3.jpg')).bombit_slide
+      img(src=require('./main.images/bg-4.jpg')).bombit_slide
+    article.main_content
+      h1.main_title="Главный Заголовок".toUpperCase()
       div.delimiter
-      h3="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua".toUpperCase()
-      div.slider-nav
-        button( type='button' class='nav-button left-button' id='left-button-click')
-        button( type='button' class='nav-button right-button' id='right-button-click')
+      h3.main_description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua".toUpperCase()
+      div.slider_nav
+        button( type='button' class='nav_button left_button' id='left_button_click')
+        button( type='button' class='nav_button right_button' id='right_button_click')
       .modal
-        input#modal.modal-trigger(type='checkbox')
-        label.modal-overlay(for='modal')
-        label#feedback-button(for='modal')="оформить заявку".toUpperCase()
-        .modal-container
+        input#modal.modal_trigger(type='checkbox')
+        label.modal_overlay(for='modal')
+        label#feedback_button(for='modal')="оформить заявку".toUpperCase()
+        .modal_container
           .card
-            .card-header
-              h3.card-title
+            .card_header
+              h3.card_title
                 | Оформление заявки
-            .card-body
+            .card_body
               form( action="#" name="add-request", method="post")#review
                 label(for "name")="ваше имя".toUpperCase()
                 input( type="text" name="name" class="inp" placeholder="Иван Иванов" required)
@@ -31,21 +31,21 @@ main#main
                 input( type="text" name="position" class="inp" placeholder="Должность")
                 label(for "message")="отзыв".toUpperCase()
                 textarea( rows="5" name="msg-box" class="inp" placeholder="ваше сообщение" required)
-                div.fieldset-img-button
+                div.fieldset_img-button
                   input(type="file" name="upload-img" accept="image/*")#file-upload
                   label( for="file-upload")#custom-file-upload
                   label( for="file-upload")="фото".toUpperCase()
                 label(for "code")="введите код с картинки".toUpperCase()
                 input( type="text" name="code" class="inp" required)#captcha-code
-                div.fieldset-submit-button
+                div.fieldset_submit_button
                   img#captcha
                   button( type="submit" name="submit" )="отправить".toUpperCase()
-            .card-footer
+            .card_footer
               label.item.action(for='modal')
                 | Close
-      section#nav-bar
-        button.slider-nav-button.bombit-nav-button-click#active-button
-        button.slider-nav-button.bombit-nav-button-click
-        button.slider-nav-button.bombit-nav-button-click
-        button.slider-nav-button.bombit-nav-button-click
-      a#scroll-below(href="#portfolio")
+      section#nav_bar
+        button.slider_nav_button.bombit_nav_button_click#active_button
+        button.slider_nav_button.bombit_nav_button_click
+        button.slider_nav_button.bombit_nav_button_click
+        button.slider_nav_button.bombit_nav_button_click
+      a#scroll_below(href="#portfolio")

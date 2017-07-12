@@ -1,15 +1,14 @@
 ﻿{
 	function Slider() {
 	  this.interval = 5000;
-		this.currentSlide = document.getElementById('active-slide');
-		this.slides = document.getElementsByClassName('bombit-slide');
-		this.buttons = document.getElementsByClassName('bombit-nav-button-click');
-    this.currentButton = document.getElementById('active-button-click');
-    this.nextButton = document.getElementById('right-button-click');
-    this.prevousButton = document.getElementById('left-button-click');
+		this.currentSlide = document.getElementById('active_slide');
+		this.slides = document.getElementsByClassName('bombit_slide');
+		this.buttons = document.getElementsByClassName('bombit_nav_button_click');
+    this.currentButton = document.getElementById('active_button_click');
+    this.nextButton = document.getElementById('right_button_click');
+    this.prevousButton = document.getElementById('left_button_click');
     this.navigators = [ this.nextButton ,this.prevousButton ];
   }
-
 	function initSlider(){
 		var bombitSlider = new Slider();
 		setButtonEvents( bombitSlider );
@@ -17,7 +16,7 @@
     startSliderTimer( bombitSlider );
     bombitSlider.getCurrentValues();
   }
-  function getCurrentButton( clickedButton , bombitSlider) {
+  function getCurrentButton( clickedButton , bombitSlider ) {
     for( var i = 0; i < bombitSlider.buttons.length; i++ ) {
       if ( bombitSlider.buttons[i] === bombitSlider.currentButton ) {
         for ( var j = 0; j < bombitSlider.navigators.length; j++ ) {
@@ -53,8 +52,8 @@
 	}
 
 	Slider.prototype.getCurrentValues = function() {
-		this.currentSlide = document.getElementById('active-slide');
-		this.currentButton = document.getElementById('active-button');
+		this.currentSlide = document.getElementById('active_slide');
+		this.currentButton = document.getElementById('active_button');
 		var slidesArray = this.slides;
 		var buttonsArray = this.buttons;
 		for (var i = 0; i < slidesArray.length; i++) {
@@ -74,8 +73,8 @@
 					this.currentButton.id = ' ';
 					this.currentSlide = slidesArray[i];
 					this.currentButton = buttonsArray[i];
-					this.currentSlide.id = 'active-slide';
-					this.currentButton.id = 'active-button';
+					this.currentSlide.id = 'active_slide';
+					this.currentButton.id = 'active_button';
 					break;
 				} 
 				else if( buttonsArray[i] !== buttonsArray[buttonsArray.length-1] ) {
@@ -83,8 +82,8 @@
 					this.currentButton.id = ' ';
 					this.currentSlide = slidesArray[i+1];
 					this.currentButton = buttonsArray[i+1];
-					this.currentSlide.id = 'active-slide';
-					this.currentButton.id = 'active-button';
+					this.currentSlide.id = 'active_slide';
+					this.currentButton.id = 'active_button';
 					break;
 				}
 				if ( this.currentButton === buttonsArray[buttonsArray.length-1] ) {
@@ -92,8 +91,8 @@
 					this.currentButton.id = ' ';
 					this.currentSlide = slidesArray[0];
 					this.currentButton = buttonsArray[0];
-					this.currentSlide.id = 'active-slide';
-					this.currentButton.id = 'active-button';
+					this.currentSlide.id = 'active_slide';
+					this.currentButton.id = 'active_button';
 					break;
 				}
 			}

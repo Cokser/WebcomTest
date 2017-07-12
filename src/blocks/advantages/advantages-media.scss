@@ -26,24 +26,24 @@ $iphone5: ( min: 320px, max: 568px );
 }
 
 @include device($DesktopsLaptop) {
-  div#fullpage {
-    div.section {
-      article#advantages {
+  #fullpage {
+    .section {
+      #advantages {
         height: 721px;
         width: 100%;
-        h2.advantage-header {
+        .advantages_header {
           font-size: 47px;
           letter-spacing: 7px;
         }
-        p.advantage-header-describe {
+        .advantage_header_describe {
           font-size: 17px;
           width: 721px;
         }
-        section.advantages {
+        .section_advantages {
           justify-content: space-around;
           width: 1225px;
           height: 405px;
-          article.advantage {
+          .article_advantage {
             height: 173px;
             width: 288px;
             @each $advantage in $advantages {
@@ -52,11 +52,11 @@ $iphone5: ( min: 320px, max: 568px );
                 height: 40px;
               }
             }
-            h3 {
+            .advantage_title {
               font-size: 16px;
               font-weight: bold;
             }
-            p {
+            .advantage_description {
               height: 72px;
               font-size: 16px;
             }
@@ -67,24 +67,24 @@ $iphone5: ( min: 320px, max: 568px );
   }
 }
 @include device($Laptop) {
-  div#fullpage {
-    div.section {
-      article#advantages {
+  #fullpage {
+    .section {
+      #advantages {
         height: 721px;
         width: 100%;
-        h2.advantage-header {
+        .advantages_header {
           font-size: 47px;
           letter-spacing: 7px;
         }
-        p.advantage-header-describe {
+        .advantage_header_describe {
           font-size: 17px;
           width: 721px;
         }
-        section.advantages {
+        .section_advantages {
           justify-content: space-between;
           width: 1016px;
           height: 405px;
-          article.advantage {
+          .article_advantage {
             height: 173px;
             width: 254px;
             @each $advantage in $advantages {
@@ -93,11 +93,11 @@ $iphone5: ( min: 320px, max: 568px );
                 height: 40px;
               }
             }
-            h3 {
+            .advantage_title {
               font-size: 16px;
               font-weight: bold;
             }
-            p {
+            .advantage_description {
               height: 72px;
               font-size: 16px;
             }
@@ -108,24 +108,24 @@ $iphone5: ( min: 320px, max: 568px );
   }
 }
 @include device($tablet) {
-  div#fullpage {
-    div.section {
-      article#advantages {
+  #fullpage {
+    .section {
+      #advantages {
         height: 721px;
         width: 100%;
-        h2.advantage-header {
+        .advantages_header {
           font-size: 47px;
           letter-spacing: 7px;
         }
-        p.advantage-header-describe {
+        .advantage_header_describe {
           font-size: 17px;
           width: 721px;
         }
-        section.advantages {
+        .section_advantages {
           justify-content: space-between;
           width: 759px;
           height: 405px;
-          article.advantage {
+          .article_advantage{
             height: 173px;
             width: 189px;
             @each $advantage in $advantages {
@@ -134,11 +134,11 @@ $iphone5: ( min: 320px, max: 568px );
                 height: 40px;
               }
             }
-            h3 {
+            .advantage_title {
               font-size: 16px;
               font-weight: bold;
             }
-            p {
+            .advantage_description {
               width: 182px;
               height: 72px;
               font-size: 13px;
@@ -150,24 +150,24 @@ $iphone5: ( min: 320px, max: 568px );
   }
 }
 @include device($tabletMobile) {
-  div#fullpage {
-    div.section {
-      article#advantages {
+  #fullpage {
+    .section {
+      #advantages {
         height: 1008px;
         width: 100%;
-        h2.advantage-header {
+        .advantages_header {
           font-size: 30px;
           letter-spacing: 5px;
         }
-        p.advantage-header-describe {
+        .advantage_header_describe {
           font-size: 13px;
           width: 300px;
         }
-        section.advantages {
+        .section_advantages {
           justify-content: space-between;
           width: 310px;
           height: 692px;
-          article.advantage {
+          .article_advantage{
             height: 173px;
             width: 150px;
             @each $advantage in $advantages {
@@ -176,11 +176,11 @@ $iphone5: ( min: 320px, max: 568px );
                 height: 40px;
               }
             }
-            h3 {
+            .advantage_title {
               font-size: 16px;
               font-weight: bold;
             }
-            p {
+            .advantage_description{
               width: 182px;
               height: 72px;
               font-size: 13px;
@@ -192,24 +192,24 @@ $iphone5: ( min: 320px, max: 568px );
   }
 }
 @include device($iphone6) {
-  div#fullpage {
-    div.section {
-      article#advantages {
+  #fullpage {
+    .section {
+      #advantages {
         height: 850px;
         width: 100%;
-        h2.advantage-header {
+        .advantages_header {
           font-size: 30px;
           letter-spacing: 5px;
         }
-        p.advantage-header-describe {
+        .advantage_header_describe {
           font-size: 13px;
           width: 340px;
         }
-        section.advantages {
+        .section_advantages {
           justify-content: space-between;
           width: 365px;
           height: 692px;
-          article.advantage {
+          .article_advantage{
             height: 173px;
             width: 180px;
             @each $advantage in $advantages {
@@ -218,11 +218,11 @@ $iphone5: ( min: 320px, max: 568px );
                 height: 40px;
               }
             }
-            h3 {
+            .advantage_title{
               font-size: 16px;
               font-weight: bold;
             }
-            p.advantage-describe {
+            .advantage_description {
               width: 182px;
               height: 72px;
               font-size: 13px;
@@ -234,31 +234,31 @@ $iphone5: ( min: 320px, max: 568px );
   }
 }
 @include device($iphone5) {
-  div#fullpage {
-    div.section {
-      article#advantages {
+  #fullpage {
+    .section {
+      #advantages {
         height: 568px;
         width: 100%;
         justify-content: space-around;
-        h2.advantage-header {
+        .advantages_header {
           font-size: 30px;
           letter-spacing: 5px;
         }
-        p.advantage-header-describe {
+        .advantage_header_describe {
           font-size: 13px;
           width: 300px;
           display: none;
         }
-        section.advantages {
+        .section_advantages {
           justify-content: space-around;
           width: 310px;
           height: 400px;
-          article.advantage {
+          .article_advantage {
             justify-content: space-around;
             height: 100px;
             width: 155px;
             &:hover {
-              .advantage-describe {
+              .advantage_description {
                 display: block;
                 position: absolute;
               }
@@ -269,11 +269,11 @@ $iphone5: ( min: 320px, max: 568px );
                 height: 40px;
               }
             }
-            h3 {
+            .advantage_title {
               font-size: 16px;
               font-weight: bold;
             }
-            p.advantage-describe {
+            .advantage_description {
               align-self: center;
               background-color: #fff;
               display: none;

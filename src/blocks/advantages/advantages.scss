@@ -1,12 +1,12 @@
 $advantages: advantage1-img, advantage2-img, advantage3-img,advantage4-img,advantage5-img,advantage6-img, advantage7-img,advantage8-img;
 @mixin advantage-mix($advantageID) {
-  div.#{$advantageID} {
+  .#{$advantageID} {
     background: url("./advantage.images/#{$advantageID}.png") no-repeat;
     width: 50px;
     height: 40px;
   }
 }
-article#advantages {
+#advantages {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +14,7 @@ article#advantages {
   background-color: #fff;
   height: 721px;
   width: 100%;
-  h2.advantage-header {
+  .advantages_header {
     font-family: "Open Sans";
     font-size: 47px;
     color: #28363d;
@@ -22,20 +22,20 @@ article#advantages {
     letter-spacing: 7px;
   }
 
-  p.advantage-header-describe {
+  .advantage_header_describe {
     font-family: "Open Sans";
     font-size: 17px;
     width: 770px;
     text-align: center;
     color: #8198a0;
   }
-  section.advantages {
+  .section_advantages {
     display: flex;
     justify-content: space-around;
     flex-flow: wrap;
     width: 1266px;
     height: 405px;
-    article.advantage {
+    .article_advantage {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -46,13 +46,13 @@ article#advantages {
       @each $advantage in $advantages {
         @include advantage-mix($advantage)
       }
-      h3 {
+      .advantage_title {
         font-family: "Open Sans";
         font-size: 16px;
         font-weight: bold;
         color: #28363d;
       }
-      p {
+      .advantage_description {
         height: 72px;
         font-family: "Open Sans";
         font-size: 16px;

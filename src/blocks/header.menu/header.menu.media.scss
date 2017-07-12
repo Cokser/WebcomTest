@@ -25,28 +25,27 @@ div#header {
   }
 }
 @include device($DesktopsLaptop) {
-  div#fullpage{
-    div.section#header{
-      header#header-menu {
+  #fullpage{
+    .section#header{
+      #header_menu {
         width: 1224px;
         height: 110px;
-        div.logo{
+        .logo{
           width: 229px;
         }
-        nav#nav-menu {
+        .nav_menu {
           width: 800px;
           height: 120px;
-          li.item {
-            a {
+          .item {
+            .item_link {
               font-size: 15px;
               font-weight: bold;
             }
           }
         }
-        div.phones {
+        .phones {
           width: 229px;
-
-          a {
+          .phone_link {
             font-size: 18px;
             font-weight: bold;
           }
@@ -56,19 +55,19 @@ div#header {
   }
 }
 @include device($Laptop) {
-  div#fullpage{
-    div.section#header{
-      header#header-menu {
+  #fullpage{
+    .section#header{
+      #header_menu {
         width: 1024px;
         height: 100px;
-        div.logo{
+        .logo{
           width: 160px;
         }
-        nav#nav-menu {
+        .nav_menu {
           width: 714px;
           height: 100px;
-          li.item {
-            a {
+          .item {
+            .item_link {
               font-size: 14px;
               font-weight: bold;
               width: 144px;
@@ -76,11 +75,11 @@ div#header {
             }
           }
         }
-        div.phones {
+        .phones {
           display: none;
           width: 150px;
 
-          a {
+          .phone_link {
             font-size: 17px;
             font-weight: bold;
           }
@@ -90,27 +89,26 @@ div#header {
   }
 }
 @include device($tablet) {
-  div#fullpage{
-    div.section#header{
-
+  #fullpage{
+    .section#header{
       width: 100%;
-      header#header-menu {
+      #header_menu {
         width: 768px;
         height: 60px;
         flex-direction: row;
-        div.logo{
+        .logo{
           width: 160px;
         }
         .hamburger {
           display: block;
         }
-        nav#nav-menu {
+        .nav_menu {
           display: none;
           width: 608px;
           height: 60px;
           flex-wrap: wrap;
-          li.item {
-            a {
+          .item {
+            .item_link {
               font-size: 14px;
               font-weight: bold;
               width: 144px;
@@ -118,11 +116,10 @@ div#header {
             }
           }
         }
-        div.phones {
+        .phones {
           display: none;
           width: 150px;
-
-          a {
+          .phone_link {
             font-size: 17px;
             font-weight: bold;
           }
@@ -132,27 +129,26 @@ div#header {
   }
 }
 @include device($tabletMobile) {
-  div#fullpage{
-    div.section#header{
-
+  #fullpage{
+    .section#header{
       width: 100%;
-      header#header-menu {
+      #header_menu {
         width: 320px;
         height: 60px;
         flex-direction: row;
-        div.logo{
+        .logo{
           width: 160px;
         }
         .hamburger {
           display: block;
         }
-        nav#nav-menu {
+        .nav_menu {
           display: none;
           width: 608px;
           height: 60px;
           flex-wrap: wrap;
-          li.item {
-            a {
+          .item {
+            .item_link {
               font-size: 14px;
               font-weight: bold;
               width: 144px;
@@ -160,11 +156,10 @@ div#header {
             }
           }
         }
-        div.phones {
+        .phones {
           display: none;
           width: 150px;
-
-          a {
+          .phone_link {
             font-size: 17px;
             font-weight: bold;
           }
@@ -174,27 +169,26 @@ div#header {
   }
 }
 @include device($iphone6) {
-  div#fullpage{
-    div.section#header{
-
+  #fullpage{
+    .section#header{
       width: 100%;
-      header#header-menu {
+      #header_menu {
         width: 320px;
         height: 60px;
         flex-direction: row;
-        div.logo{
+        .logo{
           width: 160px;
         }
         .hamburger {
           display: block;
         }
-        nav#nav-menu {
+        .nav_menu {
           display: none;
           width: 608px;
           height: 60px;
           flex-wrap: wrap;
-          li.item {
-            a {
+          .item {
+            .item_link {
               font-size: 14px;
               font-weight: bold;
               width: 144px;
@@ -202,11 +196,10 @@ div#header {
             }
           }
         }
-        div.phones {
+        .phones {
           display: none;
           width: 150px;
-
-          a {
+          .phone_link {
             font-size: 17px;
             font-weight: bold;
           }
@@ -216,25 +209,25 @@ div#header {
   }
 }
 @include device($iphone5) {
-  div#fullpage{
-    div.section#header{
-      header#header-menu {
+  #fullpage{
+    .section#header{
+      #header_menu {
         width: 320px;
         height: 60px;
         flex-direction: row;
-        div.logo{
+        .logo{
           width: 160px;
         }
         .hamburger {
           display: block;
         }
-        nav#nav-menu {
+        .nav_menu {
           display: none;
           width: 608px;
           height: 60px;
           flex-wrap: wrap;
-          li.item {
-            a {
+          .item {
+            .item_link {
               font-size: 14px;
               font-weight: bold;
               width: 144px;
@@ -242,11 +235,10 @@ div#header {
             }
           }
         }
-        div.phones {
+        .phones {
           display: none;
           width: 150px;
-
-          a {
+          .phone_link {
             font-size: 17px;
             font-weight: bold;
           }

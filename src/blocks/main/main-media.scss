@@ -16,31 +16,31 @@ $iphone5: ( min: 320px, max: 568px );
   }
 }
 @include device($DesktopsLaptop) {
-  div#fullpage {
-    div.section {
-      main#main {
-        .bombit-slide {
+  #fullpage {
+    .section {
+      #main {
+        .bombit_slide {
           height: 1000px;
         }
-        section.wrapper {
+        .slider_wrapper {
           width: 100%;
-          article.main-content {
+          .main_content {
             width: 1225px;
-            div.slider-nav {
+            .slider_nav {
               width: 1100px;
-              button.left-button {
+              .left_button {
                 transform: rotate(180deg);
                 background-size: 80px 80px;
               }
-              button.right-button {
+              .right_button {
                 background-size: 80px 80px;
               }
             }
-            label#feedback-button {
+            #feedback_button {
               width: 400px;
               height: 80px;
             }
-            section#nav-bar {
+            #nav_bar {
               height: 18px;
               width: 138px;
             }
@@ -51,32 +51,33 @@ $iphone5: ( min: 320px, max: 568px );
   }
 }
 @include device($Laptop) {
-  div#fullpage {
-    div.section {
-      main#main {
-        .bombit-slide {
+  #fullpage {
+    .section {
+      #main {
+        .bombit_slide {
           height: 1000px;
         }
-        section.wrapper {
+        .slider_wrapper {
           width: 100%;
-          article.main-content {
+          .main_content {
 
             width: 1025px;
-            div.slider-nav {
+            .slider_nav {
               width: 900px;
-              button.left-button {
+              .left_button {
                 transform: rotate(180deg);
                 background-size: 80px 80px;
               }
-              button.right-button {
+              .right_button {
                 background-size: 80px 80px;
               }
             }
-            label#feedback-button {
+            #feedback_button {
               width: 300px;
               height: 70px;
+              font-size: 23px;
             }
-            section#nav-bar {
+            #nav_bar {
               height: 18px;
               width: 138px;
             }
@@ -87,40 +88,43 @@ $iphone5: ( min: 320px, max: 568px );
   }
 }
 @include device($tablet) {
-  div#fullpage {
-    div.section {
-      main#main {
-        .bombit-slide {
+  #fullpage {
+    .section {
+      #main {
+        .bombit_slide {
           height: 700px;
         }
-        section.wrapper {
+        .slider_wrapper {
           width: 100%;
-          article.main-content {
+          .main_content {
             width: 769px;
-            h1 {
+            .main_title{
               font-size: 40px;
               letter-spacing: 13px;
             }
-            div.delimiter {
+            .delimiter {
               height: 16px;
               width: 740px;
               background-size: 740px;
             }
-            div.slider-nav {
+            .slider_nav {
               width: 700px;
-              button.left-button {
+              .left_button {
                 transform: rotate(180deg);
                 background-size: 80px 80px;
               }
-              button.right-button {
+              .right_button {
                 background-size: 80px 80px;
               }
             }
-            label#feedback-button {
-              width: 300px;
-              height: 80px;
+            .modal {
+              #feedback_button {
+                width: 300px;
+                height: 80px;
+                font-size: 20px;
+              }
             }
-            section#nav-bar {
+            #nav_bar {
               height: 18px;
               width: 138px;
             }
@@ -131,61 +135,62 @@ $iphone5: ( min: 320px, max: 568px );
   }
 }
 @include device($tabletMobile) {
-  div#fullpage {
-    div.section {
-      main#main {
-        .bombit-slide {
+  #fullpage {
+    .section {
+      #main {
+        .bombit_slide {
           height: 400px;
         }
-        section.wrapper {
+        .slider_wrapper {
           width: 100%;
           height: 400px;
-          article.main-content {
+          .main_content {
             width: 320px;
             height: 400px;
-            h1 {
+            .main_title{
               font-size: 25px;
               letter-spacing: 0;
             }
-            div.delimiter {
+            .main_description {
+              font-size: 15px;
+              width: 320px;
+            }
+            .delimiter {
               height: 16px;
               width: 300px;
               background-size: 300px;
             }
-            div.slider-nav {
+            .slider_nav {
               height: 60px;
               width: 320px;
               padding: 0;
               margin: 0;
-              button.left-button {
+              .left_button {
                 transform: rotate(180deg);
                 background-size: 60px 60px;
                 width: 60px;
                 height: 60px;
               }
-              button.right-button {
+              .right_button {
                 background-size: 60px 60px;
                 width: 60px;
                 height: 60px;
               }
             }
-            h3 {
+            .card_title {
               width: 320px;
               font-size: 10px;
               font-weight: normal;
               position: relative;
             }
-
-            .modal {
-              label#feedback-button {
-                width: 320px;
-                height: 60px;
-                border-radius: 0;
-                font-size: 25px;
-                font-weight: bold;
-              }
+            #feedback_button {
+              width: 320px;
+              height: 60px;
+              border-radius: 0;
+              font-size: 25px;
+              font-weight: bold;
             }
-            section#nav-bar {
+            #nav_bar {
               height: 18px;
               width: 138px;
             }
@@ -196,51 +201,51 @@ $iphone5: ( min: 320px, max: 568px );
   }
 }
 @include device($iphone6) {
-  div#fullpage {
-    div.section {
-      main#main {
-        .bombit-slide {
+  #fullpage {
+    .section {
+      #main {
+        .bombit_slide {
           height: 400px;
         }
-        section.wrapper {
+        .slider_wrapper {
           width: 100%;
           height: 400px;
-          article.main-content {
+          .main_content {
             width: 375px;
             height: 400px;
-            h1 {
+            .main_title{
               font-size: 25px;
               letter-spacing: 0;
             }
-            div.delimiter {
+            .delimiter {
               height: 16px;
               width: 300px;
               background-size: 300px;
             }
-            div.slider-nav {
+            .slider_nav {
               height: 60px;
               width: 375px;
               padding: 0;
               margin: 0;
-              button.left-button {
+              .left_button {
                 transform: rotate(180deg);
                 background-size: 60px 60px;
                 width: 60px;
                 height: 60px;
               }
-              button.right-button {
+              .right_button {
                 background-size: 60px 60px;
                 width: 60px;
                 height: 60px;
               }
             }
-            h3 {
+            .card_title {
               width: 375px;
               font-size: 10px;
               font-weight: normal;
               position: relative;
             }
-            section#nav-bar {
+            #nav_bar {
               height: 18px;
               width: 138px;
             }
@@ -251,59 +256,58 @@ $iphone5: ( min: 320px, max: 568px );
   }
 }
 @include device($iphone5) {
-  div#fullpage {
-    div.section {
-      main#main {
-        .bombit-slide {
+  #fullpage {
+    .section {
+      #main {
+        .bombit_slide {
           height: 400px;
         }
-        section.wrapper {
-
+        .slider_wrapper {
           width: 100%;
           height: 400px;
-          article.main-content {
+          .main_content {
             width: 320px;
             height: 400px;
-            h1 {
+            .main_title {
               font-size: 25px;
               letter-spacing: 0;
             }
-            div.delimiter {
+            .delimiter {
               height: 16px;
               width: 300px;
               background-size: 300px;
             }
-            div.slider-nav {
+            .slider_nav {
               height: 50px;
               width: 320px;
               padding: 0;
               margin: 0;
-              button.left-button {
+              .left_button {
                 transform: rotate(180deg);
                 background-size: 50px 50px;
                 width: 50px;
                 height: 50px;
               }
-              button.right-button {
+              .right_button {
                 background-size: 50px 50px;
                 width: 50px;
                 height: 50px;
               }
             }
-            h3 {
+            .card_title {
               width: 320px;
               font-size: 10px;
               font-weight: normal;
               position: relative;
             }
-            label#feedback-button {
+            #feedback_button {
               width: 100%;
               height: 60px;
               border-radius: 0;
               font-size: 25px;
               font-weight: bold;
             }
-            section#nav-bar {
+            #nav_bar {
               height: 18px;
               width: 138px;
             }

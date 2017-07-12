@@ -1,4 +1,4 @@
-label {
+.form_item {
   color: #28363d;
   font-size: 24px;
   font-family: "Open Sans";
@@ -15,10 +15,10 @@ label {
     outline: none;
   }
 }
-input#captcha-code {
+#captcha_code {
   width: 302px;
 }
-article#reviews {
+#reviews_block {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +26,7 @@ article#reviews {
   background-color: #fff;
   height: 940px;
   width: 100%;
-  h2.reviews-header {
+  .reviews_header {
     display : inline-block;
     color: #28363d;
     font-size: 50px;
@@ -34,39 +34,39 @@ article#reviews {
     letter-spacing: 7px;
     font-family: "Open Sans";
   }
-  p.reviews-header-describe {
+  .reviews_header_describe {
     text-align: center;
     width: 780px;
     color: #8198a0;
     font-family: "Open Sans";
     font-size: 16px;
   }
-  section.reviews-contacts {
+  .reviews_contacts {
     height: 607px;
     width: 940px;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
-    div#contacts {
+    .contacts_group {
       height: 215px;
       width: 320px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
-      article.contact {
+      .contact_item {
         display: flex;
         align-content: flex-start;
         flex-direction: column;
         height: 67px;
-        h4.contact-header {
+        .contact_header {
           height: 37px;
           font-family: "Open Sans";
           font-size: 20px;
           font-weight: bold;
           color: #ff8207;
         }
-        a.contact-link {
+        .contact_link {
           font-family: "Open Sans";
           font-size: 16px;
           font-weight: normal;
@@ -75,9 +75,9 @@ article#reviews {
         }
       }
     }
-    div.reviews {
+    .reviews {
       background-color: #fff;
-      form#review {
+      .review_form {
         width: 540px;
         height: 607px;
         display: flex;
@@ -85,43 +85,39 @@ article#reviews {
         align-items: flex-start;
         justify-content: space-between;
 
-        div.fieldset {
+        .fieldset {
           border: 0;
         }
-        div.fieldset-img-button {
+        .fieldset_img_button {
           display: flex;
           align-items: center;
           justify-content: space-between;
           width: 130px;
-          #file-upload {
+          #file_upload {
             display: none;
           }
-          & #custom-file-upload {
-
+          & .custom_file_upload {
             cursor: pointer;
             display: block;
             background: url("./reviews.images/plus.png") no-repeat center center, #ff8207;
             width: 48px;
             height: 60px;
             border-radius: 9px;
-
           }
         }
 
-        div.fieldset-submit-button {
+        .fieldset_submit_button {
           display: flex;
           align-items: center;
           align-content: center;
           justify-content: space-between;
           width: 540px;
-          img#captcha {
+          .captcha {
             width: 137px;
             height: 41px;
             background: url("./reviews.images/captcha.png") no-repeat;
-
           }
-          button {
-
+          .submit_button {
             cursor: pointer;
             color: #fff;
             font-family: "Open Sans";
@@ -138,12 +134,12 @@ article#reviews {
       }
     }
   }
-  div#pg-up {
+  #pg_up {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     width: 1398px;
-    & a#scroll-up {
+    & .scroll_up {
       height: 60px;
       width: 69px;
       background: url("./reviews.images/pgup.png") no-repeat;

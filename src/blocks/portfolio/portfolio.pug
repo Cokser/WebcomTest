@@ -1,15 +1,15 @@
 div#portfolio
-  article
-    h2.portfolio-caption= "наша работа".toUpperCase()
-    p.portfolio-descriptions="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut."
+  article.portfolio_article
+    h2.portfolio_caption= "наша работа".toUpperCase()
+    p.portfolio_descriptions="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut."
     div.separator
     mixin product(item)
       div.product
-        div#invise
-          article#card
-            h3="product " + item
+        div.invise_block
+          article.product_card
+            h3.product_title="product " + item
             div.separator
-            p="work"
+            p.product_descriptions="work"
 
     div.products
       - for( var i = 1; i < 7; i++ )

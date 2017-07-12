@@ -1,32 +1,32 @@
 $height: 120px;
 
-div#header {
+#header {
   display: flex;
   justify-content: center;
   background-color: #28363d;
   transition: all 0.2s ease-in-out;
-  header#header-menu {
+  #header_menu {
     width: 1398px;
     height: 120px;;
     display: flex;
     align-items: center;
-    div.logo {
+    .logo {
       background: url("../../images/logo.png") no-repeat;
       width: 229px;
       height: 40px;
     }
 
-    nav#nav-menu {
+    .nav_menu {
       width: 940px;
       height: 120px;
-      ul {
+      .menu_items {
         display: flex;
         flex-wrap: nowrap;
         list-style: none;
         justify-content: space-between;
 
-        li.item {
-          a {
+        .item {
+          .item_link {
             align-items: center;
             justify-content: space-around;
             height: 120px;
@@ -47,14 +47,14 @@ div#header {
         }
       }
     }
-    div.phones {
+    .phones {
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
       width: 229px;
       height: 120px;
-      a {
+      .phone_link {
         text-decoration: none;
         font-family: "Open Sans";
         font-size: 25px;
@@ -88,16 +88,16 @@ div#header {
   -ms-user-select: none;
   /* IE 10+ */
   user-select: none;
-  &:hover #menu-button {
+  &:hover #menu_button {
 
   }
 }
 
-.hamburger-active {
+.hamburger_active {
   .hamburger {
     right: 300px;
   }
-  .hamburger div#menu-button{
+  .hamburger #menu_button{
     display: block;
     background: url("./header.images/menu.png");
     height: 32px;
@@ -107,7 +107,7 @@ div#header {
 
 }
 
-.hamburger-menu {
+.hamburger_menu {
   box-sizing: border-box;
   color: #fff;
   background-color: #28363d;
@@ -121,12 +121,12 @@ div#header {
   z-index: 100;
 }
 
-.hamburger-active .hamburger-menu {
+.hamburger_active .hamburger_menu {
   right: 0;
 }
 
-.hamburger-menu {
-  ul {
+.hamburger_menu {
+  .main_links {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -135,7 +135,7 @@ div#header {
     justify-content: space-between;
     height: 300px;
   }
-  .main-links li a {
+  .main_links li a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,12 +179,12 @@ div#header {
   }
 }
 
-.hamburger-active .main-links li a {
+.hamburger_active .main_links li a {
   opacity: 1;
   transform: translateY(0);
 }
 
-.hamburger-menu .secondary-links {
+.hamburger_menu .secondary_links {
   text-align: center;
   color: #fff;
   font-size: 12px;
@@ -194,13 +194,12 @@ div#header {
   opacity: 0;
 }
 
-.hamburger-active .secondary-links {
+.hamburger_active .secondary_links {
   transform: translateX(0);
   opacity: 1;
   transition-delay: 0.6s;
 }
-
-.hamburger-menu .secondary-links {
+.hamburger_menu .secondary_links {
   a, p {
     display: inline-block;
     padding: 10px 3px;

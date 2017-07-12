@@ -1,18 +1,16 @@
-
-div#portfolio {
+#portfolio {
   background: url("./portfolio.images/effect.jpg") -6px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  article {
+  .portfolio_article {
     display: flex;
     height: 977px;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-
-    h2.portfolio-caption {
+    .portfolio_caption {
       display : inline-block;
       height: 33px;
       color: #28363d;
@@ -21,7 +19,7 @@ div#portfolio {
       letter-spacing: 7px;
       font-family: "Open Sans";
     }
-    p.portfolio-descriptions {
+    .portfolio_descriptions {
       text-align: center;
       width: 780px;
       color: #8198a0;
@@ -29,7 +27,7 @@ div#portfolio {
       font-size: 16px;
     }
   }
-  div.products {
+  .products {
     display: flex;
     align-items: center;
     align-content: space-between;
@@ -37,8 +35,7 @@ div#portfolio {
     flex-flow: row wrap;
     height: 654px;
     width: 1420px;
-
-    div.product {
+    .product {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -47,11 +44,10 @@ div#portfolio {
       width: 460px;
       background: url("./portfolio.images/photo134.png") no-repeat center, #28363d;
       background-size: 60px 46px, cover;
-      div#invise {
-
+      .invise_block {
         display: none;
         width: 100%;
-        article#card {
+        .product_card {
           display: flex;
           align-items: flex-start;
           justify-content: space-around;
@@ -62,14 +58,11 @@ div#portfolio {
           animation-name: cardFadeIn;
           animation-duration: 1s;
           animation-fill-mode: both;
-
-          h3 {
+          .product_title {
             font-family: "Open Sans";
             font-size: 18px;
           }
-
-          p {
-
+          .product_descriptions {
             font-family: "Open Sans";
             font-size: 16px;
           }
@@ -77,15 +70,13 @@ div#portfolio {
             0% {opacity: 0;}
             100% {opacity: 0.8;}
           }
-
         }
       }
     }
-    div.product:hover {
-      #invise {
+    .product:hover {
+      .invise_block {
         display: block;
       }
-
     }
   }
 }

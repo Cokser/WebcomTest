@@ -1,25 +1,25 @@
 - var menuItems = [["главная","firstPage"],["портфолио","secondPage"],["преимущества","thirdPage"],["схема работы",""],["отзывы","fourthPage"],["контакты","fifthPage"]];
-header#header-menu
+header#header_menu
   div.logo
-  nav#nav-menu
-    ul
+  nav.nav_menu
+    ul.menu_items
       for menuItem in menuItems
         li(data-menuanchor=menuItem[1]).item
-          a(href="#"+menuItem[1])= menuItem[0].toUpperCase()
+          a(href="#"+menuItem[1]).item_link=menuItem[0].toUpperCase()
   div.phones
-    a(href="href")="+375(29)123-45-67"
-    a(href="href")="+375(29)123-45-67"
+    a(href="href").phone_link="+375(29)123-45-67"
+    a(href="href").phone_link="+375(29)123-45-67"
 
-  .container.container-hamburger
-    .hamburger-wrapper
+  .container.container_hamburger
+    .hamburger_wrapper
       .hamburger
-        div#menu-button
-      .hamburger-menu
-        ul.main-links
+        div#menu_button
+      .hamburger_menu
+        ul.main_links
           for menuItem, i in menuItems
             li(data-menuanchor=menuItem[1]).delay
               a(href="#" + menuItem[1])= menuItem[0].toUpperCase()
-        .secondary-links
+        .secondary_links
           .row
             a(href="#") instagram
             a(href="#") twitter
