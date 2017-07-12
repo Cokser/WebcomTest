@@ -2,21 +2,12 @@
 	function Slider() {
 	  this.interval = 5000;
 		this.currentSlide = document.getElementById('active-slide');
-		this.slides = getSlides();
+		this.slides = document.getElementsByClassName('bombit-slide');
 		this.buttons = document.getElementsByClassName('bombit-nav-button-click');
     this.currentButton = document.getElementById('active-button-click');
     this.nextButton = document.getElementById('right-button-click');
     this.prevousButton = document.getElementById('left-button-click');
     this.navigators = [ this.nextButton ,this.prevousButton ];
-  }
-  function getSlides() {
-    var slidesList = ['bg-1','bg-2','bg-3','bg-4'],
-      tempList = [];
-    for( var i = 0; i < slidesList.length; i++ ) {
-      tempElem = document.getElementsByClassName(slidesList[i]);
-      tempList.push(tempElem[0]);
-    }
-    return tempList;
   }
 
 	function initSlider(){
