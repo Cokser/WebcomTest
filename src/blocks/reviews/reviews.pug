@@ -1,7 +1,5 @@
-//
-   Created by valeriy on 29/06/17.
 mixin contacts(header, linkName,link)
-  article#contact
+  article.contact
     h4.contact-header=header.toUpperCase()
     a.contact-link(href=link)=linkName
 
@@ -23,9 +21,9 @@ article#reviews
         label(for "position")="ваша должность".toUpperCase()
         input( type="text" name="position" class="inp" placeholder="Должность")
         label(for "message")="отзыв".toUpperCase()
-        textarea( rows="5" name="msg-box" class="inp" placeholder="ваше сообщение" required)
+        textarea( rows="5" name="message" class="inp" placeholder="ваше сообщение" required)
         div.fieldset-img-button
-          input(type="file" name="upload-img" accept="image/*")#file-upload
+          input(type="file" name="file-upload" accept="image/*")#file-upload
           label( for="file-upload")#custom-file-upload
           label( for="file-upload")="фото".toUpperCase()
         label(for "code")="введите код с картинки".toUpperCase()

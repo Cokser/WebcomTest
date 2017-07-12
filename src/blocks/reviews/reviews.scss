@@ -54,7 +54,7 @@ article#reviews {
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
-      article#contact {
+      article.contact {
         display: flex;
         align-content: flex-start;
         flex-direction: column;
@@ -97,6 +97,8 @@ article#reviews {
             display: none;
           }
           & #custom-file-upload {
+
+            cursor: pointer;
             display: block;
             background: url("./reviews.images/plus.png") no-repeat center center, #ff8207;
             width: 48px;
@@ -119,6 +121,8 @@ article#reviews {
 
           }
           button {
+
+            cursor: pointer;
             color: #fff;
             font-family: "Open Sans";
             font-size: 18px;

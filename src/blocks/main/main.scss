@@ -2,12 +2,12 @@ main#main {
   section.wrapper {
     display: flex;
     justify-content: center;
-    height: 1000px;
+    height: 962px;
     border-bottom: 4px solid #ff8207;
     article.main-content {
       z-index: 5;
       width: 1216px;
-      height: 1000px;
+      height: 962px;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -41,6 +41,7 @@ main#main {
           outline: none;
           width: 80px;
           height: 80px;
+          cursor: pointer;
         }
         button.left-button {
           background: url("./main.images/slider-nav.png") no-repeat;
@@ -65,6 +66,7 @@ main#main {
           background: black;
           outline: none;
           border: none;
+          cursor: pointer;
         }
 
         #active-button {
@@ -82,83 +84,81 @@ main#main {
     }
   }
 }
-
-  .modal {
-    display: inline-block;
-    label#feedback-button {
-      width: 400px;
-      height: 80px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #ff8207;
-      border-radius: 10px;
-      color: #fff;
-      font-size: 32px;
-      font-family: "Open Sans";
-      font-weight: bold;
-      text-decoration: none;
-    }
-    > .modal-trigger {
-      display: none;
-      ~ {
-        .modal-overlay {
-          top: 0;
-          left: 0;
-          opacity: 0;
-          width: 100%;
-          height: 100%;
-          z-index: 100;
-          position: fixed;
-          visibility: hidden;
-          transition: opacity 0.3s;
-          background-color: rgba(0, 0, 0, 0.5);
-        }
-        .modal-container {
-          top: 50%;
-          left: 50%;
-          opacity: 0;
-          z-index: 110;
-          position: fixed;
-          visibility: hidden;
-          transition: opacity 0.3s;
-          transform: translate(-50%, -50%);
-        }
+.modal {
+  display: inline-block;
+  label#feedback-button {
+    width: 400px;
+    height: 80px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff8207;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 32px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    text-decoration: none;
+  }
+  > .modal-trigger {
+    display: none;
+    ~ {
+      .modal-overlay {
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        position: fixed;
+        visibility: hidden;
+        transition: opacity 0.3s;
+        background-color: rgba(0, 0, 0, 0.5);
       }
-      &:checked ~ {
-        .modal-overlay, .modal-container {
-          opacity: 1;
-          visibility: visible;
+      .modal-container {
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        z-index: 110;
+        position: fixed;
+        visibility: hidden;
+        transition: opacity 0.3s;
+        transform: translate(-50%, -50%);
+      }
+    }
+    &:checked ~ {
+      .modal-overlay, .modal-container {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+.card {
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: #fff;
+  .card-header, .card-body {
+    padding: 1rem 2rem;
+  }
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .item {
+      flex: 1;
+      padding: 1rem;
+      text-align: center;
+      &.action {
+        cursor: pointer;
+        &:hover {
+          background-color: #ccc;
         }
       }
     }
   }
-
-  .card {
-    overflow: hidden;
-    border-radius: 4px;
-    background-color: #fff;
-    .card-header, .card-body {
-      padding: 1rem 2rem;
-    }
-    .card-footer {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      .item {
-        flex: 1;
-        padding: 1rem;
-        text-align: center;
-        &.action {
-          cursor: pointer;
-          &:hover {
-            background-color: #ccc;
-          }
-        }
-      }
-    }
-  }
-
+}
 //---------SLIDER
 .slider-bar ul {
   text-align: center;
@@ -181,8 +181,7 @@ main#main {
     left: 0;
     opacity: 0;
     width: 100%;
-    height: 1000px;
-
+    height: 964px;
   }
   #active-slide {
     display: block;
@@ -191,8 +190,6 @@ main#main {
     transition: ease-out 2s;
   }
 }
-
-
 .text-wrapper {
   top: 0;
   position: absolute;
@@ -219,7 +216,6 @@ main#main {
     }
   }
 }
-
 .slider-bar {
   position: absolute;
   left: 0;
