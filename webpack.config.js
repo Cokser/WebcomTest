@@ -13,6 +13,7 @@ const extractCss = require('./config/webpack.css-extract');
 const webpack = require('webpack');
 const uglifyJS = require('./config/webpcak.js-uglify');
 const images = require('./config/webpack.images');
+const tinyPngWebpackPlugin = require('tinypng-webpack-plugin');
 
 process.noDeprecation = true;
 
@@ -43,6 +44,11 @@ const common = merge([
         $: 'jquery',
         jQuery: 'jquery'
       }),
+      new tinyPngWebpackPlugin({
+        key:"S8Y3nrAwzSsgodns26HHFAFtJJnjJeFb",
+        relativePath:"./images/",
+        ext: ['png', 'jpg']
+      })
     ]
   },
   pug(),
