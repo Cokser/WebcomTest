@@ -1,11 +1,20 @@
-- var menuItems = [["главная","firstPage"],["портфолио","secondPage"],["преимущества","thirdPage"],["схема работы",""],["отзывы","fourthPage"],["контакты","fifthPage"]];
+- var menuItems = [["главная","secondPage"],["портфолио","thirdPage"],["преимущества","fourthPage"],["схема работы",""],["отзывы","fifthPage"],["контакты","sixthPage"]];
 header#header_menu
   div.logo
   nav.nav_menu
     ul.menu_items
-      for menuItem in menuItems
-        li(data-menuanchor=menuItem[1]).item
-          a(href="#"+menuItem[1]).item_link=menuItem[0].toUpperCase()
+      li(data-menuanchor="secondPage").item
+        a(href="#" + "secondPage").item_link="главная".toUpperCase()
+      li(data-menuanchor="thirdPage").item
+        a(href="#" + "thirdPage").item_link="портфолио".toUpperCase()
+      li(data-menuanchor="fourthPage").item
+        a(href="#" + "fourthPage").item_link="преимущества".toUpperCase()
+      li.fake_item
+        a(href="#").item_link="схема работы".toUpperCase()
+      li(data-menuanchor="fifthPage").item
+        a(href="#" + "fifthPage").item_link="отзывы".toUpperCase()
+      li(data-menuanchor="sixthPage").item
+        a(href="#" + "sixthPage").item_link="контакты".toUpperCase()
   div.phones
     a(href="href").phone_link="+375(29)123-45-67"
     a(href="href").phone_link="+375(29)123-45-67"

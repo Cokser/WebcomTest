@@ -42,6 +42,9 @@ div#header {
               font-weight: bold;
             }
           }
+          .fake_item{
+            @extend .item
+          }
         }
         .phones {
           width: 229px;
@@ -73,6 +76,9 @@ div#header {
               width: 144px;
               height: 100px;
             }
+          }
+          .fake_item{
+            @extend .item
           }
         }
         .phones {
@@ -115,6 +121,9 @@ div#header {
               height: 80px;
             }
           }
+          .fake_item{
+            @extend .item
+          }
         }
         .phones {
           display: none;
@@ -129,6 +138,13 @@ div#header {
   }
 }
 @include device($tabletMobile) {
+  #fp-nav {
+    top: 80%;
+    opacity: 0.6;
+    &:hover {
+      opacity: 1;
+    }
+  }
   #fullpage{
     .section#header{
       width: 100%;
@@ -154,6 +170,9 @@ div#header {
               width: 144px;
               height: 80px;
             }
+          }
+          .fake_item{
+            @extend .item
           }
         }
         .phones {
@@ -169,6 +188,13 @@ div#header {
   }
 }
 @include device($iphone6) {
+  #fp-nav {
+    top: 80%;
+    opacity: 0.6;
+    &:hover {
+      opacity: 1;
+    }
+  }
   #fullpage{
     .section#header{
       width: 100%;
@@ -195,6 +221,9 @@ div#header {
               height: 80px;
             }
           }
+          .fake_item{
+            @extend .item
+          }
         }
         .phones {
           display: none;
@@ -209,6 +238,13 @@ div#header {
   }
 }
 @include device($iphone5) {
+  #fp-nav {
+    top: 80%;
+    opacity: 0.6;
+    &:hover {
+      opacity: 1;
+    }
+  }
   #fullpage{
     .section#header{
       #header_menu {

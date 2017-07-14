@@ -45,6 +45,9 @@ $height: 120px;
             }
           }
         }
+        .fake_item{
+          @extend .item
+        }
       }
     }
     .phones {
@@ -96,6 +99,7 @@ $height: 120px;
 .hamburger_active {
   .hamburger {
     right: 300px;
+    z-index: 100;
   }
   .hamburger #menu_button{
     display: block;
@@ -103,6 +107,7 @@ $height: 120px;
     height: 32px;
     width: 32px;
     background-size: 32px 32px;
+    z-index: 100;
   }
 
 }
@@ -212,7 +217,7 @@ $height: 120px;
   }
 }
 
-/*---ANIMATION DELAYS---*/
+/*------------------------ANIMATION DELAYS----------------------*/
 
 .delay {
   transition-delay: 0.1s;
@@ -220,4 +225,50 @@ $height: 120px;
 
 
 
-//------------------header
+/*------------------Navigation Bar by FullPage.js--------------*/
+#fp-nav {
+  span {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 1;
+    visibility: hidden;
+  }
+  .fp-tooltip {
+    position: absolute;
+    color: #fff;
+    font-size: 14px;
+    font-family: arial, helvetica, sans-serif;
+    top: -2px;
+    visibility: hidden;
+  }
+  li a {
+    outline: none;
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 20px;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0.6;
+    background-color: #000;
+    border-radius: 15px;
+    &:hover {
+      background-color: #ff8207;
+    }
+  }
+  width: 20px;
+  top: 50%;
+  right: 15px;
+  position: fixed;
+  z-index: 100;
+  a.active  {
+    opacity: 0.8;
+    background-color: #ff8207;
+  }
+}

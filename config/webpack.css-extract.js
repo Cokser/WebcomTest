@@ -1,20 +1,47 @@
-/**
- * Created by valeriy on 29/06/17.
- */
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+// const extractCssNormal = new ExtractTextPlugin('./css/[name].css');
+const extractCssMin = new ExtractTextPlugin('./css/[name]-min.css');
 
 module.exports = function(paths) {
   return {
     module: {
       rules: [
+        // {
+        //   test: /\.scss$/,
+        //   include: paths,
+        //   use: extractCssNormal.extract({
+        //     publicPath: '../',
+        //     fallback: 'style-loader',
+        //     use: [
+        //       'css-loader',
+        //       {
+        //         loader: "postcss-loader",
+        //         options: {
+        //           plugins: function () {
+        //             return [
+        //               require("autoprefixer")
+        //             ];
+        //           }
+        //         }
+        //       },
+        //       'sass-loader'
+        //     ],
+        //   }),
+        // },
         {
           test: /\.scss$/,
           include: paths,
-          use: ExtractTextPlugin.extract({
+          use: extractCssMin.extract({
             publicPath: '../',
             fallback: 'style-loader',
             use: [
-              'css-loader',
+              {
+                loader: 'css-loader',
+                options: {
+                  minimize: true
+                }
+              },
               {
                 loader: "postcss-loader",
                 options: {
@@ -29,18 +56,11 @@ module.exports = function(paths) {
             ],
           }),
         },
-        {
-          test: /\.css$/,
-          include: paths,
-          use: ExtractTextPlugin.extract({
-            fallback: 'style-loader',
-            use: ExtractTextPlugin.extract([ 'css-loader', 'postcss-loader' ]),
-          }),
-        },
       ],
     },
     plugins: [
-      new ExtractTextPlugin('./css/[name].css'),
-    ],
+      // extractCssNormal,
+      extractCssMin
+    ]
   };
 };

@@ -52,6 +52,7 @@ $iphone5: ( min: 320px, max: 568px );
 }
 @include device($Laptop) {
   #fullpage {
+    overflow: hidden;
     .section {
       #main {
         .bombit_slide {
@@ -60,7 +61,6 @@ $iphone5: ( min: 320px, max: 568px );
         .slider_wrapper {
           width: 100%;
           .main_content {
-
             width: 1025px;
             .slider_nav {
               width: 900px;
@@ -89,6 +89,7 @@ $iphone5: ( min: 320px, max: 568px );
 }
 @include device($tablet) {
   #fullpage {
+    overflow: hidden;
     .section {
       #main {
         .bombit_slide {
@@ -136,6 +137,7 @@ $iphone5: ( min: 320px, max: 568px );
 }
 @include device($tabletMobile) {
   #fullpage {
+    overflow: hidden;
     .section {
       #main {
         .bombit_slide {
@@ -202,10 +204,13 @@ $iphone5: ( min: 320px, max: 568px );
 }
 @include device($iphone6) {
   #fullpage {
+    overflow: hidden;
     .section {
       #main {
         .bombit_slide {
           height: 400px;
+          min-width: 100%;
+          //max-height: 100%;
         }
         .slider_wrapper {
           width: 100%;
@@ -257,6 +262,7 @@ $iphone5: ( min: 320px, max: 568px );
 }
 @include device($iphone5) {
   #fullpage {
+    overflow: hidden;
     .section {
       #main {
         .bombit_slide {
@@ -271,6 +277,10 @@ $iphone5: ( min: 320px, max: 568px );
             .main_title {
               font-size: 25px;
               letter-spacing: 0;
+            }
+            .main_description {
+              font-size: 15px;
+              width: 320px;
             }
             .delimiter {
               height: 16px;

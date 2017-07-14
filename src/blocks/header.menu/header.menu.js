@@ -7,12 +7,20 @@ import "fullpage.js"
 $(document).ready(function() {
   $('#fullpage').fullpage({
     menu: '#menu',
-    lockAnchors: false,
     anchors:['firstPage', 'secondPage','thirdPage', 'fourthPage','fifthPage','sixthPage'],
-    navigationPosition: 'left',
-    scrollBar: true,
-    navigationBar: true
+    navigationBar: true,
+    nacBar: true,
+    autoScrolling: false,
+    navigation: true,
+    showActiveTooltip: false,
+    navigationTooltips: ['firstPage', 'secondPage','thirdPage', 'fourthPage','fifthPage','sixthPage']
   });
+});
+$(document).on('click', '#scroll_below', function(){
+  $.fn.fullpage.moveSectionDown();
+});
+$(document).on('click', '#pg_up', function(){
+  $.fn.fullpage.moveTo('firstPage');
 });
 
 (function(){
