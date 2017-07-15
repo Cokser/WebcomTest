@@ -1,34 +1,34 @@
 - var menuItems = [["главная","secondPage"],["портфолио","thirdPage"],["преимущества","fourthPage"],["схема работы",""],["отзывы","fifthPage"],["контакты","sixthPage"]];
-header#header_menu
+header#header-menu
   div.logo
-  nav.nav_menu
-    ul.menu_items
+  nav.nav-menu
+    ul.menu-items
       li(data-menuanchor="secondPage").item
-        a(href="#" + "secondPage").item_link="главная".toUpperCase()
+        a(href="#" + "secondPage").item-link="главная".toUpperCase()
       li(data-menuanchor="thirdPage").item
-        a(href="#" + "thirdPage").item_link="портфолио".toUpperCase()
+        a(href="#" + "thirdPage").item-link="портфолио".toUpperCase()
       li(data-menuanchor="fourthPage").item
-        a(href="#" + "fourthPage").item_link="преимущества".toUpperCase()
-      li.fake_item
-        a(href="#").item_link="схема работы".toUpperCase()
+        a(href="#" + "fourthPage").item-link="преимущества".toUpperCase()
+      li.fake-item
+        a(href="#").item-link="схема работы".toUpperCase()
       li(data-menuanchor="fifthPage").item
-        a(href="#" + "fifthPage").item_link="отзывы".toUpperCase()
+        a(href="#" + "fifthPage").item-link="отзывы".toUpperCase()
       li(data-menuanchor="sixthPage").item
-        a(href="#" + "sixthPage").item_link="контакты".toUpperCase()
+        a(href="#" + "sixthPage").item-link="контакты".toUpperCase()
   div.phones
-    a(href="href").phone_link="+375(29)123-45-67"
-    a(href="href").phone_link="+375(29)123-45-67"
+    a(href="href").phone-link="+375(29)123-45-67"
+    a(href="href").phone-link="+375(29)123-45-67"
 
-  .container.container_hamburger
-    .hamburger_wrapper
+  .container.container-hamburger
+    .hamburger-wrapper
       .hamburger
-        div#menu_button
-      .hamburger_menu
-        ul.main_links
+        div#menu-button
+      .hamburger-menu
+        ul.main-links
           for menuItem, i in menuItems
             li(data-menuanchor=menuItem[1]).delay
               a(href="#" + menuItem[1])= menuItem[0].toUpperCase()
-        .secondary_links
+        .secondary-links
           .row
             a(href="#") instagram
             a(href="#") twitter

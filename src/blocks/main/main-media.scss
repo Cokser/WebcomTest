@@ -11,7 +11,7 @@ $iphone6:  ( min: 375px, max: 736px );
 $iphone5: ( min: 320px, max: 568px );
 
 @mixin device($device){
-  @media only screen and (min-width:map_get($device, min)) and (max-width:map_get($device, max)) {
+  @media only screen and (min-width:map-get($device, min)) and (max-width:map-get($device, max)) {
     @content;
   }
 }
@@ -19,28 +19,28 @@ $iphone5: ( min: 320px, max: 568px );
   #fullpage {
     .section {
       #main {
-        .bombit_slide {
+        .bombit-slide {
           height: 1000px;
         }
-        .slider_wrapper {
+        .slider-wrapper {
           width: 100%;
-          .main_content {
+          .main-content {
             width: 1225px;
-            .slider_nav {
+            .slider-nav {
               width: 1100px;
-              .left_button {
+              .left-button {
                 transform: rotate(180deg);
                 background-size: 80px 80px;
               }
-              .right_button {
+              .right-button {
                 background-size: 80px 80px;
               }
             }
-            #feedback_button {
+            #feedback-button {
               width: 400px;
               height: 80px;
             }
-            #nav_bar {
+            #nav-bar {
               height: 18px;
               width: 138px;
             }
@@ -55,29 +55,29 @@ $iphone5: ( min: 320px, max: 568px );
     overflow: hidden;
     .section {
       #main {
-        .bombit_slide {
+        .bombit-slide {
           height: 1000px;
         }
-        .slider_wrapper {
+        .slider-wrapper {
           width: 100%;
-          .main_content {
+          .main-content {
             width: 1025px;
-            .slider_nav {
+            .slider-nav {
               width: 900px;
-              .left_button {
+              .left-button {
                 transform: rotate(180deg);
                 background-size: 80px 80px;
               }
-              .right_button {
+              .right-button {
                 background-size: 80px 80px;
               }
             }
-            #feedback_button {
+            #feedback-button {
               width: 300px;
               height: 70px;
               font-size: 23px;
             }
-            #nav_bar {
+            #nav-bar {
               height: 18px;
               width: 138px;
             }
@@ -92,14 +92,14 @@ $iphone5: ( min: 320px, max: 568px );
     overflow: hidden;
     .section {
       #main {
-        .bombit_slide {
+        .bombit-slide {
           height: 700px;
         }
-        .slider_wrapper {
+        .slider-wrapper {
           width: 100%;
-          .main_content {
+          .main-content {
             width: 769px;
-            .main_title{
+            .main-title{
               font-size: 40px;
               letter-spacing: 13px;
             }
@@ -108,24 +108,24 @@ $iphone5: ( min: 320px, max: 568px );
               width: 740px;
               background-size: 740px;
             }
-            .slider_nav {
+            .slider-nav {
               width: 700px;
-              .left_button {
+              .left-button {
                 transform: rotate(180deg);
                 background-size: 80px 80px;
               }
-              .right_button {
+              .right-button {
                 background-size: 80px 80px;
               }
             }
             .modal {
-              #feedback_button {
+              #feedback-button {
                 width: 300px;
                 height: 80px;
                 font-size: 20px;
               }
             }
-            #nav_bar {
+            #nav-bar {
               height: 18px;
               width: 138px;
             }
@@ -140,20 +140,20 @@ $iphone5: ( min: 320px, max: 568px );
     overflow: hidden;
     .section {
       #main {
-        .bombit_slide {
+        .bombit-slide {
           height: 400px;
         }
-        .slider_wrapper {
+        .slider-wrapper {
           width: 100%;
           height: 400px;
-          .main_content {
+          .main-content {
             width: 320px;
             height: 400px;
-            .main_title{
+            .main-title{
               font-size: 25px;
               letter-spacing: 0;
             }
-            .main_description {
+            .main-description {
               font-size: 15px;
               width: 320px;
             }
@@ -162,37 +162,37 @@ $iphone5: ( min: 320px, max: 568px );
               width: 300px;
               background-size: 300px;
             }
-            .slider_nav {
+            .slider-nav {
               height: 60px;
               width: 320px;
               padding: 0;
               margin: 0;
-              .left_button {
+              .left-button {
                 transform: rotate(180deg);
                 background-size: 60px 60px;
                 width: 60px;
                 height: 60px;
               }
-              .right_button {
+              .right-button {
                 background-size: 60px 60px;
                 width: 60px;
                 height: 60px;
               }
             }
-            .card_title {
+            .card-title {
               width: 320px;
               font-size: 10px;
               font-weight: normal;
               position: relative;
             }
-            #feedback_button {
+            #feedback-button {
               width: 320px;
               height: 60px;
               border-radius: 0;
               font-size: 25px;
               font-weight: bold;
             }
-            #nav_bar {
+            #nav-bar {
               height: 18px;
               width: 138px;
             }
@@ -207,18 +207,18 @@ $iphone5: ( min: 320px, max: 568px );
     overflow: hidden;
     .section {
       #main {
-        .bombit_slide {
+        .bombit-slide {
           height: 400px;
           min-width: 100%;
           //max-height: 100%;
         }
-        .slider_wrapper {
+        .slider-wrapper {
           width: 100%;
           height: 400px;
-          .main_content {
+          .main-content {
             width: 375px;
             height: 400px;
-            .main_title{
+            .main-title{
               font-size: 25px;
               letter-spacing: 0;
             }
@@ -227,30 +227,30 @@ $iphone5: ( min: 320px, max: 568px );
               width: 300px;
               background-size: 300px;
             }
-            .slider_nav {
+            .slider-nav {
               height: 60px;
               width: 375px;
               padding: 0;
               margin: 0;
-              .left_button {
+              .left-button {
                 transform: rotate(180deg);
                 background-size: 60px 60px;
                 width: 60px;
                 height: 60px;
               }
-              .right_button {
+              .right-button {
                 background-size: 60px 60px;
                 width: 60px;
                 height: 60px;
               }
             }
-            .card_title {
+            .card-title {
               width: 375px;
               font-size: 10px;
               font-weight: normal;
               position: relative;
             }
-            #nav_bar {
+            #nav-bar {
               height: 18px;
               width: 138px;
             }
@@ -265,20 +265,20 @@ $iphone5: ( min: 320px, max: 568px );
     overflow: hidden;
     .section {
       #main {
-        .bombit_slide {
+        .bombit-slide {
           height: 400px;
         }
-        .slider_wrapper {
+        .slider-wrapper {
           width: 100%;
           height: 400px;
-          .main_content {
+          .main-content {
             width: 320px;
             height: 400px;
-            .main_title {
+            .main-title {
               font-size: 25px;
               letter-spacing: 0;
             }
-            .main_description {
+            .main-description {
               font-size: 15px;
               width: 320px;
             }
@@ -287,37 +287,37 @@ $iphone5: ( min: 320px, max: 568px );
               width: 300px;
               background-size: 300px;
             }
-            .slider_nav {
+            .slider-nav {
               height: 50px;
               width: 320px;
               padding: 0;
               margin: 0;
-              .left_button {
+              .left-button {
                 transform: rotate(180deg);
                 background-size: 50px 50px;
                 width: 50px;
                 height: 50px;
               }
-              .right_button {
+              .right-button {
                 background-size: 50px 50px;
                 width: 50px;
                 height: 50px;
               }
             }
-            .card_title {
+            .card-title {
               width: 320px;
               font-size: 10px;
               font-weight: normal;
               position: relative;
             }
-            #feedback_button {
+            #feedback-button {
               width: 100%;
               height: 60px;
               border-radius: 0;
               font-size: 25px;
               font-weight: bold;
             }
-            #nav_bar {
+            #nav-bar {
               height: 18px;
               width: 138px;
             }

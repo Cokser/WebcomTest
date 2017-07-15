@@ -1,15 +1,15 @@
 - var advantages = ["advantage1","advantage2","advantage3","advantage4","advantage5","advantage6", "advantage7","advantage8"];
 
 mixin advantages(advantageID)
-  article.article_advantage
+  article.article-advantage
     div(class = advantageID + "-img")
-    h3.advantage_title=advantageID.toUpperCase()
-    p.advantage_description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium"
+    h3.advantage-title=advantageID.toUpperCase()
+    p.advantage-description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium"
 
 article#advantages
-  h2.advantages_header="почему мы".toUpperCase()
+  h2.advantages-header="почему мы".toUpperCase()
   div.separator
-  p.advantage_header_describe="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut."
-  section.section_advantages
+  p.advantage-header-describe="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut."
+  section.section-advantages
     for advantage in advantages
       +advantages(advantage)

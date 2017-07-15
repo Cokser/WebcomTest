@@ -12,7 +12,7 @@ $iphone6:  ( min: 375px, max: 736px );
 $iphone5: ( min: 320px, max: 568px );
 
 @mixin device($device){
-  @media only screen and (min-width:map_get($device, min)) and (max-width:map_get($device, max)) {
+  @media only screen and (min-width:map-get($device, min)) and (max-width:map-get($device, max)) {
     @content;
   }
 }
@@ -20,7 +20,7 @@ $iphone5: ( min: 320px, max: 568px );
 @include device($DesktopsLaptop) {
   #fullpage {
     .section {
-      .form_item {
+      .form-item {
         font-size: 24px;
       }
       .inp {
@@ -33,62 +33,62 @@ $iphone5: ( min: 320px, max: 568px );
           outline: none;
         }
       }
-      .captcha_code {
+      .captcha-code {
         width: 302px;
       }
-      #reviews_block {
+      #reviews-block {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         height: 940px;
         width: 100%;
-        .reviews_header {
+        .reviews-header {
           display : inline-block;
           font-size: 50px;
           letter-spacing: 7px;
         }
-        .reviews_header_describe {
+        .reviews-header-describe {
           text-align: center;
           width: 780px;
           font-size: 16px;
         }
-        .reviews_contacts {
+        .reviews-contacts {
           height: 607px;
           width: 940px;
           justify-content: space-between;
-          .contacts_group {
+          .contacts-group {
             height: 215px;
             width: 320px;
             justify-content: space-between;
             align-items: flex-start;
-            .contact_item {
+            .contact-item {
               align-content: flex-start;
               flex-direction: column;
               height: 67px;
-              .contact_header {
+              .contact-header {
                 height: 37px;
                 font-size: 20px;
               }
-              .contact_link {
+              .contact-link {
                 font-size: 16px;
               }
             }
           }
           .reviews {
-            .review_form {
+            .review-form {
               width: 540px;
               height: 607px;
               display: flex;
               align-items: flex-start;
               justify-content: space-between;
-              .fieldset_img_button {
+              .fieldset-img-button {
                 align-items: center;
                 justify-content: space-between;
                 width: 130px;
                 #file-upload {
                   display: none;
                 }
-                & .custom_file_upload {
+                & .custom-file-upload {
                   background: url("./reviews.images/plus.png") no-repeat center center, #ff8207;
                   width: 48px;
                   height: 60px;
@@ -96,7 +96,7 @@ $iphone5: ( min: 320px, max: 568px );
 
                 }
               }
-              .fieldset_submit_button {
+              .fieldset-submit-button {
                 align-items: center;
                 align-content: center;
                 justify-content: space-between;
@@ -105,7 +105,7 @@ $iphone5: ( min: 320px, max: 568px );
                   width: 137px;
                   height: 41px;
                 }
-                .submit_button{
+                .submit-button{
                   font-size: 18px;
                   border: 0;
                   border-radius: 9px;
@@ -118,9 +118,9 @@ $iphone5: ( min: 320px, max: 568px );
             }
           }
         }
-        #pg_up {
+        #pg-up {
           width: 1215px;
-          & .scroll_up {
+          & .scroll-up {
             height: 60px;
             width: 69px;
           }
@@ -132,7 +132,7 @@ $iphone5: ( min: 320px, max: 568px );
 @include device($Laptop) {
   #fullpage {
     .section {
-      .form_item {
+      .form-item {
         font-size: 24px;
       }
       .inp {
@@ -145,62 +145,62 @@ $iphone5: ( min: 320px, max: 568px );
           outline: none;
         }
       }
-      .captcha_code {
+      .captcha-code {
         width: 302px;
       }
-      #reviews_block {
+      #reviews-block {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         height: 940px;
         width: 100%;
-        .reviews_header {
+        .reviews-header {
           display : inline-block;
           font-size: 50px;
           letter-spacing: 7px;
         }
-        .reviews_header_describe {
+        .reviews-header-describe {
           text-align: center;
           width: 780px;
           font-size: 16px;
         }
-        .reviews_contacts {
+        .reviews-contacts {
           height: 607px;
           width: 940px;
           justify-content: space-between;
-          .contacts_group {
+          .contacts-group {
             height: 215px;
             width: 320px;
             justify-content: space-between;
             align-items: flex-start;
-            .contact_item {
+            .contact-item {
               align-content: flex-start;
               flex-direction: column;
               height: 67px;
-              .contact_header {
+              .contact-header {
                 height: 37px;
                 font-size: 20px;
               }
-              .contact_link {
+              .contact-link {
                 font-size: 16px;
               }
             }
           }
           .reviews {
-            .review_form {
+            .review-form {
               width: 540px;
               height: 607px;
               display: flex;
               align-items: flex-start;
               justify-content: space-between;
-              .fieldset_img_button {
+              .fieldset-img-button {
                 align-items: center;
                 justify-content: space-between;
                 width: 130px;
                 #file-upload {
                   display: none;
                 }
-                & .custom_file_upload {
+                & .custom-file-upload {
                   background: url("./reviews.images/plus.png") no-repeat center center, #ff8207;
                   width: 48px;
                   height: 60px;
@@ -208,7 +208,7 @@ $iphone5: ( min: 320px, max: 568px );
 
                 }
               }
-              .fieldset_submit_button {
+              .fieldset-submit-button {
                 align-items: center;
                 align-content: center;
                 justify-content: space-between;
@@ -217,7 +217,7 @@ $iphone5: ( min: 320px, max: 568px );
                   width: 137px;
                   height: 41px;
                 }
-                .submit_button{
+                .submit-button{
                   font-size: 18px;
                   border: 0;
                   border-radius: 9px;
@@ -230,9 +230,9 @@ $iphone5: ( min: 320px, max: 568px );
             }
           }
         }
-        #pg_up {
+        #pg-up {
           width: 1015px;
-          & .scroll_up {
+          & .scroll-up {
             height: 60px;
             width: 69px;
           }
@@ -244,7 +244,7 @@ $iphone5: ( min: 320px, max: 568px );
 @include device($tablet) {
   #fullpage {
     .section {
-      .form_item {
+      .form-item {
         font-size: 24px;
       }
       .inp {
@@ -257,67 +257,67 @@ $iphone5: ( min: 320px, max: 568px );
           outline: none;
         }
       }
-      .captcha_code {
+      .captcha-code {
         width: 302px;
       }
-      #reviews_block {
+      #reviews-block {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         height: 940px;
         width: 100%;
-        .reviews_header {
+        .reviews-header {
           display : inline-block;
           font-size: 50px;
           letter-spacing: 7px;
         }
-        .reviews_header_describe {
+        .reviews-header-describe {
           text-align: center;
           width: 759px;
           font-size: 15px;
         }
-        .reviews_contacts {
+        .reviews-contacts {
           height: 607px;
           width: 759px;
           justify-content: space-between;
-          .contacts_group {
+          .contacts-group {
             height: 315px;
             width: 320px;
             justify-content: space-between;
-            .contact_item {
+            .contact-item {
               height: 100px;
-              .contact_header {
+              .contact-header {
                 height: 37px;
                 font-size: 20px;
               }
-              .contact_link {
+              .contact-link {
                 font-size: 16px;
                 width: 160px;
               }
             }
           }
           .reviews {
-            .review_form {
+            .review-form {
               width: 439px;
               height: 607px;
               display: flex;
               align-items: flex-start;
               justify-content: space-between;
-              .fieldset_img_button {
+              .fieldset-img-button {
                 align-items: center;
                 justify-content: space-between;
                 width: 130px;
                 #file-upload {
                   display: none;
                 }
-                & .custom_file_upload {
+                & .custom-file-upload {
                   width: 48px;
                   height: 60px;
                   border-radius: 9px;
 
                 }
               }
-              .fieldset_submit_button {
+              .fieldset-submit-button {
                 align-items: center;
                 align-content: center;
                 justify-content: space-between;
@@ -326,7 +326,7 @@ $iphone5: ( min: 320px, max: 568px );
                   width: 137px;
                   height: 41px;
                 }
-                .submit_button{
+                .submit-button{
                   font-size: 18px;
                   border: 0;
                   border-radius: 9px;
@@ -339,9 +339,9 @@ $iphone5: ( min: 320px, max: 568px );
             }
           }
         }
-        #pg_up {
+        #pg-up {
           width: 759px;
-          & .scroll_up {
+          & .scroll-up {
             height: 60px;
             width: 69px;
           }
@@ -353,7 +353,7 @@ $iphone5: ( min: 320px, max: 568px );
 @include device($tabletMobile) {
   #fullpage {
     .section {
-      .form_item {
+      .form-item {
         font-size: 20px;
       }
       .inp {
@@ -366,71 +366,71 @@ $iphone5: ( min: 320px, max: 568px );
           outline: none;
         }
       }
-      .captcha_code {
+      .captcha-code {
         width: 302px;
       }
-      #reviews_block {
+      #reviews-block {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         height: 950px;
         width: 100%;
-        .reviews_header {
+        .reviews-header {
           display : inline-block;
           font-size: 30px;
           letter-spacing: 3px;
         }
-        .reviews_header_describe {
+        .reviews-header-describe {
           display: none;
           text-align: center;
           width: 310px;
           font-size: 13px;
         }
-        .reviews_contacts {
+        .reviews-contacts {
           height: 910px;
           width: 310px;
           justify-content: space-between;
           flex-direction: column;
-          .contacts_group {
+          .contacts-group {
             height: 300px;
             width: 320px;
             justify-content: center;
             flex-direction: row;
             flex-wrap: wrap;
-            .contact_item {
+            .contact-item {
               height: 100px;
-              .contact_header {
+              .contact-header {
                 height: 37px;
                 font-size: 20px;
               }
-              .contact_link {
+              .contact-link {
                 font-size: 16px;
                 width: 160px;
               }
             }
           }
           .reviews {
-            .review_form {
+            .review-form {
               width: 310px;
               height: 607px;
               display: flex;
               align-items: flex-start;
               justify-content: space-between;
-              .fieldset_img_button {
+              .fieldset-img-button {
                 align-items: center;
                 justify-content: space-between;
                 width: 130px;
                 #file-upload {
                   display: none;
                 }
-                & .custom_file_upload {
+                & .custom-file-upload {
                   width: 48px;
                   height: 60px;
                   border-radius: 9px;
 
                 }
               }
-              .fieldset_submit_button {
+              .fieldset-submit-button {
                 align-items: center;
                 align-content: center;
                 justify-content: space-between;
@@ -439,7 +439,7 @@ $iphone5: ( min: 320px, max: 568px );
                   width: 137px;
                   height: 41px;
                 }
-                .submit_button{
+                .submit-button{
                   font-size: 18px;
                   border: 0;
                   border-radius: 9px;
@@ -451,10 +451,10 @@ $iphone5: ( min: 320px, max: 568px );
             }
           }
         }
-        #pg_up {
+        #pg-up {
           width: 310px;
           justify-content: center;
-          & .scroll_up {
+          & .scroll-up {
             height: 60px;
             width: 69px;
           }
@@ -469,7 +469,7 @@ $iphone5: ( min: 320px, max: 568px );
   }
   #fullpage {
     .section {
-      .form_item {
+      .form-item {
         font-size: 16px;
       }
       .inp {
@@ -482,49 +482,49 @@ $iphone5: ( min: 320px, max: 568px );
           outline: none;
         }
       }
-      .captcha_code {
+      .captcha-code {
         width: 302px;
       }
-      #reviews_block {
+      #reviews-block {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         height: 800px;
         width: 100%;
-        .reviews_header {
+        .reviews-header {
           display : inline-block;
           font-size: 25px;
           letter-spacing: 3px;
         }
-        .reviews_header_describe {
+        .reviews-header-describe {
           display: none;
           text-align: center;
           width: 365px;
           font-size: 13px;
         }
-        .reviews_contacts {
+        .reviews-contacts {
           height: 610px;
           width: 365px;
           justify-content: space-between;
           flex-direction: column;
-          .contacts_group {
+          .contacts-group {
             height: 120px;
             width: 310px;
             justify-content: center;
             align-content: center;
             flex-direction: row;
             flex-wrap: wrap;
-            .contact_item {
+            .contact-item {
               height: 40px;
               align-content: center;
               justify-content: space-around;
               flex-direction: row;
-              .contact_header {
+              .contact-header {
                 height: 20px;
                 font-size: 15px;
                 width: 150px;
               }
-              .contact_link {
+              .contact-link {
                 font-size: 13px;
                 width: 150px;
               }
@@ -532,30 +532,30 @@ $iphone5: ( min: 320px, max: 568px );
           }
           .reviews {
             height: 500px;
-            .review_form {
+            .review-form {
               width: 365px;
               height: 500px;
               display: flex;
               align-items: flex-start;
               justify-content: space-between;
-              .reviev_comment {
+              .reviev-comment {
                 height: 75px;
               }
-              .fieldset_img_button {
+              .fieldset-img-button {
                 align-items: center;
                 justify-content: space-between;
                 width: 130px;
                 #file-upload {
                   display: none;
                 }
-                & .custom_file_upload {
+                & .custom-file-upload {
                   width: 48px;
                   height: 60px;
                   border-radius: 9px;
 
                 }
               }
-              .fieldset_submit_button {
+              .fieldset-submit-button {
                 align-items: center;
                 align-content: center;
                 justify-content: space-between;
@@ -564,7 +564,7 @@ $iphone5: ( min: 320px, max: 568px );
                   width: 137px;
                   height: 41px;
                 }
-                .submit_button{
+                .submit-button{
                   font-size: 18px;
                   border: 0;
                   border-radius: 9px;
@@ -577,10 +577,10 @@ $iphone5: ( min: 320px, max: 568px );
             }
           }
         }
-        #pg_up {
+        #pg-up {
           width: 365px;
           justify-content: center;
-          & .scroll_up {
+          & .scroll-up {
             background-size: 40px 40px;
             height: 40px;
             width: 69px;
@@ -596,7 +596,7 @@ $iphone5: ( min: 320px, max: 568px );
   }
   #fullpage {
     .section {
-      .form_item {
+      .form-item {
         font-size: 16px;
       }
       .inp {
@@ -609,49 +609,49 @@ $iphone5: ( min: 320px, max: 568px );
           outline: none;
         }
       }
-      #captcha_code {
+      #captcha-code {
         width: 302px;
       }
-      #reviews_block {
+      #reviews-block {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         height: 710px;
         width: 100%;
-        .reviews_header {
+        .reviews-header {
           display : inline-block;
           font-size: 25px;
           letter-spacing: 3px;
         }
-        .reviews_header_describe {
+        .reviews-header-describe {
           display: none;
           text-align: center;
           width: 310px;
           font-size: 13px;
         }
-        .reviews_contacts {
+        .reviews-contacts {
           height: 610px;
           width: 310px;
           justify-content: space-between;
           flex-direction: column;
-          .contacts_group {
+          .contacts-group {
             height: 120px;
             width: 310px;
             justify-content: center;
             align-content: center;
             flex-direction: row;
             flex-wrap: wrap;
-            .contact_item {
+            .contact-item {
               height: 40px;
               align-content: center;
               justify-content: space-around;
               flex-direction: row;
-              .contact_header {
+              .contact-header {
                 height: 20px;
                 font-size: 15px;
                 width: 150px;
               }
-              .contact_link {
+              .contact-link {
                 font-size: 13px;
                 width: 150px;
               }
@@ -659,30 +659,30 @@ $iphone5: ( min: 320px, max: 568px );
           }
           .reviews {
             height: 500px;
-            .review_form {
+            .review-form {
               width: 310px;
               height: 500px;
               display: flex;
               align-items: flex-start;
               justify-content: space-between;
-              .reviev_comment {
+              .reviev-comment {
                 height: 75px;
               }
-              .fieldset_img_button {
+              .fieldset-img-button {
                 align-items: center;
                 justify-content: space-between;
                 width: 130px;
-                #file_upload {
+                #file-upload {
                   display: none;
                 }
-                & .custom_file_upload {
+                & .custom-file-upload {
                   width: 48px;
                   height: 60px;
                   border-radius: 9px;
 
                 }
               }
-              .fieldset_submit_button {
+              .fieldset-submit-button {
                 align-items: center;
                 align-content: center;
                 justify-content: space-between;
@@ -691,7 +691,7 @@ $iphone5: ( min: 320px, max: 568px );
                   width: 137px;
                   height: 41px;
                 }
-                .submit_button{
+                .submit-button{
                   font-size: 18px;
                   border: 0;
                   border-radius: 9px;
@@ -704,10 +704,10 @@ $iphone5: ( min: 320px, max: 568px );
             }
           }
         }
-        #pg_up {
+        #pg-up {
           width: 310px;
           justify-content: center;
-          & .scroll_up {
+          & .scroll-up {
             background-size: 40px 40px;
             height: 40px;
             width: 69px;

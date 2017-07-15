@@ -1,11 +1,11 @@
 #main {
   overflow: hidden;
-  .slider_wrapper {
+  .slider-wrapper {
     display: flex;
     justify-content: center;
     height: 962px;
     border-bottom: 4px solid #ff8207;
-    .main_content {
+    .main-content {
       z-index: 5;
       width: 1216px;
       height: 962px;
@@ -13,7 +13,7 @@
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      .main_title {
+      .main-title {
         font-family: "Open Sans";
         font-size: 48px;
         letter-spacing: 16px;
@@ -23,43 +23,43 @@
         width: 826px;
         background: url("./main.images/delemiter.png") no-repeat;
       }
-      .main_description {
+      .main-description {
         text-align: center;
         width: 683px;
         font-family: "Open Sans";
         font-size: 24px;
         font-weight: normal;
       }
-      .slider_nav {
+      .slider-nav {
         height: 80px;
         display: flex;
         justify-content: space-between;
         width: 1216px;
         align-items: center;
         align-content: center;
-        .nav_button {
+        .nav-button {
           border: none;
           outline: none;
           width: 80px;
           height: 80px;
           cursor: pointer;
         }
-        .left_button {
+        .left-button {
           background: url("./main.images/slider-nav.png") no-repeat;
           transform: rotate(180deg);
           background-size: 80px 80px;
         }
-        .right_button {
+        .right-button {
           background: url("./main.images/slider-nav.png") no-repeat;
           background-size: 80px 80px;
         }
       }
-      #nav_bar {
+      #nav-bar {
         height: 18px;
         width: 138px;
         display: flex;
         justify-content: space-between;
-        .slider_nav_button {
+        .slider-nav-button {
           width: 18px;
           height: 18px;
           border-radius: 7px;
@@ -70,12 +70,12 @@
           cursor: pointer;
         }
 
-        #active_button {
+        #active-button {
           background-color: #f29700;
           border-color: #f29700;
         }
       }
-      #scroll_below {
+      #scroll-below {
         width: 54px;
         height: 54px;
         background: url("main.images/pgdn.png") no-repeat center center, rgba(40, 54, 61, 0.6);
@@ -87,7 +87,7 @@
 }
 .modal {
   display: inline-block;
-  #feedback_button {
+  #feedback-button {
     width: 400px;
     height: 80px;
     cursor: pointer;
@@ -102,10 +102,10 @@
     font-weight: bold;
     text-decoration: none;
   }
-  > .modal_trigger {
+  > .modal-trigger {
     display: none;
     ~ {
-      .modal_overlay {
+      .modal-overlay {
         top: 0;
         left: 0;
         opacity: 0;
@@ -117,7 +117,7 @@
         transition: opacity 0.3s;
         background-color: rgba(0, 0, 0, 0.5);
       }
-      .modal_container {
+      .modal-container {
         top: 50%;
         left: 50%;
         opacity: 0;
@@ -129,7 +129,7 @@
       }
     }
     &:checked ~ {
-      .modal_overlay, .modal_container {
+      .modal-overlay, .modal-container {
         opacity: 1;
         visibility: visible;
       }
@@ -140,10 +140,10 @@
   overflow: hidden;
   border-radius: 4px;
   background-color: #fff;
-  .card_header, .card_body {
+  .card-header, .card-body {
     padding: 1rem 2rem;
   }
-  .card_footer {
+  .card-footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,7 +164,7 @@
 #main {
   position: relative;
 
-  .bombit_slide {
+  .bombit-slide {
     z-index: 4;
     position: absolute;
     top: 0;
@@ -174,7 +174,7 @@
     height: 964px;
     overflow: hidden;
   }
-  #active_slide {
+  #active-slide {
     display: block;
     z-index: 5;
     opacity: 1;

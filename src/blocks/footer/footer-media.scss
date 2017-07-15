@@ -13,7 +13,7 @@ $iphone6:  ( min: 375px, max: 736px );
 $iphone5: ( min: 320px, max: 568px );
 
 @mixin device($device){
-  @media only screen and (min-width:map_get($device, min)) and (max-width:map_get($device, max)) {
+  @media only screen and (min-width:map-get($device, min)) and (max-width:map-get($device, max)) {
     @content;
   }
 }
@@ -44,10 +44,10 @@ $iphone5: ( min: 320px, max: 568px );
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        .footer_info {
+        .footer-info {
           height: 250px;
         }
-        .footer_copyright {
+        .footer-copyright {
           align-items: center;
           justify-content: center;
           height: 62px;
@@ -58,22 +58,22 @@ $iphone5: ( min: 320px, max: 568px );
           }
         }
       }
-      .footer_box {
+      .footer-box {
         width: 1215px;
         height: 234px;
         justify-content: space-between;
         align-items: center;
-        .left_info_block {
+        .left-info-block {
           @include info-block( flex-start);
         }
-        .center_info_block {
+        .center-info-block {
           @include info-block( center);
         }
-        .right_info_block {
+        .right-info-block {
           @include info-block( flex-end);
         }
       }
-      .footer_logo {
+      .footer-logo {
         width: 162px;
         height: 40px;
       }
@@ -84,16 +84,16 @@ $iphone5: ( min: 320px, max: 568px );
         font-size: 16px;
         font-weight: bold;
       }
-      .social_links {
+      .social-links {
         height: 26px;
         width: 115px;
         justify-content: space-between;
       }
-      .info_block_address {
+      .info-block-address {
         font-size: 16px;
         font-weight: bold;
       }
-      .address_map {
+      .address-map {
         text-align: end;
         font-size: 14px;
         font-weight: normal;
@@ -109,10 +109,10 @@ $iphone5: ( min: 320px, max: 568px );
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      .footer_info {
+      .footer-info {
         height: 250px;
       }
-      .footer_copyright {
+      .footer-copyright {
         align-items: center;
         justify-content: center;
         height: 62px;
@@ -123,22 +123,22 @@ $iphone5: ( min: 320px, max: 568px );
         }
       }
     }
-      .footer_box {
+      .footer-box {
         width: 1015px;
         height: 234px;
         justify-content: space-between;
         align-items: center;
-        .left_info_block {
+        .left-info-block {
           @include info-block( flex-start);
         }
-        .center_info_block {
+        .center-info-block {
           @include info-block( center);
         }
-        .right_info_block {
+        .right-info-block {
           @include info-block( flex-end);
         }
       }
-      .footer_logo {
+      .footer-logo {
         width: 162px;
         height: 40px;
       }
@@ -149,16 +149,16 @@ $iphone5: ( min: 320px, max: 568px );
         font-size: 16px;
         font-weight: bold;
       }
-      .social_links {
+      .social-links {
         height: 26px;
         width: 115px;
         justify-content: space-between;
       }
-      .info_block_address {
+      .info-block-address {
         font-size: 16px;
         font-weight: bold;
       }
-      .address_map {
+      .address-map {
         text-align: end;
         font-size: 14px;
         font-weight: normal;
@@ -175,10 +175,10 @@ $iphone5: ( min: 320px, max: 568px );
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        .footer_info {
+        .footer-info {
           height: 250px;
         }
-        .footer_copyright {
+        .footer-copyright {
           align-items: center;
           justify-content: center;
           height: 62px;
@@ -189,22 +189,22 @@ $iphone5: ( min: 320px, max: 568px );
           }
         }
       }
-      .footer_box {
+      .footer-box {
         width: 759px;
         height: 234px;
         justify-content: space-between;
         align-items: center;
-        .left_info_block {
+        .left-info-block {
           @include info-block( flex-start);
         }
-        .center_info_block {
+        .center-info-block {
           @include info-block( center);
         }
-        .right_info_block {
+        .right-info-block {
           @include info-block( flex-end);
         }
       }
-      .footer_logo {
+      .footer-logo {
         width: 162px;
         height: 40px;
 
@@ -216,16 +216,16 @@ $iphone5: ( min: 320px, max: 568px );
         font-size: 16px;
         font-weight: bold;
       }
-      .social_links {
+      .social-links {
         height: 26px;
         width: 115px;
         justify-content: space-between;
       }
-      .info_block_address {
+      .info-block-address {
         font-size: 16px;
         font-weight: bold;
       }
-      .address_map {
+      .address-map {
         text-align: end;
         font-size: 14px;
         font-weight: normal;
@@ -242,10 +242,10 @@ $iphone5: ( min: 320px, max: 568px );
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        .footer_info {
+        .footer-info {
           height: 300px;
         }
-        .footer_copyright {
+        .footer-copyright {
           align-items: center;
           justify-content: center;
           height: 50px;
@@ -256,23 +256,23 @@ $iphone5: ( min: 320px, max: 568px );
           }
         }
       }
-      .footer_box {
+      .footer-box {
         width: 311px;
         height: 100%;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-        .left_info_block {
+        .left-info-block {
           @include info-block( center);
         }
-        .center_info_block {
+        .center-info-block {
           @include info-block( center);
         }
-        .right_info_block {
+        .right-info-block {
           @include info-block( center );
         }
       }
-      .footer_logo {
+      .footer-logo {
         width: 162px;
         height: 40px;
       }
@@ -283,16 +283,16 @@ $iphone5: ( min: 320px, max: 568px );
         font-size: 16px;
         font-weight: bold;
       }
-      .social_links {
+      .social-links {
         height: 26px;
         width: 115px;
         justify-content: space-between;
       }
-      .info_block_address {
+      .info-block-address {
         font-size: 16px;
         font-weight: bold;
       }
-      .address_map {
+      .address-map {
         text-align: center;
         font-size: 14px;
         font-weight: normal;
@@ -309,10 +309,10 @@ $iphone5: ( min: 320px, max: 568px );
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        .footer_info {
+        .footer-info {
           height: 300px;
         }
-        .footer_copyright {
+        .footer-copyright {
           align-items: center;
           justify-content: center;
           height: 50px;
@@ -323,23 +323,23 @@ $iphone5: ( min: 320px, max: 568px );
           }
         }
       }
-      .footer_box {
+      .footer-box {
         width: 311px;
         height: 100%;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-        .left_info_block {
+        .left-info-block {
           @include info-block( center);
         }
-        .center_info_block {
+        .center-info-block {
           @include info-block( center);
         }
-        .right_info_block {
+        .right-info-block {
           @include info-block( center );
         }
       }
-      .footer_logo {
+      .footer-logo {
         width: 162px;
         height: 40px;
       }
@@ -350,16 +350,16 @@ $iphone5: ( min: 320px, max: 568px );
         font-size: 16px;
         font-weight: bold;
       }
-      .social_links {
+      .social-links {
         height: 26px;
         width: 115px;
         justify-content: space-between;
       }
-      .info_block_address {
+      .info-block-address {
         font-size: 16px;
         font-weight: bold;
       }
-      .address_map {
+      .address-map {
         text-align: center;
         font-size: 14px;
         font-weight: normal;
@@ -376,10 +376,10 @@ $iphone5: ( min: 320px, max: 568px );
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        .footer_info {
+        .footer-info {
           height: 300px;
         }
-        .footer_copyright {
+        .footer-copyright {
           align-items: center;
           justify-content: center;
           height: 50px;
@@ -390,23 +390,23 @@ $iphone5: ( min: 320px, max: 568px );
           }
         }
       }
-      .footer_box {
+      .footer-box {
         width: 311px;
         height: 100%;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-        .left_info_block {
+        .left-info-block {
           @include info-block( center);
         }
-        .center_info_block {
+        .center-info-block {
           @include info-block( center);
         }
-        .right_info_block {
+        .right-info-block {
           @include info-block( center );
         }
       }
-      .footer_logo {
+      .footer-logo {
         width: 162px;
         height: 40px;
       }
@@ -417,16 +417,16 @@ $iphone5: ( min: 320px, max: 568px );
         font-size: 16px;
         font-weight: bold;
       }
-      .social_links {
+      .social-links {
         height: 26px;
         width: 115px;
         justify-content: space-between;
       }
-      .info_block_address {
+      .info-block-address {
         font-size: 16px;
         font-weight: bold;
       }
-      .address_map {
+      .address-map {
         text-align: center;
         font-size: 14px;
         font-weight: normal;

@@ -20,35 +20,35 @@ div#header {
 }
 
 @mixin device($device){
-  @media only screen and (min-width:map_get($device, min)) and (max-width:map_get($device, max)) {
+  @media only screen and (min-width:map-get($device, min)) and (max-width:map-get($device, max)) {
     @content;
   }
 }
 @include device($DesktopsLaptop) {
   #fullpage{
     .section#header{
-      #header_menu {
+      #header-menu {
         width: 1224px;
         height: 110px;
         .logo{
           width: 229px;
         }
-        .nav_menu {
+        .nav-menu {
           width: 800px;
           height: 120px;
           .item {
-            .item_link {
+            .item-link {
               font-size: 15px;
               font-weight: bold;
             }
           }
-          .fake_item{
+          .fake-item{
             @extend .item
           }
         }
         .phones {
           width: 229px;
-          .phone_link {
+          .phone-link {
             font-size: 18px;
             font-weight: bold;
           }
@@ -60,24 +60,24 @@ div#header {
 @include device($Laptop) {
   #fullpage{
     .section#header{
-      #header_menu {
+      #header-menu {
         width: 1024px;
         height: 100px;
         .logo{
           width: 160px;
         }
-        .nav_menu {
+        .nav-menu {
           width: 714px;
           height: 100px;
           .item {
-            .item_link {
+            .item-link {
               font-size: 14px;
               font-weight: bold;
               width: 144px;
               height: 100px;
             }
           }
-          .fake_item{
+          .fake-item{
             @extend .item
           }
         }
@@ -85,7 +85,7 @@ div#header {
           display: none;
           width: 150px;
 
-          .phone_link {
+          .phone-link {
             font-size: 17px;
             font-weight: bold;
           }
@@ -98,7 +98,7 @@ div#header {
   #fullpage{
     .section#header{
       width: 100%;
-      #header_menu {
+      #header-menu {
         width: 768px;
         height: 60px;
         flex-direction: row;
@@ -108,27 +108,27 @@ div#header {
         .hamburger {
           display: block;
         }
-        .nav_menu {
+        .nav-menu {
           display: none;
           width: 608px;
           height: 60px;
           flex-wrap: wrap;
           .item {
-            .item_link {
+            .item-link {
               font-size: 14px;
               font-weight: bold;
               width: 144px;
               height: 80px;
             }
           }
-          .fake_item{
+          .fake-item{
             @extend .item
           }
         }
         .phones {
           display: none;
           width: 150px;
-          .phone_link {
+          .phone-link {
             font-size: 17px;
             font-weight: bold;
           }
@@ -148,7 +148,7 @@ div#header {
   #fullpage{
     .section#header{
       width: 100%;
-      #header_menu {
+      #header-menu {
         width: 320px;
         height: 60px;
         flex-direction: row;
@@ -158,27 +158,27 @@ div#header {
         .hamburger {
           display: block;
         }
-        .nav_menu {
+        .nav-menu {
           display: none;
           width: 608px;
           height: 60px;
           flex-wrap: wrap;
           .item {
-            .item_link {
+            .item-link {
               font-size: 14px;
               font-weight: bold;
               width: 144px;
               height: 80px;
             }
           }
-          .fake_item{
+          .fake-item{
             @extend .item
           }
         }
         .phones {
           display: none;
           width: 150px;
-          .phone_link {
+          .phone-link {
             font-size: 17px;
             font-weight: bold;
           }
@@ -198,7 +198,7 @@ div#header {
   #fullpage{
     .section#header{
       width: 100%;
-      #header_menu {
+      #header-menu {
         width: 320px;
         height: 60px;
         flex-direction: row;
@@ -208,27 +208,27 @@ div#header {
         .hamburger {
           display: block;
         }
-        .nav_menu {
+        .nav-menu {
           display: none;
           width: 608px;
           height: 60px;
           flex-wrap: wrap;
           .item {
-            .item_link {
+            .item-link {
               font-size: 14px;
               font-weight: bold;
               width: 144px;
               height: 80px;
             }
           }
-          .fake_item{
+          .fake-item{
             @extend .item
           }
         }
         .phones {
           display: none;
           width: 150px;
-          .phone_link {
+          .phone-link {
             font-size: 17px;
             font-weight: bold;
           }
@@ -247,7 +247,7 @@ div#header {
   }
   #fullpage{
     .section#header{
-      #header_menu {
+      #header-menu {
         width: 320px;
         height: 60px;
         flex-direction: row;
@@ -257,13 +257,13 @@ div#header {
         .hamburger {
           display: block;
         }
-        .nav_menu {
+        .nav-menu {
           display: none;
           width: 608px;
           height: 60px;
           flex-wrap: wrap;
           .item {
-            .item_link {
+            .item-link {
               font-size: 14px;
               font-weight: bold;
               width: 144px;
@@ -274,7 +274,7 @@ div#header {
         .phones {
           display: none;
           width: 150px;
-          .phone_link {
+          .phone-link {
             font-size: 17px;
             font-weight: bold;
           }

@@ -1,6 +1,3 @@
-/**
- * Created by valeriy on 28/06/17.
- */
 import './index.scss';
 import "./blocks/header.menu/header.menu";
 import "./blocks/main/main";

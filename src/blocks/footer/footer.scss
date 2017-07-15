@@ -14,11 +14,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  .footer_info {
+  .footer-info {
     background-color: #28363d;
     height: 250px;
   }
-  .footer_copyright {
+  .footer-copyright {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,23 +36,23 @@
     }
   }
 }
-.footer_box {
+.footer-box {
   width: 1400px;
   height: 234px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  .left_info_block {
+  .left-info-block {
     @include info-block( flex-start);
   }
-  .center_info_block {
+  .center-info-block {
     @include info-block( center);
   }
-  .right_info_block {
+  .right-info-block {
     @include info-block( flex-end);
   }
 }
-.footer_logo {
+.footer-logo {
   background-color: white;
   width: 162px;
   height: 40px;
@@ -78,7 +78,7 @@
   font-weight: bold;
   color: #fff;
 }
-.social_links {
+.social-links {
   height: 26px;
   width: 115px;
   display: flex;
@@ -93,13 +93,13 @@
     @include social("./footer.images/facebook.png");
   }
 }
-.info_block_address {
+.info-block-address {
   font-size: 16px;
   font-family: "Open Sans";
   font-weight: bold;
   color: #fff;
 }
-.address_map {
+.address-map {
   text-decoration: none;
   text-align: end;
   font-size: 14px;

@@ -1,12 +1,12 @@
 ﻿{
 	function Slider() {
 	  this.interval = 5000;
-		this.currentSlide = document.getElementById('active_slide');
-		this.slides = document.getElementsByClassName('bombit_slide');
-		this.buttons = document.getElementsByClassName('bombit_nav_button_click');
-    this.currentButton = document.getElementById('active_button_click');
-    this.nextButton = document.getElementById('right_button_click');
-    this.prevousButton = document.getElementById('left_button_click');
+		this.currentSlide = document.getElementById('active-slide');
+		this.slides = document.getElementsByClassName('bombit-slide');
+		this.buttons = document.getElementsByClassName('bombit-nav-button-click');
+    this.currentButton = document.getElementById('active-button-click');
+    this.nextButton = document.getElementById('right-button-click');
+    this.prevousButton = document.getElementById('left-button-click');
     this.navigators = [ this.nextButton ,this.prevousButton ];
   }
 	function initSlider(){
@@ -52,8 +52,8 @@
 	}
 
 	Slider.prototype.getCurrentValues = function() {
-		this.currentSlide = document.getElementById('active_slide');
-		this.currentButton = document.getElementById('active_button');
+		this.currentSlide = document.getElementById('active-slide');
+		this.currentButton = document.getElementById('active-button');
 		var slidesArray = this.slides;
 		var buttonsArray = this.buttons;
 		for (var i = 0; i < slidesArray.length; i++) {
@@ -73,8 +73,8 @@
 					this.currentButton.id = ' ';
 					this.currentSlide = slidesArray[i];
 					this.currentButton = buttonsArray[i];
-					this.currentSlide.id = 'active_slide';
-					this.currentButton.id = 'active_button';
+					this.currentSlide.id = 'active-slide';
+					this.currentButton.id = 'active-button';
 					break;
 				} 
 				else if( buttonsArray[i] !== buttonsArray[buttonsArray.length-1] ) {
@@ -82,8 +82,8 @@
 					this.currentButton.id = ' ';
 					this.currentSlide = slidesArray[i+1];
 					this.currentButton = buttonsArray[i+1];
-					this.currentSlide.id = 'active_slide';
-					this.currentButton.id = 'active_button';
+					this.currentSlide.id = 'active-slide';
+					this.currentButton.id = 'active-button';
 					break;
 				}
 				if ( this.currentButton === buttonsArray[buttonsArray.length-1] ) {
@@ -91,8 +91,8 @@
 					this.currentButton.id = ' ';
 					this.currentSlide = slidesArray[0];
 					this.currentButton = buttonsArray[0];
-					this.currentSlide.id = 'active_slide';
-					this.currentButton.id = 'active_button';
+					this.currentSlide.id = 'active-slide';
+					this.currentButton.id = 'active-button';
 					break;
 				}
 			}

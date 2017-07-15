@@ -1,25 +1,25 @@
 #portfolio {
-  background: url("./portfolio.images/effect.jpg") -6px 0;
+  background: url(portfolio.images/effect.jpg) -6px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  .portfolio_article {
+  .portfolio-article {
     display: flex;
     height: 977px;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    .portfolio_caption {
-      display : inline-block;
+    .portfolio-caption {
+      display: inline-block;
       height: 33px;
       color: #28363d;
       font-size: 50px;
-      font-weight: normal;
+      font-weight: 400;
       letter-spacing: 7px;
       font-family: "Open Sans";
     }
-    .portfolio_descriptions {
+    .portfolio-descriptions {
       text-align: center;
       width: 780px;
       color: #8198a0;
@@ -42,12 +42,12 @@
       justify-content: flex-end;
       height: 320px;
       width: 460px;
-      background: url("./portfolio.images/photo134.png") no-repeat center, #28363d;
-      background-size: 60px 46px, cover;
-      .invise_block {
+      background: url(portfolio.images/photo134.png) center no-repeat, #28363d;
+      background-size: 60px 46px,cover;
+      .invise-block {
         display: none;
         width: 100%;
-        .product_card {
+        .product-card {
           display: flex;
           align-items: flex-start;
           justify-content: space-around;
@@ -58,25 +58,29 @@
           animation-name: cardFadeIn;
           animation-duration: 1s;
           animation-fill-mode: both;
-          .product_title {
+          .product-title {
             font-family: "Open Sans";
             font-size: 18px;
           }
-          .product_descriptions {
+          .product-descriptions {
             font-family: "Open Sans";
             font-size: 16px;
           }
-          @keyframes cardFadeIn {
-            0% {opacity: 0;}
-            100% {opacity: 0.8;}
-          }
         }
       }
-    }
-    .product:hover {
-      .invise_block {
+      &:hover .invise-block {
         display: block;
       }
     }
+  }
+}
+
+@keyframes cardFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: .8;
   }
 }
