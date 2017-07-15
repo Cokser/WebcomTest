@@ -1,10 +1,10 @@
 ﻿{
 	function Slider() {
 	  this.interval = 5000;
-		this.currentSlide = document.getElementById('active-slide');
 		this.slides = document.getElementsByClassName('bombit-slide');
-		this.buttons = document.getElementsByClassName('bombit-nav-button-click');
-    this.currentButton = document.getElementById('active-button-click');
+    this.buttons = document.getElementsByClassName('bombit-nav-button-click');
+    this.currentSlide = document.getElementsByClassName('active-slide')[0];
+    this.currentButton = document.getElementsByClassName('active-button')[0];
     this.nextButton = document.getElementById('right-button-click');
     this.prevousButton = document.getElementById('left-button-click');
     this.navigators = [ this.nextButton ,this.prevousButton ];
@@ -15,6 +15,7 @@
     setNavigationEvents( bombitSlider );
     startSliderTimer( bombitSlider );
     bombitSlider.getCurrentValues();
+
   }
   function getCurrentButton( clickedButton , bombitSlider ) {
     for( var i = 0; i < bombitSlider.buttons.length; i++ ) {
@@ -52,8 +53,8 @@
 	}
 
 	Slider.prototype.getCurrentValues = function() {
-		this.currentSlide = document.getElementById('active-slide');
-		this.currentButton = document.getElementById('active-button');
+		this.currentSlide = document.getElementsByClassName('active-slide')[0];
+		this.currentButton = document.getElementsByClassName('active-button')[0];
 		var slidesArray = this.slides;
 		var buttonsArray = this.buttons;
 		for (var i = 0; i < slidesArray.length; i++) {
@@ -61,43 +62,50 @@
 				this.currentButton = buttonsArray[i];
 			}
 		}
-	}
-
+	};
+	var myClass = {
+		addMyClass: function( myObjectName, myClass ) {
+      myObjectName.className += ' ' + myClass;
+		},
+		removeMyClass: function ( myObjectName, myClass ) {
+      myObjectName.className = myObjectName.className.replace( ' '  + myClass, "");
+    }
+	};
 	Slider.prototype.swithcSlide = function(){
 		var slidesArray = this.slides;
 		var buttonsArray = this.buttons;
 		for (var i = 0; i < buttonsArray.length; i++) {
 			if ( buttonsArray[i] === this.currentButton) {
-				if ( this.currentSlide.id !== slidesArray[i].id ) {
-					this.currentSlide.id = ' ';
-					this.currentButton.id = ' ';
+				if ( this.currentSlide.className !== slidesArray[i].className ) {
+          myClass.removeMyClass( this.currentSlide, 'active-slide' );
+          myClass.removeMyClass( this.currentButton, 'active-button' );
 					this.currentSlide = slidesArray[i];
 					this.currentButton = buttonsArray[i];
-					this.currentSlide.id = 'active-slide';
-					this.currentButton.id = 'active-button';
+          myClass.addMyClass( this.currentSlide, 'active-slide' );
+          myClass.addMyClass(  this.currentButton, 'active-button' );
 					break;
 				} 
 				else if( buttonsArray[i] !== buttonsArray[buttonsArray.length-1] ) {
-					this.currentSlide.id = ' ';
-					this.currentButton.id = ' ';
+          myClass.removeMyClass( this.currentSlide, 'active-slide' );
+          myClass.removeMyClass(  this.currentButton, 'active-button' );
 					this.currentSlide = slidesArray[i+1];
 					this.currentButton = buttonsArray[i+1];
-					this.currentSlide.id = 'active-slide';
-					this.currentButton.id = 'active-button';
+          myClass.addMyClass( this.currentSlide, 'active-slide' );
+          myClass.addMyClass(  this.currentButton, 'active-button' );
 					break;
 				}
 				if ( this.currentButton === buttonsArray[buttonsArray.length-1] ) {
-					this.currentSlide.id = ' ';
-					this.currentButton.id = ' ';
-					this.currentSlide = slidesArray[0];
-					this.currentButton = buttonsArray[0];
-					this.currentSlide.id = 'active-slide';
-					this.currentButton.id = 'active-button';
+          myClass.removeMyClass( this.currentSlide, 'active-slide' );
+          myClass.removeMyClass(  this.currentButton, 'active-button' );
+          this.currentSlide = slidesArray[0];
+          this.currentButton = buttonsArray[0];
+          myClass.addMyClass( this.currentSlide, 'active-slide' );
+          myClass.addMyClass(  this.currentButton, 'active-button' );
 					break;
 				}
 			}
 		}
-	}
+	};
 	
 	function setButtonEvents( bombitSlider ) {
 		for (var i = 0; i < bombitSlider.buttons.length; i++) {
@@ -121,7 +129,7 @@
 
 		var tempButton = bombitSlider.currentButton;
     bombitSlider.currentButton = getCurrentButton( clickedButton, bombitSlider );
-    tempButton.id = ' ';
+    myClass.removeMyClass( tempButton, 'active-button' );
 		clearInterval(bombitSlider.sliderTimer);
     bombitSlider.swithcSlide();
     bombitSlider.getCurrentValues();

@@ -70,7 +70,7 @@
           cursor: pointer;
         }
 
-        #active-button {
+        .active-button {
           background-color: #f29700;
           border-color: #f29700;
         }
@@ -174,7 +174,7 @@
     height: 964px;
     overflow: hidden;
   }
-  #active-slide {
+  .active-slide {
     display: block;
     z-index: 5;
     opacity: 1;
