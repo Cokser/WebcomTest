@@ -11,12 +11,12 @@
   <div class="logo"></div>
   <nav class="nav-menu">
     <ul class="menu-items">
-      <li class="item" data-menuanchor="secondPage"><a class="item-link" href="#secondPage">ГЛАВНАЯ</a></li>
-      <li class="item" data-menuanchor="thirdPage"><a class="item-link" href="#thirdPage">ПОРТФОЛИО</a></li>
-      <li class="item" data-menuanchor="fourthPage"><a class="item-link" href="#fourthPage">ПРЕИМУЩЕСТВА</a></li>
+      <li class="item" data-menuanchor="second-page"><a class="item-link" href="#second-page">ГЛАВНАЯ</a></li>
+      <li class="item" data-menuanchor="third-page"><a class="item-link" href="#third-page">ПОРТФОЛИО</a></li>
+      <li class="item" data-menuanchor="fourth-page"><a class="item-link" href="#fourth-page">ПРЕИМУЩЕСТВА</a></li>
       <li class="fake-item"><a class="item-link" href="#">СХЕМА РАБОТЫ</a></li>
-      <li class="item" data-menuanchor="fifthPage"><a class="item-link" href="#fifthPage">ОТЗЫВЫ</a></li>
-      <li class="item" data-menuanchor="sixthPage"><a class="item-link" href="#sixthPage">КОНТАКТЫ</a></li>
+      <li class="item" data-menuanchor="fifth-page"><a class="item-link" href="#fifth-page">ОТЗЫВЫ</a></li>
+      <li class="item" data-menuanchor="sixth-page"><a class="item-link" href="#sixth-page">КОНТАКТЫ</a></li>
     </ul>
   </nav>
   <div class="phones"><a class="phone-link" href="href">+375(29)123-45-67</a><a class="phone-link" href="href">+375(29)123-45-67</a></div>
@@ -27,12 +27,12 @@
       </div>
       <div class="hamburger-menu">
         <ul class="main-links">
-          <li class="delay" data-menuanchor="secondPage"><a href="#secondPage">ГЛАВНАЯ</a></li>
-          <li class="delay" data-menuanchor="thirdPage"><a href="#thirdPage">ПОРТФОЛИО</a></li>
-          <li class="delay" data-menuanchor="fourthPage"><a href="#fourthPage">ПРЕИМУЩЕСТВА</a></li>
+          <li class="delay" data-menuanchor="second-page"><a href="#second-page">ГЛАВНАЯ</a></li>
+          <li class="delay" data-menuanchor="third-page"><a href="#third-page">ПОРТФОЛИО</a></li>
+          <li class="delay" data-menuanchor="fourth-page"><a href="#fourth-page">ПРЕИМУЩЕСТВА</a></li>
           <li class="delay" data-menuanchor=""><a href="#">СХЕМА РАБОТЫ</a></li>
-          <li class="delay" data-menuanchor="fifthPage"><a href="#fifthPage">ОТЗЫВЫ</a></li>
-          <li class="delay" data-menuanchor="sixthPage"><a href="#sixthPage">КОНТАКТЫ</a></li>
+          <li class="delay" data-menuanchor="fifth-page"><a href="#fifth-page">ОТЗЫВЫ</a></li>
+          <li class="delay" data-menuanchor="sixth-page"><a href="#sixth-page">КОНТАКТЫ</a></li>
         </ul>
         <div class="secondary-links">
           <div class="row"><a href="#">instagram</a><a href="#">twitter</a><a href="#">facebook</a></div>
@@ -57,43 +57,7 @@
         <button class="nav-button left-button" type="button" id="left-button-click"></button>
         <button class="nav-button right-button" type="button" id="right-button-click"></button>
       </div>
-      <div class="modal">
-        <input class="modal-trigger" id="modal" type="checkbox">
-        <label class="modal-overlay" for="modal"></label>
-        <label id="feedback-button" for="modal">ОФОРМИТЬ ЗАЯВКУ</label>
-        <div class="modal-container">
-          <div class="card">
-            <div class="card-header">
-              <h3 class="card-title">Оформление заявки</h3>
-            </div>
-            <div class="card-body">
-              <form action="#" name="add-request" method="post" id="review">
-                <label for name>ВАШЕ ИМЯ</label>
-                <input class="inp" type="text" name="name" placeholder="Иван Иванов" required>
-                <label for email>E-MAIL</label>
-                <input class="inp" type="email" name="email" placeholder="example@mysite.com" required>
-                <label for position>ВАША ДОЛЖНОСТЬ</label>
-                <input class="inp" type="text" name="position" placeholder="Должность">
-                <label for message>ОТЗЫВ</label>
-                <textarea class="inp" rows="5" name="msg-box" placeholder="ваше сообщение" required></textarea>
-                <div class="fieldset-img-button">
-                  <input type="file" name="upload-img" accept="image/*" id="file-upload">
-                  <label for="file-upload" id="custom-file-upload"></label>
-                  <label for="file-upload">ФОТО</label>
-                </div>
-                <label for code>ВВЕДИТЕ КОД С КАРТИНКИ</label>
-                <input class="inp" type="text" name="code" required id="captcha-code">
-                <div class="fieldset-submit-button"><img id="captcha">
-                  <button type="submit" name="submit">ОТПРАВИТЬ</button>
-                </div>
-              </form>
-            </div>
-            <div class="card-footer">
-              <label class="item action" for="modal">Close</label>
-            </div>
-          </div>
-        </div>
-      </div>
+      <button class="feedback-button" data-toggle="true">оформить заявку</button>
       <section id="nav-bar">
         <button class="slider-nav-button bombit-nav-button-click active-button"></button>
         <button class="slider-nav-button bombit-nav-button-click"></button>
@@ -107,7 +71,7 @@
       <div class="section fp-auto-height">
         <div id="portfolio">
           <article class="portfolio-article">
-            <h2 class="portfolio-caption">НАША РАБОТА</h2>
+            <h2 class="section-title">НАША РАБОТА</h2>
             <p class="portfolio-descriptions">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
             <div class="separator"></div>
             <div class="products">
@@ -171,7 +135,7 @@
       </div>
       <div class="section fp-auto-height">
         <article id="advantages">
-          <h2 class="advantages-header">ПОЧЕМУ МЫ</h2>
+          <h2 class="section-title">почему мы</h2>
           <div class="separator"></div>
           <p class="advantage-header-describe">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
           <section class="section-advantages">
@@ -220,40 +184,48 @@
       </div>
       <div class="section fp-auto-height">
         <article id="reviews-block">
-          <h2 class="reviews-header">ОСТАВЬТЕ ОТЗЫВ</h2>
+          <h2 class="section-title">оставьте отзыв</h2>
           <div class="separator"></div>
           <p class="reviews-header-describe">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
           <section class="reviews-contacts">
             <section class="contacts-group">
                       <article class="contact-item">
-                        <h4 class="contact-header">НАШ АДРЕС</h4><a class="contact-link" href="https://www.google.by/maps/place/%D1%83%D0%BB.+%D0%A1%D0%BA%D1%80%D1%8B%D0%B3%D0%B0%D0%BD%D0%BE%D0%B2%D0%B0+6%D0%B0,+%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/@53.9106004,27.5150178,17z/data=!4m5!3m4!1s0x46dbc55eac1f56b1:0x608821dc8d7c0b1!8m2!3d53.9105873!4d27.5168252">г.Минск, ул. Скрыганова, 6А, 4 этаж</a>
+                        <h4 class="contact-header">наш адрес</h4><a class="contact-link" href="https://www.google.by/maps/place/%D1%83%D0%BB.+%D0%A1%D0%BA%D1%80%D1%8B%D0%B3%D0%B0%D0%BD%D0%BE%D0%B2%D0%B0+6%D0%B0,+%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/@53.9106004,27.5150178,17z/data=!4m5!3m4!1s0x46dbc55eac1f56b1:0x608821dc8d7c0b1!8m2!3d53.9105873!4d27.5168252">г.Минск, ул. Скрыганова, 6А, 4 этаж</a>
                       </article>
                       <article class="contact-item">
-                        <h4 class="contact-header">ЗВОНИТЕ</h4><a class="contact-link" href="href">+375 (29) 123-45-67,  +375 (33) 123-45-67</a>
+                        <h4 class="contact-header">звоните</h4><a class="contact-link" href="href">+375 (29) 123-45-67,  +375 (33) 123-45-67</a>
                       </article>
                       <article class="contact-item">
-                        <h4 class="contact-header">ПИШИТЕ</h4><a class="contact-link" href="mailto:info@promo-webcom.by">info@promo-webcom.by</a>
+                        <h4 class="contact-header">пишите</h4><a class="contact-link" href="mailto:info@promo-webcom.by">info@promo-webcom.by</a>
                       </article>
             </section>
             <section class="reviews">
               <form class="review-form" action="#" name="add-review" method="post">
-                <label class="form-item" for name>ВАШЕ ИМЯ</label>
-                <input class="inp" type="text" name="name" placeholder="Иван Иванов" required>
-                <label class="form-item" for email>E-MAIL</label>
-                <input class="inp" type="email" name="email" placeholder="example@mysite.com" required>
-                <label class="form-item" for position>ВАША ДОЛЖНОСТЬ</label>
-                <input class="inp" type="text" name="position" placeholder="Должность">
-                <label class="form-item" for message>ОТЗЫВ</label>
-                <textarea class="inp reviev-comment" rows="5" name="message" placeholder="ваше сообщение" required></textarea>
+                <fieldset class="form-fieldset">
+                  <label class="form-item" for name>ваше имя</label>
+                  <input class="inp" type="text" name="name" placeholder="Иван Иванов" required>
+                </fieldset>
+                <fieldset class="form-fieldset">
+                  <label class="form-item" for email>e-mail</label>
+                  <input class="inp" type="email" name="email" placeholder="example@mysite.com" required>
+                </fieldset>
+                <fieldset class="form-fieldset">
+                  <label class="form-item" for position>ваша должность</label>
+                  <input class="inp" type="text" name="position" placeholder="Должность">
+                </fieldset>
+                <fieldset class="form-fieldset">
+                  <label class="form-item" for message>отзыв</label>
+                  <textarea class="inp review-comment" rows="5" name="message" placeholder="ваше сообщение" required></textarea>
+                </fieldset>
                 <div class="fieldset-img-button">
                   <input type="file" name="file-upload" accept="image/*" id="file-upload">
                   <label class="form-item custom-file-upload" for="file-upload"></label>
-                  <label class="form-item" for="file-upload">ФОТО</label>
+                  <label class="image-button-title" for="file-upload">фото</label>
                 </div>
-                <label class="form-item" for captcha-code>ВВЕДИТЕ КОД С КАРТИНКИ</label>
+                <label class="form-item captcha-label" for captcha-code>введите код с картинки</label>
                 <input class="inp captcha-code" type="text" name="code" required>
                 <div class="fieldset-submit-button"><img class="captcha">
-                  <button class="submit-button" type="submit" name="submit">ОТПРАВИТЬ</button>
+                  <button class="submit-button" type="submit" name="submit">отправить</button>
                 </div>
               </form>
             </section>
@@ -282,6 +254,31 @@
   </div>
   <div class="footer-copyright"><small class="copyright">COPYRIGHT 2015 © WEBCOM MEDIA</small></div>
 </footer>
+      </div>
+    </div>
+    <div class="modal" data-toggle="true" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+      <div class="modal-window">
+        <button class="modal-close" data-toggle="true">Close</button>
+        <form class="review-form" action="#" name="add-request" method="post">
+          <label class="form-item" for name>ваше имя</label>
+          <input class="inp" type="text" name="name" placeholder="Иван Иванов" required>
+          <label class="form-item" for email>e-mail</label>
+          <input class="inp" type="email" name="email" placeholder="example@mysite.com" required>
+          <label class="form-item" for position>ваша должность</label>
+          <input class="inp" type="text" name="position" placeholder="Должность">
+          <label class="form-item" for message>отзыв</label>
+          <textarea class="inp" rows="5" name="msg-box" placeholder="ваше сообщение" required></textarea>
+          <div class="fieldset-img-button">
+            <input type="file" name="upload-img" accept="image/*" id="image-upload">
+            <label class="custom-image-upload" for="image-upload"></label>
+            <label class="form-item" for="image-upload">фото</label>
+          </div>
+          <label class="form-item" for code>введите код с картинки</label>
+          <input class="inp captcha-code" type="text" name="code" required>
+          <div class="fieldset-submit-button"><img class="captcha-image">
+            <button class="form-item submit-button" type="submit" name="submit">отправить</button>
+          </div>
+        </form>
       </div>
     </div>
   <script type="text/javascript" src="js/common.js"></script><script type="text/javascript" src="js/index.js"></script></body>

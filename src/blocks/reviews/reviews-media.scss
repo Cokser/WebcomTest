@@ -18,448 +18,281 @@ $iphone5: ( min: 320px, max: 568px );
 }
 
 @include device($DesktopsLaptop) {
-  #fullpage {
-    .section {
-      .form-item {
-        font-size: 24px;
-      }
-      .inp {
-        font-size: 18px;
-        font-style: italic;
-        border: 0;
-        border-bottom: 1px solid #c0c0c0;
-        width: 540px;
-        &:active {
-          outline: none;
-        }
-      }
-      .captcha-code {
-        width: 302px;
-      }
-      #reviews-block {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        height: 940px;
-        width: 100%;
-        .reviews-header {
-          display : inline-block;
-          font-size: 50px;
-          letter-spacing: 7px;
-        }
-        .reviews-header-describe {
-          text-align: center;
-          width: 780px;
-          font-size: 16px;
-        }
-        .reviews-contacts {
-          height: 607px;
-          width: 940px;
-          justify-content: space-between;
-          .contacts-group {
-            height: 215px;
-            width: 320px;
-            justify-content: space-between;
-            align-items: flex-start;
-            .contact-item {
-              align-content: flex-start;
-              flex-direction: column;
-              height: 67px;
-              .contact-header {
-                height: 37px;
-                font-size: 20px;
-              }
-              .contact-link {
-                font-size: 16px;
-              }
-            }
-          }
-          .reviews {
-            .review-form {
-              width: 540px;
-              height: 607px;
-              display: flex;
-              align-items: flex-start;
-              justify-content: space-between;
-              .fieldset-img-button {
-                align-items: center;
-                justify-content: space-between;
-                width: 130px;
-                #file-upload {
-                  display: none;
-                }
-                & .custom-file-upload {
-                  background: url("./reviews.images/plus.png") no-repeat center center, #ff8207;
-                  width: 48px;
-                  height: 60px;
-                  border-radius: 9px;
-
-                }
-              }
-              .fieldset-submit-button {
-                align-items: center;
-                align-content: center;
-                justify-content: space-between;
-                width: 540px;
-                .captcha {
-                  width: 137px;
-                  height: 41px;
-                }
-                .submit-button{
-                  font-size: 18px;
-                  border: 0;
-                  border-radius: 9px;
-                  outline: 0;
-                  width: 220px;
-                  height: 60px;
-
-                }
-              }
-            }
-          }
-        }
-        #pg-up {
-          width: 1215px;
-          & .scroll-up {
-            height: 60px;
-            width: 69px;
-          }
-        }
-      }
+  .separator {
+    display: block;
+  }
+  .form-item {
+    font-size: 24px;
+  }
+  .inp {
+    font-size: 18px;
+    font-style: italic;
+    border: 0;
+    border-bottom: 1px solid #c0c0c0;
+    width: 540px;
+    &:active {
+      outline: none;
+    }
+  }
+  .captcha-code {
+    width: 302px;
+  }
+  #reviews-block {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 940px;
+    width: 100%;
+  }
+  .reviews-header {
+    display : inline-block;
+    font-size: 50px;
+    letter-spacing: 7px;
+  }
+  .reviews-header-describe {
+    text-align: center;
+    width: 780px;
+    font-size: 16px;
+  }
+  .reviews-contacts {
+    height: 607px;
+    width: 940px;
+    justify-content: space-between;
+  }
+  .contacts-group {
+    height: 215px;
+    width: 320px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .contact-item {
+    align-content: flex-start;
+    flex-direction: column;
+    height: 67px;
+    .contact-header {
+      height: 37px;
+      font-size: 20px;
+    }
+    .contact-link {
+      font-size: 16px;
+    }
+  }
+  .review-form {
+    width: 540px;
+    height: 607px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .fieldset-img-button {
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+    #file-upload {
+      display: none;
+    }
+    & .custom-file-upload {
+      background: url("./reviews.images/plus.png") no-repeat center center, #ff8207;
+      width: 48px;
+      height: 60px;
+      border-radius: 9px;
+    }
+  }
+  .fieldset-submit-button {
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    width: 540px;
+    .captcha {
+      width: 137px;
+      height: 41px;
+    }
+    .submit-button{
+      font-size: 18px;
+      border: 0;
+      border-radius: 9px;
+      outline: 0;
+      width: 220px;
+      height: 60px;
+    }
+  }
+  #pg-up {
+    width: 1215px;
+    & .scroll-up {
+      height: 60px;
+      width: 69px;
     }
   }
 }
 @include device($Laptop) {
-  #fullpage {
-    .section {
-      .form-item {
-        font-size: 24px;
-      }
-      .inp {
-        font-size: 18px;
-        font-style: italic;
-        border: 0;
-        border-bottom: 1px solid #c0c0c0;
-        width: 540px;
-        & {
-          outline: none;
-        }
-      }
-      .captcha-code {
-        width: 302px;
-      }
-      #reviews-block {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        height: 940px;
-        width: 100%;
-        .reviews-header {
-          display : inline-block;
-          font-size: 50px;
-          letter-spacing: 7px;
-        }
-        .reviews-header-describe {
-          text-align: center;
-          width: 780px;
-          font-size: 16px;
-        }
-        .reviews-contacts {
-          height: 607px;
-          width: 940px;
-          justify-content: space-between;
-          .contacts-group {
-            height: 215px;
-            width: 320px;
-            justify-content: space-between;
-            align-items: flex-start;
-            .contact-item {
-              align-content: flex-start;
-              flex-direction: column;
-              height: 67px;
-              .contact-header {
-                height: 37px;
-                font-size: 20px;
-              }
-              .contact-link {
-                font-size: 16px;
-              }
-            }
-          }
-          .reviews {
-            .review-form {
-              width: 540px;
-              height: 607px;
-              display: flex;
-              align-items: flex-start;
-              justify-content: space-between;
-              .fieldset-img-button {
-                align-items: center;
-                justify-content: space-between;
-                width: 130px;
-                #file-upload {
-                  display: none;
-                }
-                & .custom-file-upload {
-                  background: url("./reviews.images/plus.png") no-repeat center center, #ff8207;
-                  width: 48px;
-                  height: 60px;
-                  border-radius: 9px;
-
-                }
-              }
-              .fieldset-submit-button {
-                align-items: center;
-                align-content: center;
-                justify-content: space-between;
-                width: 540px;
-                .captcha {
-                  width: 137px;
-                  height: 41px;
-                }
-                .submit-button{
-                  font-size: 18px;
-                  border: 0;
-                  border-radius: 9px;
-                  outline: 0;
-                  width: 220px;
-                  height: 60px;
-
-                }
-              }
-            }
-          }
-        }
-        #pg-up {
-          width: 1015px;
-          & .scroll-up {
-            height: 60px;
-            width: 69px;
-          }
-        }
-      }
+  #pg-up {
+    width: 1015px;
+    & .scroll-up {
+      height: 60px;
+      width: 69px;
     }
   }
+
 }
 @include device($tablet) {
-  #fullpage {
-    .section {
-      .form-item {
-        font-size: 24px;
-      }
-      .inp {
-        font-size: 18px;
-        font-style: italic;
-        border: 0;
-        border-bottom: 1px solid #c0c0c0;
-        width: 439px;
-        & {
-          outline: none;
-        }
-      }
-      .captcha-code {
-        width: 302px;
-      }
-      #reviews-block {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        height: 940px;
-        width: 100%;
-        .reviews-header {
-          display : inline-block;
-          font-size: 50px;
-          letter-spacing: 7px;
-        }
-        .reviews-header-describe {
-          text-align: center;
-          width: 759px;
-          font-size: 15px;
-        }
-        .reviews-contacts {
-          height: 607px;
-          width: 759px;
-          justify-content: space-between;
-          .contacts-group {
-            height: 315px;
-            width: 320px;
-            justify-content: space-between;
-            .contact-item {
-              height: 100px;
-              .contact-header {
-                height: 37px;
-                font-size: 20px;
-              }
-              .contact-link {
-                font-size: 16px;
-                width: 160px;
-              }
-            }
-          }
-          .reviews {
-            .review-form {
-              width: 439px;
-              height: 607px;
-              display: flex;
-              align-items: flex-start;
-              justify-content: space-between;
-              .fieldset-img-button {
-                align-items: center;
-                justify-content: space-between;
-                width: 130px;
-                #file-upload {
-                  display: none;
-                }
-                & .custom-file-upload {
-                  width: 48px;
-                  height: 60px;
-                  border-radius: 9px;
+  .inp {
+    font-size: 18px;
+    font-style: italic;
+    border: 0;
+    border-bottom: 1px solid #c0c0c0;
+    width: 439px;
+    &:active {
+      outline: none;
+    }
+  }
+  #reviews-block {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 940px;
+    width: 100%;
+  }
 
-                }
-              }
-              .fieldset-submit-button {
-                align-items: center;
-                align-content: center;
-                justify-content: space-between;
-                width: 439px;
-                .captcha {
-                  width: 137px;
-                  height: 41px;
-                }
-                .submit-button{
-                  font-size: 18px;
-                  border: 0;
-                  border-radius: 9px;
-                  outline: 0;
-                  width: 160px;
-                  height: 60px;
-
-                }
-              }
-            }
-          }
-        }
-        #pg-up {
-          width: 759px;
-          & .scroll-up {
-            height: 60px;
-            width: 69px;
-          }
-        }
-      }
+  .reviews-header-describe {
+    text-align: center;
+    width: 759px;
+    font-size: 15px;
+  }
+  .reviews-contacts {
+    height: 607px;
+    width: 759px;
+    justify-content: space-between;
+  }
+  .contacts-group {
+    height: 315px;
+    width: 320px;
+    justify-content: space-between;
+  }
+  .contact-item {
+    align-content: flex-start;
+    flex-direction: column;
+    height: 100px;
+    .contact-link {
+      font-size: 16px;
+      width: 160px;
+    }
+  }
+  .review-form {
+    width: 439px;
+    height: 607px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .fieldset-submit-button {
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    width: 439px;
+    .submit-button{
+      font-size: 18px;
+      border: 0;
+      border-radius: 9px;
+      outline: 0;
+      width: 160px;
+      height: 60px;
+    }
+  }
+  #pg-up {
+    width: 759px;
+    & .scroll-up {
+      height: 60px;
+      width: 69px;
     }
   }
 }
 @include device($tabletMobile) {
-  #fullpage {
-    .section {
-      .form-item {
-        font-size: 20px;
-      }
-      .inp {
-        font-size: 15px;
-        font-style: italic;
-        border: 0;
-        border-bottom: 1px solid #c0c0c0;
-        width: 310px;
-        &:active {
-          outline: none;
-        }
-      }
-      .captcha-code {
-        width: 302px;
-      }
-      #reviews-block {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        height: 950px;
-        width: 100%;
-        .reviews-header {
-          display : inline-block;
-          font-size: 30px;
-          letter-spacing: 3px;
-        }
-        .reviews-header-describe {
-          display: none;
-          text-align: center;
-          width: 310px;
-          font-size: 13px;
-        }
-        .reviews-contacts {
-          height: 910px;
-          width: 310px;
-          justify-content: space-between;
-          flex-direction: column;
-          .contacts-group {
-            height: 300px;
-            width: 320px;
-            justify-content: center;
-            flex-direction: row;
-            flex-wrap: wrap;
-            .contact-item {
-              height: 100px;
-              .contact-header {
-                height: 37px;
-                font-size: 20px;
-              }
-              .contact-link {
-                font-size: 16px;
-                width: 160px;
-              }
-            }
-          }
-          .reviews {
-            .review-form {
-              width: 310px;
-              height: 607px;
-              display: flex;
-              align-items: flex-start;
-              justify-content: space-between;
-              .fieldset-img-button {
-                align-items: center;
-                justify-content: space-between;
-                width: 130px;
-                #file-upload {
-                  display: none;
-                }
-                & .custom-file-upload {
-                  width: 48px;
-                  height: 60px;
-                  border-radius: 9px;
+  .form-item {
+    font-size: 20px;
+  }
+  .inp {
+    font-size: 15px;
+    font-style: italic;
+    border: 0;
+    border-bottom: 1px solid #c0c0c0;
+    width: 310px;
+    &:active {
+      outline: none;
+    }
+  }
+  #reviews-block {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 950px;
+    width: 100%;
+  }
+  .reviews-header {
+    display : inline-block;
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+  .reviews-header-describe {
+    display: none;
+  }
+  .reviews-contacts {
+    height: 910px;
+    width: 310px;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .contacts-group {
+    height: 300px;
+    width: 320px;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .review-form {
+    width: 310px;
+    height: 607px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .form-fieldset {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .fieldset-img-button {
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+    #file-upload {
+      display: none;
+    }
+    & .custom-file-upload {
+      width: 48px;
+      height: 60px;
+      border-radius: 9px;
 
-                }
-              }
-              .fieldset-submit-button {
-                align-items: center;
-                align-content: center;
-                justify-content: space-between;
-                width: 310px;
-                .captcha {
-                  width: 137px;
-                  height: 41px;
-                }
-                .submit-button{
-                  font-size: 18px;
-                  border: 0;
-                  border-radius: 9px;
-                  outline: 0;
-                  width: 160px;
-                  height: 60px;
-                }
-              }
-            }
-          }
-        }
-        #pg-up {
-          width: 310px;
-          justify-content: center;
-          & .scroll-up {
-            height: 60px;
-            width: 69px;
-          }
-        }
-      }
+    }
+  }
+  .fieldset-submit-button {
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    width: 310px;
+    .submit-button{
+      font-size: 18px;
+      border: 0;
+      border-radius: 9px;
+      outline: 0;
+      width: 150px;
+      height: 50px;
+    }
+  }
+  #pg-up {
+    width: 310px;
+    & .scroll-up {
+      height: 60px;
+      width: 69px;
     }
   }
 }
@@ -467,126 +300,133 @@ $iphone5: ( min: 320px, max: 568px );
   .separator {
     display: none;
   }
-  #fullpage {
-    .section {
-      .form-item {
-        font-size: 16px;
-      }
-      .inp {
-        font-size: 15px;
-        font-style: italic;
-        border: 0;
-        border-bottom: 1px solid #c0c0c0;
-        width: 365px;
-        &:active {
-          outline: none;
-        }
-      }
-      .captcha-code {
-        width: 302px;
-      }
-      #reviews-block {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        height: 800px;
-        width: 100%;
-        .reviews-header {
-          display : inline-block;
-          font-size: 25px;
-          letter-spacing: 3px;
-        }
-        .reviews-header-describe {
-          display: none;
-          text-align: center;
-          width: 365px;
-          font-size: 13px;
-        }
-        .reviews-contacts {
-          height: 610px;
-          width: 365px;
-          justify-content: space-between;
-          flex-direction: column;
-          .contacts-group {
-            height: 120px;
-            width: 310px;
-            justify-content: center;
-            align-content: center;
-            flex-direction: row;
-            flex-wrap: wrap;
-            .contact-item {
-              height: 40px;
-              align-content: center;
-              justify-content: space-around;
-              flex-direction: row;
-              .contact-header {
-                height: 20px;
-                font-size: 15px;
-                width: 150px;
-              }
-              .contact-link {
-                font-size: 13px;
-                width: 150px;
-              }
-            }
-          }
-          .reviews {
-            height: 500px;
-            .review-form {
-              width: 365px;
-              height: 500px;
-              display: flex;
-              align-items: flex-start;
-              justify-content: space-between;
-              .reviev-comment {
-                height: 75px;
-              }
-              .fieldset-img-button {
-                align-items: center;
-                justify-content: space-between;
-                width: 130px;
-                #file-upload {
-                  display: none;
-                }
-                & .custom-file-upload {
-                  width: 48px;
-                  height: 60px;
-                  border-radius: 9px;
-
-                }
-              }
-              .fieldset-submit-button {
-                align-items: center;
-                align-content: center;
-                justify-content: space-between;
-                width: 365px;
-                .captcha {
-                  width: 137px;
-                  height: 41px;
-                }
-                .submit-button{
-                  font-size: 18px;
-                  border: 0;
-                  border-radius: 9px;
-                  outline: 0;
-                  width: 160px;
-                  height: 60px;
-
-                }
-              }
-            }
-          }
-        }
-        #pg-up {
-          width: 365px;
-          justify-content: center;
-          & .scroll-up {
-            background-size: 40px 40px;
-            height: 40px;
-            width: 69px;
-          }
-        }
-      }
+  .captcha-code {
+    width: 302px;
+  }
+  .reviews {
+    width: 350px;
+  }
+  #reviews-block {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 667px;
+    width: 100%;
+  }
+  .reviews-header {
+    display: inline-block;
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+  .reviews-header-describe {
+    display: none;
+  }
+  .reviews-contacts {
+    height: 500px;
+    width: 355px;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacts-group {
+    height: 120px;
+    width: 355px;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .contact-item {
+    height: 40px;
+    width: 355px;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    .contact-header {
+      height: 20px;
+      font-size: 15px;
+      width: 150px;
+    }
+    .contact-link {
+      font-size: 13px;
+      width: 150px;
+    }
+  }
+  .review-form {
+    width: 350px;
+    height: 380px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .review-comment {
+    height: 40px;
+  }
+  .form-item {
+    font-size: 16px;
+    width: 150px;
+    display: inline-block;
+  }
+  .inp {
+    font-size: 15px;
+    font-style: italic;
+    border: 0;
+    border-bottom: 1px solid #c0c0c0;
+    width: 190px;
+    display: inline-block;
+    &:active {
+      outline: none;
+    }
+  }
+  .form-fieldset {
+    height: 44px;
+    width: 350px;
+    margin: 0 auto;
+    display: inline-block;
+    border: none;
+    vertical-align: bottom;
+  }
+  .fieldset-img-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+    #file-upload {
+      display: none;
+    }
+    & .custom-file-upload {
+      cursor: pointer;
+      display: block;
+      background: url("./reviews.images/plus.png") no-repeat center center, #ff8207;
+      width: 48px;
+      height: 45px;
+      border-radius: 9px;
+    }
+  }
+  .fieldset-submit-button {
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    width: 350px;
+  }
+  .submit-button {
+    width: 140px;
+    height: 40px;
+  }
+  .captcha-label {
+    width: 350px;
+  }
+  .captcha {
+    width: 137px;
+    height: 41px;
+  }
+  #pg-up {
+    width: 350px;
+    & .scroll-up {
+      background-size: 40px 40px;
+      height: 40px;
+      width: 69px;
     }
   }
 }
@@ -594,126 +434,132 @@ $iphone5: ( min: 320px, max: 568px );
   .separator {
     display: none;
   }
-  #fullpage {
-    .section {
-      .form-item {
-        font-size: 16px;
-      }
-      .inp {
-        font-size: 15px;
-        font-style: italic;
-        border: 0;
-        border-bottom: 1px solid #c0c0c0;
-        width: 310px;
-        & {
-          outline: none;
-        }
-      }
-      #captcha-code {
-        width: 302px;
-      }
-      #reviews-block {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        height: 710px;
-        width: 100%;
-        .reviews-header {
-          display : inline-block;
-          font-size: 25px;
-          letter-spacing: 3px;
-        }
-        .reviews-header-describe {
-          display: none;
-          text-align: center;
-          width: 310px;
-          font-size: 13px;
-        }
-        .reviews-contacts {
-          height: 610px;
-          width: 310px;
-          justify-content: space-between;
-          flex-direction: column;
-          .contacts-group {
-            height: 120px;
-            width: 310px;
-            justify-content: center;
-            align-content: center;
-            flex-direction: row;
-            flex-wrap: wrap;
-            .contact-item {
-              height: 40px;
-              align-content: center;
-              justify-content: space-around;
-              flex-direction: row;
-              .contact-header {
-                height: 20px;
-                font-size: 15px;
-                width: 150px;
-              }
-              .contact-link {
-                font-size: 13px;
-                width: 150px;
-              }
-            }
-          }
-          .reviews {
-            height: 500px;
-            .review-form {
-              width: 310px;
-              height: 500px;
-              display: flex;
-              align-items: flex-start;
-              justify-content: space-between;
-              .reviev-comment {
-                height: 75px;
-              }
-              .fieldset-img-button {
-                align-items: center;
-                justify-content: space-between;
-                width: 130px;
-                #file-upload {
-                  display: none;
-                }
-                & .custom-file-upload {
-                  width: 48px;
-                  height: 60px;
-                  border-radius: 9px;
-
-                }
-              }
-              .fieldset-submit-button {
-                align-items: center;
-                align-content: center;
-                justify-content: space-between;
-                width: 310px;
-                .captcha {
-                  width: 137px;
-                  height: 41px;
-                }
-                .submit-button{
-                  font-size: 18px;
-                  border: 0;
-                  border-radius: 9px;
-                  outline: 0;
-                  width: 160px;
-                  height: 60px;
-
-                }
-              }
-            }
-          }
-        }
-        #pg-up {
-          width: 310px;
-          justify-content: center;
-          & .scroll-up {
-            background-size: 40px 40px;
-            height: 40px;
-            width: 69px;
-          }
-        }
-      }
+  .captcha-code {
+    width: 302px;
+  }
+  .reviews {
+    width: 300px;
+  }
+  #reviews-block {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 568px;
+    width: 100%;
+  }
+  .reviews-header {
+    display: inline-block;
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+  .reviews-header-describe {
+    display: none;
+  }
+  .reviews-contacts {
+    height: 470px;
+    width: 310px;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacts-group {
+    height: 120px;
+    width: 310px;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .contact-item {
+    height: 40px;
+    width: 310px;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    .contact-header {
+      height: 20px;
+      font-size: 15px;
+      width: 150px;
+    }
+    .contact-link {
+      font-size: 13px;
+      width: 150px;
+    }
+  }
+  .review-form {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .review-comment {
+    height: 40px;
+  }
+  .form-item {
+    font-size: 16px;
+    width: 110px;
+    display: inline-block;
+  }
+  .inp {
+    font-size: 15px;
+    font-style: italic;
+    border: 0;
+    border-bottom: 1px solid #c0c0c0;
+    width: 180px;
+    display: inline-block;
+    &:active {
+      outline: none;
+    }
+  }
+  .form-fieldset {
+    height: 44px;
+    width: 300px;
+    margin: 0 auto;
+    display: inline-block;
+    border: none;
+    vertical-align: bottom;
+  }
+  .fieldset-img-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+    #file-upload {
+      display: none;
+    }
+    & .custom-file-upload {
+      cursor: pointer;
+      display: block;
+      background: url("./reviews.images/plus.png") no-repeat center center, #ff8207;
+      width: 48px;
+      height: 45px;
+      border-radius: 9px;
+    }
+  }
+  .fieldset-submit-button {
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    width: 300px;
+  }
+  .submit-button {
+    width: 140px;
+    height: 40px;
+  }
+  .captcha-label {
+    width: 300px;
+  }
+  .captcha {
+    width: 137px;
+    height: 41px;
+  }
+  #pg-up {
+    width: 300px;
+    & .scroll-up {
+      background-size: 40px 40px;
+      height: 40px;
+      width: 69px;
     }
   }
 }

@@ -1,4 +1,6 @@
 import './index.scss';
+import './index-media.scss';
+
 import "./blocks/header.menu/header.menu";
 import "./blocks/main/main";
 import "./blocks/portfolio/portfolio";

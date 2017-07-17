@@ -26,265 +26,193 @@ $iphone5: ( min: 320px, max: 568px );
 }
 
 @include device($DesktopsLaptop) {
-  #fullpage {
-    .section {
-      #advantages {
-        height: 721px;
-        width: 100%;
-        .advantages-header {
-          font-size: 47px;
-          letter-spacing: 7px;
-        }
-        .advantage-header-describe {
-          font-size: 17px;
-          width: 721px;
-        }
-        .section-advantages {
-          justify-content: space-around;
-          width: 1225px;
-          height: 405px;
-          .article-advantage {
-            height: 173px;
-            width: 288px;
-            @each $advantage in $advantages {
-              @include advantage-mix($advantage){
-                width: 50px;
-                height: 40px;
-              }
-            }
-            .advantage-title {
-              font-size: 16px;
-              font-weight: bold;
-            }
-            .advantage-description {
-              height: 72px;
-              font-size: 16px;
-            }
-          }
-        }
+  #advantages {
+    height: 721px;
+    width: 100%;
+  }
+  .advantages-header {
+    font-size: 47px;
+    letter-spacing: 7px;
+  }
+  .advantage-header-describe {
+    font-size: 17px;
+    width: 721px;
+  }
+  .section-advantages {
+    justify-content: space-around;
+    width: 1225px;
+    height: 405px;
+  }
+  .article-advantage {
+    height: 173px;
+    width: 288px;
+    @each $advantage in $advantages {
+      @include advantage-mix($advantage){
+        width: 50px;
+        height: 40px;
       }
+    }
+    .advantage-title {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .advantage-description {
+      height: 72px;
+      font-size: 16px;
     }
   }
 }
 @include device($Laptop) {
-  #fullpage {
-    .section {
-      #advantages {
-        height: 721px;
-        width: 100%;
-        .advantages-header {
-          font-size: 47px;
-          letter-spacing: 7px;
-        }
-        .advantage-header-describe {
-          font-size: 17px;
-          width: 721px;
-        }
-        .section-advantages {
-          justify-content: space-between;
-          width: 1016px;
-          height: 405px;
-          .article-advantage {
-            height: 173px;
-            width: 254px;
-            @each $advantage in $advantages {
-              @include advantage-mix($advantage){
-                width: 50px;
-                height: 40px;
-              }
-            }
-            .advantage-title {
-              font-size: 16px;
-              font-weight: bold;
-            }
-            .advantage-description {
-              height: 72px;
-              font-size: 16px;
-            }
-          }
-        }
-      }
-    }
+  .section-advantages {
+    justify-content: space-around;
+    width: 1016px;
+    height: 405px;
+  }
+  .article-advantage {
+    height: 173px;
+    width: 254px;
   }
 }
 @include device($tablet) {
-  #fullpage {
-    .section {
-      #advantages {
-        height: 721px;
-        width: 100%;
-        .advantages-header {
-          font-size: 47px;
-          letter-spacing: 7px;
-        }
-        .advantage-header-describe {
-          font-size: 17px;
-          width: 721px;
-        }
-        .section-advantages {
-          justify-content: space-between;
-          width: 759px;
-          height: 405px;
-          .article-advantage{
-            height: 173px;
-            width: 189px;
-            @each $advantage in $advantages {
-              @include advantage-mix($advantage){
-                width: 50px;
-                height: 40px;
-              }
-            }
-            .advantage-title {
-              font-size: 16px;
-              font-weight: bold;
-            }
-            .advantage-description {
-              width: 182px;
-              height: 72px;
-              font-size: 13px;
-            }
-          }
-        }
-      }
+  .section-advantages {
+    justify-content: space-around;
+    width: 759px;
+    height: 405px;
+  }
+  .article-advantage {
+    height: 173px;
+    width: 189px;
+    .advantage-description {
+      width: 182px;
+      height: 72px;
+      font-size: 13px;
     }
   }
 }
 @include device($tabletMobile) {
-  #fullpage {
-    .section {
-      #advantages {
-        height: 1008px;
-        width: 100%;
-        .advantages-header {
-          font-size: 30px;
-          letter-spacing: 5px;
-        }
-        .advantage-header-describe {
-          font-size: 13px;
-          width: 300px;
-        }
-        .section-advantages {
-          justify-content: space-between;
-          width: 310px;
-          height: 692px;
-          .article-advantage{
-            height: 173px;
-            width: 150px;
-            @each $advantage in $advantages {
-              @include advantage-mix($advantage){
-                width: 50px;
-                height: 40px;
-              }
-            }
-            .advantage-title {
-              font-size: 16px;
-              font-weight: bold;
-            }
-            .advantage-description{
-              width: 182px;
-              height: 72px;
-              font-size: 13px;
-            }
-          }
-        }
+  #advantages {
+    height: 1008px;
+    width: 100%;
+  }
+  .advantages-header {
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+  .advantage-header-describe {
+    font-size: 13px;
+    width: 300px;
+  }
+  .section-advantages {
+    justify-content: space-between;
+    width: 310px;
+    height: 692px;
+  }
+  .article-advantage{
+    height: 173px;
+    width: 150px;
+    @each $advantage in $advantages {
+      @include advantage-mix($advantage){
+        width: 50px;
+        height: 40px;
       }
+    }
+    .advantage-title {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .advantage-description{
+      width: 182px;
+      height: 72px;
+      font-size: 13px;
     }
   }
 }
 @include device($iphone6) {
-  #fullpage {
-    .section {
-      #advantages {
-        height: 850px;
-        width: 100%;
-        .advantages-header {
-          font-size: 30px;
-          letter-spacing: 5px;
-        }
-        .advantage-header-describe {
-          font-size: 13px;
-          width: 340px;
-        }
-        .section-advantages {
-          justify-content: space-between;
-          width: 365px;
-          height: 692px;
-          .article-advantage{
-            height: 173px;
-            width: 180px;
-            @each $advantage in $advantages {
-              @include advantage-mix($advantage){
-                width: 50px;
-                height: 40px;
-              }
-            }
-            .advantage-title{
-              font-size: 16px;
-              font-weight: bold;
-            }
-            .advantage-description {
-              width: 182px;
-              height: 72px;
-              font-size: 13px;
-            }
-          }
-        }
+  #advantages {
+    height: 667px;
+    width: 100%;
+  }
+  .advantages-header {
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+  .advantage-header-describe {
+    display: none;
+  }
+  .section-advantages {
+    justify-content: space-between;
+    width: 365px;
+    height: 667px;
+  }
+  .article-advantage {
+    justify-content: space-around;
+    height: 150px;
+    width: 180px;
+    &:hover {
+      .advantage-description {
+        display: block;
+        position: absolute;
+        opacity: 1;
+        margin: 0 auto;
+        transition: linear 2s;
       }
+    }
+    .advantage-title {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .advantage-description {
+      align-self: center;
+      opacity: 0;
+      background-color: #fff;
+      display: none;
+      text-align: center;
+      width: 182px;
+      height: 120px;
+      font-size: 14px;
     }
   }
 }
 @include device($iphone5) {
-  #fullpage {
-    .section {
-      #advantages {
-        height: 568px;
-        width: 100%;
-        justify-content: space-around;
-        .advantages-header {
-          font-size: 30px;
-          letter-spacing: 5px;
-        }
-        .advantage-header-describe {
-          font-size: 13px;
-          width: 300px;
-          display: none;
-        }
-        .section-advantages {
-          justify-content: space-around;
-          width: 310px;
-          height: 400px;
-          .article-advantage {
-            justify-content: space-around;
-            height: 100px;
-            width: 155px;
-            &:hover {
-              .advantage-description {
-                display: block;
-                position: absolute;
-              }
-            }
-            @each $advantage in $advantages {
-              @include advantage-mix($advantage){
-                width: 50px;
-                height: 40px;
-              }
-            }
-            .advantage-title {
-              font-size: 16px;
-              font-weight: bold;
-            }
-            .advantage-description {
-              align-self: center;
-              background-color: #fff;
-              display: none;
-              text-align: center;
-              width: 155px;
-              height: 100px;
-              font-size: 15px;
-            }
-          }
-        }
+  #advantages {
+    height: 568px;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .advantages-header {
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+  .advantage-header-describe {
+    display: none;
+  }
+  .section-advantages {
+    justify-content: space-around;
+    width: 310px;
+    height: 400px;
+  }
+  .article-advantage {
+    justify-content: space-around;
+    height: 100px;
+    width: 155px;
+    &:hover {
+      .advantage-description {
+        display: block;
+        position: absolute;
       }
+    }
+    .advantage-title {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .advantage-description {
+      align-self: center;
+      background-color: #fff;
+      display: none;
+      text-align: center;
+      width: 155px;
+      height: 100px;
+      font-size: 15px;
     }
   }
 }

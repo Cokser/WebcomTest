@@ -12,37 +12,8 @@ main#main
       div.slider-nav
         button( type='button' class='nav-button left-button' id='left-button-click')
         button( type='button' class='nav-button right-button' id='right-button-click')
-      .modal
-        input#modal.modal-trigger(type='checkbox')
-        label.modal-overlay(for='modal')
-        label#feedback-button(for='modal')="оформить заявку".toUpperCase()
-        .modal-container
-          .card
-            .card-header
-              h3.card-title
-                | Оформление заявки
-            .card-body
-              form( action="#" name="add-request", method="post")#review
-                label(for "name")="ваше имя".toUpperCase()
-                input( type="text" name="name" class="inp" placeholder="Иван Иванов" required)
-                label(for "email")="e-mail".toUpperCase()
-                input( type="email" name="email" class="inp" placeholder="example@mysite.com" required)
-                label(for "position")="ваша должность".toUpperCase()
-                input( type="text" name="position" class="inp" placeholder="Должность")
-                label(for "message")="отзыв".toUpperCase()
-                textarea( rows="5" name="msg-box" class="inp" placeholder="ваше сообщение" required)
-                div.fieldset-img-button
-                  input(type="file" name="upload-img" accept="image/*")#file-upload
-                  label( for="file-upload")#custom-file-upload
-                  label( for="file-upload")="фото".toUpperCase()
-                label(for "code")="введите код с картинки".toUpperCase()
-                input( type="text" name="code" class="inp" required)#captcha-code
-                div.fieldset-submit-button
-                  img#captcha
-                  button( type="submit" name="submit" )="отправить".toUpperCase()
-            .card-footer
-              label.item.action(for='modal')
-                | Close
+      button.feedback-button(data-toggle='true') оформить заявку
+
       section#nav-bar
         button.slider-nav-button.bombit-nav-button-click.active-button
         button.slider-nav-button.bombit-nav-button-click

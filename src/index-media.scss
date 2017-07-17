@@ -1,0 +1,221 @@
+$DesktopsLaptop: ( min: 1225px, max: 1399px );
+
+$Laptop: ( min: 1025px, max: 1224px );
+
+$tablet: ( min: 769px, max: 1024px );
+
+$tabletMobile: ( min: 321px, max: 1024px );
+
+$iphone6:  ( min: 375px, max: 736px );
+
+$iphone5: ( min: 320px, max: 568px );
+
+@mixin device($device){
+  @media only screen and (min-width:map-get($device, min)) and (max-width:map-get($device, max)) {
+    @content;
+  }
+}
+@include device($DesktopsLaptop) {
+  .section-title {
+    text-transform: uppercase;
+    display : inline-block;
+    color: #28363d;
+    font-size: 50px;
+    font-weight: normal;
+    letter-spacing: 7px;
+    font-family: "Open Sans";
+    height: 33px;
+  }
+  .fieldset-img-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+    #image-upload {
+      display: none;
+    }
+    & .custom-image-upload {
+      cursor: pointer;
+      display: block;
+      background: url("./blocks/reviews/reviews.images/plus.png") no-repeat center center, #ff8207;
+      width: 48px;
+      height: 60px;
+      border-radius: 9px;
+    }
+  }
+  .captcha-image {
+    width: 137px;
+    height: 41px;
+    background: url("./blocks/reviews/reviews.images/captcha.png") no-repeat;
+  }
+}
+@include device($Laptop) {
+  .section-title {
+    text-transform: uppercase;
+    display : inline-block;
+    color: #28363d;
+    font-size: 50px;
+    font-weight: normal;
+    letter-spacing: 7px;
+    font-family: "Open Sans";
+    height: 33px;
+  }
+  .fieldset-img-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+    #image-upload {
+      display: none;
+    }
+    & .custom-image-upload {
+      cursor: pointer;
+      display: block;
+      background: url("./blocks/reviews/reviews.images/plus.png") no-repeat center center, #ff8207;
+      width: 48px;
+      height: 60px;
+      border-radius: 9px;
+    }
+  }
+  .captcha-image {
+    width: 137px;
+    height: 41px;
+    background: url("./blocks/reviews/reviews.images/captcha.png") no-repeat;
+  }
+}
+@include device($tablet) {
+  .section-title {
+    text-transform: uppercase;
+    display : inline-block;
+    color: #28363d;
+    font-size: 40px;
+    letter-spacing: 13px;
+    font-weight: normal;
+    font-family: "Open Sans";
+    height: 33px;
+  }
+  .fieldset-img-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+    #image-upload {
+      display: none;
+    }
+    & .custom-image-upload {
+      cursor: pointer;
+      display: block;
+      background: url("./blocks/reviews/reviews.images/plus.png") no-repeat center center, #ff8207;
+      width: 48px;
+      height: 60px;
+      border-radius: 9px;
+    }
+  }
+  .captcha-image {
+    width: 137px;
+    height: 41px;
+    background: url("./blocks/reviews/reviews.images/captcha.png") no-repeat;
+  }
+}
+@include device($tabletMobile) {
+  .section-title {
+    text-transform: uppercase;
+    display : inline-block;
+    color: #28363d;
+    font-size: 25px;
+    letter-spacing: 0;
+    font-weight: normal;
+    font-family: "Open Sans";
+    height: 33px;
+  }
+  .fieldset-img-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+    #image-upload {
+      display: none;
+    }
+    & .custom-image-upload {
+      cursor: pointer;
+      display: block;
+      background: url("./blocks/reviews/reviews.images/plus.png") no-repeat center center, #ff8207;
+      width: 48px;
+      height: 60px;
+      border-radius: 9px;
+    }
+  }
+  .captcha-image {
+    width: 137px;
+    height: 41px;
+    background: url("./blocks/reviews/reviews.images/captcha.png") no-repeat;
+  }
+}
+@include device($iphone6) {
+  .section-title {
+    text-transform: uppercase;
+    display : inline-block;
+    color: #28363d;
+    font-size: 25px;
+    letter-spacing: 0;
+    font-weight: normal;
+    font-family: "Open Sans";
+    height: 33px;
+  }
+  .fieldset-img-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+    #image-upload {
+      display: none;
+    }
+    & .custom-image-upload {
+      cursor: pointer;
+      display: block;
+      background: url("./blocks/reviews/reviews.images/plus.png") no-repeat center center, #ff8207;
+      width: 48px;
+      height: 60px;
+      border-radius: 9px;
+    }
+  }
+  .captcha-image {
+    width: 137px;
+    height: 41px;
+    background: url("./blocks/reviews/reviews.images/captcha.png") no-repeat;
+  }
+}
+@include device($iphone5) {
+  .section-title {
+    text-transform: uppercase;
+    display : inline-block;
+    color: #28363d;
+    font-size: 25px;
+    letter-spacing: 0;
+    font-weight: normal;
+    font-family: "Open Sans";
+    height: 33px;
+  }
+  .fieldset-img-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+    #image-upload {
+      display: none;
+    }
+    & .custom-image-upload {
+      cursor: pointer;
+      display: block;
+      background: url("./blocks/reviews/reviews.images/plus.png") no-repeat center center, #ff8207;
+      width: 48px;
+      height: 60px;
+      border-radius: 9px;
+    }
+  }
+  .captcha-image {
+    width: 137px;
+    height: 41px;
+    background: url("./blocks/reviews/reviews.images/captcha.png") no-repeat;
+  }
+}

@@ -17,313 +17,251 @@ $iphone5: ( min: 320px, max: 568px );
   }
 }
 @include device($DesktopsLaptop) {
-  #fullpage {
-    .section {
-      #portfolio {
-        .portfolio-article {
-          .portfolio-caption {
-            height: 33px;
-            font-size: 50px;
-            letter-spacing: 7px;
-          }
-          .portfolio-descriptions {
-            width: 780px;
-            font-size: 16px;
-          }
+  .portfolio-caption {
+    height: 33px;
+    font-size: 50px;
+    letter-spacing: 7px;
+  }
+  .portfolio-descriptions {
+    width: 780px;
+    font-size: 16px;
+  }
+  .products {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    height: 640px;
+    width: 1215px;
+  }
+  .product {
+    height: 320px;
+    width: 405px;
+    background-size: 60px 46px, cover;
+    .invise-block {
+      display: none;
+      width: 100%;
+      .product-card {
+        width: 100%;
+        height: 100px;
+        .product-title {
+          font-size: 18px;
         }
-        .products {
-          display: flex;
-          align-items: center;
-          align-content: space-between;
-          justify-content: space-between;
-          flex-flow: row wrap;
-          height: 640px;
-          width: 1215px;
-          .product {
-            height: 320px;
-            width: 405px;
-            background-size: 60px 46px, cover;
-            .invise-block {
-              display: none;
-              width: 100%;
-              .product-card {
-                width: 100%;
-                height: 100px;
-                .product-title {
-                  font-size: 18px;
-                }
-                .product-descriptions {
-                  font-size: 16px;
-                }
-              }
-            }
-          }
-          .product:hover {
-            .invise-block {
-              width: 405px;
-              display: block;
-            }
-
-          }
+        .product-descriptions {
+          font-size: 16px;
         }
       }
+    }
+    &:hover .invise-block {
+      display: block;
     }
   }
 }
 @include device($Laptop) {
-  #fullpage {
-    .section {
-      #portfolio {
-        width: 100%;
-        .portfolio-article {
-          height: 700px;
-          .portfolio-caption {
-            height: 33px;
-            font-size: 50px;
-            letter-spacing: 7px;
-          }
-          .portfolio-descriptions {
-            width: 780px;
-            font-size: 16px;
-          }
-        }
-        .products {
-          height: 500px;
-          width: 1014px;
-          .product {
-            height: 250px;
-            width: 338px;
-            background-size: 60px 46px, cover;
-            .invise-block {
-              display: none;
-              width: 338px;
-              .product-card {
-                width: 338px;
-                height: 90px;
-                .product-title {
-                  font-size: 18px;
-                }
-                .product-descriptions {
-                  font-size: 16px;
-                }
-              }
-            }
-          }
-          .product:hover {
-            .invise-block {
-              width: 338px;
-              display: block;
-            }
-          }
-        }
+  .portfolio-article {
+    height: 700px;
+  }
+  .products {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    height: 500px;
+    width: 1014px;
+  }
+  .product {
+    height: 250px;
+    width: 338px;
+    background-size: 60px 46px, cover;
+    .invise-block {
+      display: none;
+      width: 338px;
+      .product-card {
+        width: 338px;
+        height: 90px;
       }
+    }
+  }
+  .product:hover {
+    .invise-block {
+      display: block;
     }
   }
 }
 @include device($tablet) {
-  #fullpage {
-    .section {
-      #portfolio {
-        width: 100%;
-        .portfolio-article {
-          height: 700px;
-          .portfolio-caption {
-            height: 33px;
-            font-size: 50px;
-            letter-spacing: 7px;
-          }
-          .portfolio-descriptions {
-            width: 700px;
-            font-size: 16px;
-          }
-        }
-        .products {
-          width: 768px;
-          height: 400px;
-
-          .product {
-            height: 200px;
-            width: 256px;
-            background-size: 60px 46px, cover;
-            .invise-block {
-              display: none;
-              width: 256px;
-              .product-card {
-                width: 256px;
-                height: 60px;
-                .product-title {
-                  font-size: 17px;
-                }
-                .product-descriptions {
-                  font-size: 16px;
-                }
-              }
-            }
-          }
-          .product:hover {
-            .invise-block {
-              width: 256px;
-              display: block;
-            }
-          }
-        }
-      }
+  .portfolio-article {
+    height: 700px;
+  }
+  .products {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 768px;
+    height: 400px;
+  }
+  .product {
+    height: 200px;
+    width: 256px;
+    background-size: 60px 46px, cover;
+    .invise-block {
+      display: none;
+      width: 256px;
+    }
+  }
+  .product-card {
+    width: 256px;
+    height: 60px;
+    .product-title {
+      font-size: 17px;
+    }
+    .product-descriptions {
+      font-size: 16px;
+    }
+  }
+  .product:hover {
+    .invise-block {
+      display: block;
     }
   }
 }
 @include device($tabletMobile) {
-    #fullpage {
-      .section {
-        #portfolio {
-          width: 100%;
-          .portfolio-article {
-            height: 700px;
-            .portfolio-caption {
-              height: 33px;
-              font-size: 30px;
-              letter-spacing: 4px;
-            }
-            .portfolio-descriptions {
-              width: 300px;
-              font-size: 15px;
-            }
-          }
-          .products {
-            width: 310px;
-            height: 450px;
-
-            .product {
-              height: 150px;
-              width: 155px;
-              background-size: 60px 46px, cover;
-              .invise-block {
-                display: none;
-                width: 155px;
-                .product-card {
-                  width: 155px;
-                  height: 60px;
-                  .product-title {
-                    font-size: 13px;
-                  }
-                  .product-descriptions {
-                    font-size: 10px;
-                  }
-                }
-              }
-            }
-            .product:hover {
-              .invise-block {
-                width: 155px;
-                display: block;
-              }
-            }
-          }
-        }
-      }
+  #portfolio {
+    width: 100%;
+  }
+  .portfolio-article {
+    height: 700px;
+  }
+  .portfolio-caption {
+    height: 33px;
+    font-size: 30px;
+    letter-spacing: 4px;
+  }
+  .portfolio-descriptions {
+    width: 300px;
+    font-size: 15px;
+  }
+  .products {
+    width: 310px;
+    height: 450px;
+  }
+  .product {
+    height: 150px;
+    width: 155px;
+    background-size: 60px 46px, cover;
+    .invise-block {
+      display: none;
+      width: 155px;
+      height: 50px;
     }
   }
+  .product-card {
+    width: 155px;
+    height: 50px;
+    .product-title {
+      font-size: 13px;
+    }
+    .product-descriptions {
+      font-size: 10px;
+    }
+  }
+  .product:hover {
+    .invise-block {
+      width: 155px;
+      display: block;
+    }
+  }
+}
 @include device($iphone6) {
-  #fullpage {
-    .section {
-      #portfolio {
-        width: 100%;
-        .portfolio-article {
-          height: 700px;
-          .portfolio-caption {
-            height: 33px;
-            font-size: 30px;
-            letter-spacing: 4px;
-          }
-          .portfolio-descriptions {
-            width: 350px;
-            font-size: 15px;
-          }
-        }
-        .products {
-          width: 364px;
-          height: 450px;
-
-          .product {
-            height: 150px;
-            width: 182px;
-            background-size: 60px 46px, cover;
-            .invise-block {
-              display: none;
-              width: 182px;
-              .product-card {
-                width: 182px;
-                height: 50px;
-                .product-title {
-                  font-size: 13px;
-                  font-weight: normal;
-                }
-                .product-descriptions {
-                  font-size: 10px;
-                }
-              }
-            }
-          }
-          .product:hover {
-            .invise-block {
-              width: 182px;
-              display: block;
-            }
-          }
-        }
-      }
+  .portfolio-article {
+    height: 667px;
+    .portfolio-caption {
+      height: 33px;
+      font-size: 30px;
+      letter-spacing: 4px;
+    }
+    .portfolio-descriptions {
+      width: 350px;
+      font-size: 15px;
+    }
+  }
+  .products {
+    width: 364px;
+    height: 450px;
+  }
+  .product {
+    height: 150px;
+    width: 182px;
+    background-size: 60px 46px, cover;
+    .invise-block {
+      display: none;
+      width: 182px;
+    }
+  }
+  .product-card {
+    width: 182px;
+    height: 50px;
+    .product-title {
+      font-size: 13px;
+      font-weight: normal;
+    }
+    .product-descriptions {
+      font-size: 10px;
+    }
+  }
+  .product:hover {
+    .invise-block {
+      width: 182px;
+      display: block;
     }
   }
 }
 @include device($iphone5) {
-  #fullpage {
-    .section {
-      #portfolio {
-        width: 100%;
-        .portfolio-article {
-          width: 100%;
-          height: 568px;
-          .portfolio-caption {
-            height: 33px;
-            font-size: 30px;
-            letter-spacing: 4px;
-          }
-          .portfolio-descriptions {
-            width: 300px;
-            font-size: 15px;
-            display: none;
-          }
-        }
-        .products {
-          width: 320px;
-          height: 450px;
-          .product {
-            height: 150px;
-            width: 160px;
-            background-size: 60px 46px, cover;
-            .invise-block {
-              display: none;
-              width: 160px;
-              .product-card {
-                width: 160px;
-                height: 50px;
-                .product-title {
-                  font-size: 13px;
-                  font-weight: normal;
-                }
-                .product-descriptions {
-                  font-size: 10px;
-                }
-              }
-            }
-          }
-          .product:hover {
-            .invise-block {
-              width: 160px;
-              display: block;
-            }
-          }
-        }
-      }
+  .portfolio-article {
+    width: 100%;
+    height: 568px;
+  }
+  .portfolio-caption {
+    height: 33px;
+    font-size: 30px;
+    letter-spacing: 4px;
+  }
+  .portfolio-descriptions {
+    width: 300px;
+    font-size: 15px;
+    display: none;
+  }
+  .products {
+    width: 320px;
+    height: 450px;
+  }
+  .product {
+    height: 150px;
+    width: 160px;
+    background-size: 60px 46px, cover;
+    .invise-block {
+      display: none;
+      width: 160px;
+    }
+  }
+  .product-card {
+    width: 160px;
+    height: 50px;
+    .product-title {
+      font-size: 13px;
+      font-weight: normal;
+    }
+    .product-descriptions {
+      font-size: 10px;
+    }
+  }
+  .product:hover {
+    .invise-block {
+      width: 160px;
+      display: block;
     }
   }
 }

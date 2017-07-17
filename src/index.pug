@@ -18,4 +18,26 @@ html
         include blocks/reviews/reviews.pug
       div.section.fp-auto-height
         include blocks/footer/footer.pug
+    .modal(data-toggle='true', role='dialog', aria-labelledby='modalTitle', aria-describedby='modalDescription')
+      .modal-window
+        button.modal-close(data-toggle='true') Close
+        form( action="#" name="add-request", method="post").review-form
+          label(for "name").form-item="ваше имя"
+          input( type="text" name="name" class="inp" placeholder="Иван Иванов" required)
+          label(for "email").form-item="e-mail"
+          input( type="email" name="email" class="inp" placeholder="example@mysite.com" required)
+          label(for "position").form-item="ваша должность"
+          input( type="text" name="position" class="inp" placeholder="Должность")
+          label(for "message").form-item="отзыв"
+          textarea( rows="5" name="msg-box" class="inp" placeholder="ваше сообщение" required)
+          div.fieldset-img-button
+            input(type="file" name="upload-img" accept="image/*")#image-upload
+            label( for="image-upload").custom-image-upload
+            label( for="image-upload").form-item="фото"
+          label(for "code").form-item="введите код с картинки"
+          input( type="text" name="code" class="inp" required).captcha-code
+          div.fieldset-submit-button
+            img.captcha-image
+            button( type="submit" name="submit" ).form-item.submit-button="отправить"
+
 

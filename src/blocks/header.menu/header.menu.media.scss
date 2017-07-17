@@ -1,6 +1,4 @@
-
 $DesktopsLaptop: ( min: 1225px, max: 1399px );
-
 
 $Laptop: ( min: 1025px, max: 1224px );
 
@@ -13,7 +11,7 @@ $iphone6:  ( min: 375px, max: 736px );
 
 $iphone5: ( min: 320px, max: 568px );
 
-div#header {
+#header {
   display: flex;
   justify-content: center;
   background-color: #28363d;
@@ -25,116 +23,92 @@ div#header {
   }
 }
 @include device($DesktopsLaptop) {
-  #fullpage{
-    .section#header{
-      #header-menu {
-        width: 1224px;
-        height: 110px;
-        .logo{
-          width: 229px;
-        }
-        .nav-menu {
-          width: 800px;
-          height: 120px;
-          .item {
-            .item-link {
-              font-size: 15px;
-              font-weight: bold;
-            }
-          }
-          .fake-item{
-            @extend .item
-          }
-        }
-        .phones {
-          width: 229px;
-          .phone-link {
-            font-size: 18px;
-            font-weight: bold;
-          }
-        }
-      }
+  #header-menu {
+    width: 1224px;
+    height: 110px;
+  }
+  .logo{
+    width: 229px;
+  }
+  .nav-menu {
+    width: 800px;
+    height: 120px;
+  }
+  .item {
+    .item-link {
+      font-size: 15px;
+      font-weight: bold;
     }
+  }
+  .fake-item {
+    @extend .item
+  }
+  .phones {
+    width: 229px;
+  }
+  .phone-link {
+    font-size: 18px;
+    font-weight: bold;
   }
 }
 @include device($Laptop) {
-  #fullpage{
-    .section#header{
-      #header-menu {
-        width: 1024px;
-        height: 100px;
-        .logo{
-          width: 160px;
-        }
-        .nav-menu {
-          width: 714px;
-          height: 100px;
-          .item {
-            .item-link {
-              font-size: 14px;
-              font-weight: bold;
-              width: 144px;
-              height: 100px;
-            }
-          }
-          .fake-item{
-            @extend .item
-          }
-        }
-        .phones {
-          display: none;
-          width: 150px;
-
-          .phone-link {
-            font-size: 17px;
-            font-weight: bold;
-          }
-        }
-      }
+  #header-menu {
+    width: 1024px;
+    height: 100px;
+  }
+  .logo{
+    width: 160px;
+  }
+  .nav-menu {
+    width: 714px;
+    height: 100px;
+  }
+  .item {
+    .item-link {
+      font-size: 14px;
+      font-weight: bold;
+      width: 144px;
+      height: 100px;
     }
+  }
+  .fake-item {
+    @extend .item
+  }
+  .phones {
+    display: none;
   }
 }
 @include device($tablet) {
-  #fullpage{
-    .section#header{
-      width: 100%;
-      #header-menu {
-        width: 768px;
-        height: 60px;
-        flex-direction: row;
-        .logo{
-          width: 160px;
-        }
-        .hamburger {
-          display: block;
-        }
-        .nav-menu {
-          display: none;
-          width: 608px;
-          height: 60px;
-          flex-wrap: wrap;
-          .item {
-            .item-link {
-              font-size: 14px;
-              font-weight: bold;
-              width: 144px;
-              height: 80px;
-            }
-          }
-          .fake-item{
-            @extend .item
-          }
-        }
-        .phones {
-          display: none;
-          width: 150px;
-          .phone-link {
-            font-size: 17px;
-            font-weight: bold;
-          }
-        }
-      }
+  .section#header {
+    width: 100%;
+  }
+  #header-menu {
+    width: 768px;
+    height: 60px;
+    flex-direction: row;
+  }
+  .nav-menu {
+    display: none;
+    width: 608px;
+    height: 60px;
+    flex-wrap: wrap;
+  }
+  .hamburger {
+    display: block;
+  }
+  .item {
+    .item-link {
+      font-size: 14px;
+      font-weight: bold;
+      width: 144px;
+      height: 100px;
     }
+  }
+  .fake-item {
+    @extend .item
+  }
+  .phones {
+    display: none;
   }
 }
 @include device($tabletMobile) {
@@ -145,46 +119,30 @@ div#header {
       opacity: 1;
     }
   }
-  #fullpage{
-    .section#header{
-      width: 100%;
-      #header-menu {
-        width: 320px;
-        height: 60px;
-        flex-direction: row;
-        .logo{
-          width: 160px;
-        }
-        .hamburger {
-          display: block;
-        }
-        .nav-menu {
-          display: none;
-          width: 608px;
-          height: 60px;
-          flex-wrap: wrap;
-          .item {
-            .item-link {
-              font-size: 14px;
-              font-weight: bold;
-              width: 144px;
-              height: 80px;
-            }
-          }
-          .fake-item{
-            @extend .item
-          }
-        }
-        .phones {
-          display: none;
-          width: 150px;
-          .phone-link {
-            font-size: 17px;
-            font-weight: bold;
-          }
-        }
-      }
+  #header-menu {
+    width: 320px;
+    height: 60px;
+    flex-direction: row;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .item {
+    .item-link {
+      font-size: 14px;
+      font-weight: bold;
+      width: 144px;
+      height: 100px;
     }
+  }
+  .fake-item {
+    @extend .item
+  }
+  .phones {
+    display: none;
   }
 }
 @include device($iphone6) {
@@ -195,46 +153,30 @@ div#header {
       opacity: 1;
     }
   }
-  #fullpage{
-    .section#header{
-      width: 100%;
-      #header-menu {
-        width: 320px;
-        height: 60px;
-        flex-direction: row;
-        .logo{
-          width: 160px;
-        }
-        .hamburger {
-          display: block;
-        }
-        .nav-menu {
-          display: none;
-          width: 608px;
-          height: 60px;
-          flex-wrap: wrap;
-          .item {
-            .item-link {
-              font-size: 14px;
-              font-weight: bold;
-              width: 144px;
-              height: 80px;
-            }
-          }
-          .fake-item{
-            @extend .item
-          }
-        }
-        .phones {
-          display: none;
-          width: 150px;
-          .phone-link {
-            font-size: 17px;
-            font-weight: bold;
-          }
-        }
-      }
+  #header-menu {
+    width: 320px;
+    height: 60px;
+    flex-direction: row;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .item {
+    .item-link {
+      font-size: 14px;
+      font-weight: bold;
+      width: 144px;
+      height: 100px;
     }
+  }
+  .fake-item {
+    @extend .item
+  }
+  .phones {
+    display: none;
   }
 }
 @include device($iphone5) {
@@ -245,41 +187,23 @@ div#header {
       opacity: 1;
     }
   }
-  #fullpage{
-    .section#header{
-      #header-menu {
-        width: 320px;
-        height: 60px;
-        flex-direction: row;
-        .logo{
-          width: 160px;
-        }
-        .hamburger {
-          display: block;
-        }
-        .nav-menu {
-          display: none;
-          width: 608px;
-          height: 60px;
-          flex-wrap: wrap;
-          .item {
-            .item-link {
-              font-size: 14px;
-              font-weight: bold;
-              width: 144px;
-              height: 80px;
-            }
-          }
-        }
-        .phones {
-          display: none;
-          width: 150px;
-          .phone-link {
-            font-size: 17px;
-            font-weight: bold;
-          }
-        }
-      }
+  .nav-menu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .fake-item {
+    @extend .item
+  }
+  .phones {
+    display: none;
+  }
+  #fp-nav {
+    top: 80%;
+    opacity: 0.6;
+    &:hover {
+      opacity: 1;
     }
   }
 }

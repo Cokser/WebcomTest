@@ -3,14 +3,16 @@ ul, li,small, div, section, a, p, h1, h2, h3, h4, input, button, label, fieldset
   margin: 0;
   padding: 0;
 }
-
-div.section {
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+}
+.section {
   background-color: #28363d;
   width: 100%;
   padding: 0;
   margin: 0;
 }
-div.separator {
+.separator {
   display: block;
   height: 6px;
   width: 31px;
@@ -19,4 +21,103 @@ div.separator {
 .fp-tableCell, .wrap,.section, .active, .fp-section, .fp-table, fp-completely {
   height: auto !important;
   margin-top: 0 !important;
+}
+
+.section-title {
+  text-transform: uppercase;
+  display : inline-block;
+  color: #28363d;
+  font-size: 50px;
+  font-weight: normal;
+  letter-spacing: 7px;
+  font-family: "Open Sans";
+  height: 33px;
+}
+
+/*---------------Modal Window-------------*/
+
+$animation-duration: .2s;
+
+.cover {
+  position: absolute;
+  visibility: hidden;
+  z-index: 30;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, .3);
+  transition: visibility 0s linear $animation-duration, opacity $animation-duration ease-out;
+}
+.modal {
+  display: flex;
+  position: fixed;
+  overflow: auto;
+  visibility: hidden;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  padding: 40px;
+  z-index: 40;
+  transform: scale(.9) translate3d(0, -50px, 0); // translate3D triggers hardware acceleration -> smooth animation
+  transition: visibility 0s linear $animation-duration, opacity $animation-duration ease-out, transform $animation-duration ease-out;
+}
+.modal[data-state='open'] {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1) translate3d(0, 0, 0);
+  transition-delay: 0s;
+
+  & ~ .cover {
+    opacity: 1;
+    transition-delay: 0s;
+    visibility: visible;
+  }
+}
+.modal-window {
+  position: relative;
+  background-color: #fff;
+  overflow: auto;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 3px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
+}
+.modal-close {
+  position: absolute;
+  outline: none;
+  cursor: pointer;
+  transform: rotate(45deg);
+  border: 0;
+  right: 1rem;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-indent: -9999px;
+  background: url('./images/close-btn.png') no-repeat center center;
+}
+.fieldset-img-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 130px;
+  #image-upload {
+    display: none;
+  }
+  & .custom-image-upload {
+    cursor: pointer;
+    display: block;
+    background: url("./blocks/reviews/reviews.images/plus.png") no-repeat center center, #ff8207;
+    width: 48px;
+    height: 60px;
+    border-radius: 9px;
+  }
+}
+.captcha-image {
+  width: 137px;
+  height: 41px;
+  background: url("./blocks/reviews/reviews.images/captcha.png") no-repeat;
 }

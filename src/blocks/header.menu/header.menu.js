@@ -8,11 +8,10 @@ $(document).ready(function() {
   $('#fullpage').fullpage({
     menu: '#menu',
     anchors:['first-page', 'second-page','third-page', 'fourth-page','fifth-page','sixth-page'],
-    navigationBar: true,
-    nacBar: true,
+    fitToSection: false,
     autoScrolling: false,
     navigation: true,
-    showActiveTooltip: false,
+    showActiveTooltip: true,
     navigationTooltips: ['first-page', 'second-page','third-page', 'fourth-page','fifth-page','sixth-page']
   });
 });

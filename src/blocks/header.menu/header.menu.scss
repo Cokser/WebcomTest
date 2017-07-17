@@ -5,67 +5,65 @@ $height: 120px;
   justify-content: center;
   background-color: #28363d;
   transition: all 0.2s ease-in-out;
-  #header-menu {
-    width: 1398px;
-    height: 120px;;
-    display: flex;
+}
+#header-menu {
+  width: 1398px;
+  height: 120px;;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  background: url("../../images/logo.png") no-repeat;
+  width: 229px;
+  height: 40px;
+}
+.nav-menu {
+  width: 940px;
+  height: 120px;
+}
+.menu-items {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  justify-content: space-between;
+}
+.item {
+  .item-link {
     align-items: center;
-    .logo {
-      background: url("../../images/logo.png") no-repeat;
-      width: 229px;
-      height: 40px;
-    }
-
-    .nav-menu {
-      width: 940px;
-      height: 120px;
-      .menu-items {
-        display: flex;
-        flex-wrap: nowrap;
-        list-style: none;
-        justify-content: space-between;
-
-        .item {
-          .item-link {
-            align-items: center;
-            justify-content: space-around;
-            height: 120px;
-            display: flex;
-            width: 140px;
-            text-decoration: none;
-            color: #fff;
-            font-size: 16px;
-            font-family: "Open Sans";
-            font-weight: bold;
-            border-bottom: 4px solid transparent;
-            box-sizing: border-box;
-            &:hover {
-              border-bottom: 4px solid #ff8207;
-              box-sizing: border-box;
-            }
-          }
-        }
-        .fake-item{
-          @extend .item
-        }
-      }
-    }
-    .phones {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      width: 229px;
-      height: 120px;
-      .phone-link {
-        text-decoration: none;
-        font-family: "Open Sans";
-        font-size: 25px;
-        font-weight: bold;
-        color: #ff8207;
-      }
+    justify-content: space-around;
+    height: 120px;
+    display: flex;
+    width: 140px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    border-bottom: 4px solid transparent;
+    box-sizing: border-box;
+    &:hover {
+      border-bottom: 4px solid #ff8207;
+      box-sizing: border-box;
     }
   }
+}
+.fake-item {
+  @extend .item
+}
+.phones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 229px;
+  height: 120px;
+}
+.phone-link {
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-size: 25px;
+  font-weight: bold;
+  color: #ff8207;
 }
 
 /*----HAMBURGER SIDE----*/
