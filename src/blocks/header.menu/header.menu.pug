@@ -4,17 +4,17 @@ header#header-menu
   nav.nav-menu
     ul.menu-items
       li(data-menuanchor="second-page").item
-        a(href="#" + "second-page").item-link="главная".toUpperCase()
+        a(href="#" + "second-page").item-link="главная"
       li(data-menuanchor="third-page").item
-        a(href="#" + "third-page").item-link="портфолио".toUpperCase()
+        a(href="#" + "third-page").item-link="портфолио"
       li(data-menuanchor="fourth-page").item
-        a(href="#" + "fourth-page").item-link="преимущества".toUpperCase()
+        a(href="#" + "fourth-page").item-link="преимущества"
       li.fake-item
-        a(href="#").item-link="схема работы".toUpperCase()
+        a(href="#").item-link="схема работы"
       li(data-menuanchor="fifth-page").item
-        a(href="#" + "fifth-page").item-link="отзывы".toUpperCase()
+        a(href="#" + "fifth-page").item-link="отзывы"
       li(data-menuanchor="sixth-page").item
-        a(href="#" + "sixth-page").item-link="контакты".toUpperCase()
+        a(href="#" + "sixth-page").item-link="контакты"
   div.phones
     a(href="href").phone-link="+375(29)123-45-67"
     a(href="href").phone-link="+375(29)123-45-67"
@@ -27,7 +27,7 @@ header#header-menu
         ul.main-links
           for menuItem, i in menuItems
             li(data-menuanchor=menuItem[1]).delay
-              a(href="#" + menuItem[1])= menuItem[0].toUpperCase()
+              a(href="#" + menuItem[1])= menuItem[0]
         .secondary-links
           .row
             a(href="#") instagram
