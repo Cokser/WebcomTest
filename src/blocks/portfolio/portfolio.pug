@@ -1,0 +1,15 @@
+div#portfolio
+  article.portfolio-article
+    h2.section-title= "наша работа".toUpperCase()
+    p.portfolio-descriptions="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut."
+    div.separator
+    mixin product(item)
+      div.product
+        div.invise-block
+          article.product-card
+            h3.product-title="product " + item
+            div.separator
+            p.product-descriptions="work"
+    div.products
+      - for( var i = 1; i < 7; i++ )
+        +product( i )

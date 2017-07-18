@@ -1,0 +1,132 @@
+#main {
+  overflow: hidden;
+}
+.slider-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  border-bottom: 4px solid #ff8207;
+}
+.main-content {
+  z-index: 5;
+  width: 1216px;
+  height: 962px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-title {
+  font-family: "Open Sans";
+  font-size: 48px;
+  letter-spacing: 16px;
+}
+.delimiter {
+  height: 16px;
+  width: 826px;
+  background: url("./main.images/delemiter.png") no-repeat;
+}
+.main-description {
+  text-align: center;
+  width: 683px;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: normal;
+}
+.slider-nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  width: 1216px;
+  align-items: center;
+  align-content: center;
+  .nav-button {
+    border: none;
+    outline: none;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+  }
+  .left-button {
+    background: url("./main.images/slider-nav.png") no-repeat;
+    transform: rotate(180deg);
+    background-size: 80px 80px;
+  }
+  .right-button {
+    background: url("./main.images/slider-nav.png") no-repeat;
+    background-size: 80px 80px;
+  }
+}
+#nav-bar {
+  height: 18px;
+  width: 138px;
+  display: flex;
+  justify-content: space-between;
+  .slider-nav-button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    opacity: 0.6;
+    border-radius: 7px;
+    background: black;
+  }
+  .active-button {
+    background-color: #f29700;
+    border-color: #f29700;
+  }
+}
+#scroll-below {
+  width: 54px;
+  height: 54px;
+  background: url("main.images/pgdn.png") no-repeat center center, rgba(40, 54, 61, 0.6);
+  opacity: 0.6;
+  border-radius: 27px;
+}
+
+/*--------------modal button----------*/
+
+.feedback-button {
+  width: 400px;
+  height: 80px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff8207;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 32px;
+  font-family: "Open Sans";
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: opacity .2s ease-out;
+  z-index: 10;
+  outline: none;
+  border: none;
+
+}
+
+/*--------------SLIDER-------------*/
+
+#main {
+  position: relative;
+}
+.bombit-slide {
+  position: absolute;
+  overflow: hidden;
+  z-index: 4;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.active-slide {
+  display: block;
+  z-index: 5;
+  opacity: 1;
+  transition: ease-out 2s;
+}

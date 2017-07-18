@@ -1,0 +1,78 @@
+#portfolio {
+  background: url(portfolio.images/effect.jpg) -6px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.portfolio-article {
+  display: flex;
+  height: 977px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  .portfolio-descriptions {
+    text-align: center;
+    width: 780px;
+    color: #8198a0;
+    font-family: "Open Sans";
+    font-size: 16px;
+  }
+}
+.products {
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  height: 654px;
+  width: 1420px;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 320px;
+  width: 460px;
+  background: url(portfolio.images/photo134.png) center no-repeat, #28363d;
+  background-size: 60px 46px, cover;
+  .invise-block {
+    display: none;
+    width: 100%;
+  }
+  &:hover .invise-block {
+    display: block;
+  }
+}
+
+.product-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  animation-name: cardFadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  .product-title {
+    font-family: "Open Sans";
+    font-size: 18px;
+  }
+  .product-descriptions {
+    font-family: "Open Sans";
+    font-size: 16px;
+  }
+}
+
+@keyframes cardFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: .8;
+  }
+}

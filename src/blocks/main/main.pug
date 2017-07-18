@@ -1,0 +1,22 @@
+main#main
+  section.slider-wrapper
+    div#bomit-slider
+      img(src=require('./main.images/bg-1.jpg')).bombit-slide.active-slide
+      img(src=require('./main.images/bg-2.jpg')).bombit-slide
+      img(src=require('./main.images/bg-3.jpg')).bombit-slide
+      img(src=require('./main.images/bg-4.jpg')).bombit-slide
+    article.main-content
+      h1.main-title="Главный Заголовок"
+      div.delimiter
+      h3.main-description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua"
+      div.slider-nav
+        button( type='button' class='nav-button left-button' id='left-button-click')
+        button( type='button' class='nav-button right-button' id='right-button-click')
+      button.feedback-button(data-toggle='true') оформить заявку
+
+      section#nav-bar
+        button.slider-nav-button.bombit-nav-button-click.active-button
+        button.slider-nav-button.bombit-nav-button-click
+        button.slider-nav-button.bombit-nav-button-click
+        button.slider-nav-button.bombit-nav-button-click
+      a#scroll-below(href="#portfolio")
