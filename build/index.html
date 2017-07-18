@@ -258,15 +258,18 @@
     </div>
     <div class="modal" data-toggle="true" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
       <div class="modal-window">
-        <button class="modal-close" data-toggle="true">Close</button>
-        <form class="review-form" action="#" name="add-request" method="post">
+        <div class="modal-header">
+          <h3 class="modal-title">оформление заявки</h3>
+          <button class="modal-close" data-toggle="true">Close</button>
+        </div>
+        <form class="request-form" action="#" name="add-request" method="post">
           <label class="form-item" for name>ваше имя</label>
           <input class="inp" type="text" name="name" placeholder="Иван Иванов" required>
           <label class="form-item" for email>e-mail</label>
           <input class="inp" type="email" name="email" placeholder="example@mysite.com" required>
           <label class="form-item" for position>ваша должность</label>
           <input class="inp" type="text" name="position" placeholder="Должность">
-          <label class="form-item" for message>отзыв</label>
+          <label class="form-item" for message>ваше заявление</label>
           <textarea class="inp" rows="5" name="msg-box" placeholder="ваше сообщение" required></textarea>
           <div class="fieldset-img-button">
             <input type="file" name="upload-img" accept="image/*" id="image-upload">
@@ -279,6 +282,9 @@
             <button class="form-item submit-button" type="submit" name="submit">отправить</button>
           </div>
         </form>
+        <div class="modal-success">
+          <h3 class="success-title">Ваша заявка принята</h3>
+        </div>
       </div>
     </div>
   <script type="text/javascript" src="js/common.js"></script><script type="text/javascript" src="js/index.js"></script></body>

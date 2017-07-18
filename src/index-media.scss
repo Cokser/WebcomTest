@@ -16,6 +16,13 @@ $iphone5: ( min: 320px, max: 568px );
   }
 }
 @include device($DesktopsLaptop) {
+  .request-form {
+    width: 540px;
+    height: 607px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
   .section-title {
     text-transform: uppercase;
     display : inline-block;
@@ -84,6 +91,13 @@ $iphone5: ( min: 320px, max: 568px );
   }
 }
 @include device($tablet) {
+  .request-form {
+    width: 439px;
+    height: 607px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
   .section-title {
     text-transform: uppercase;
     display : inline-block;
@@ -118,6 +132,13 @@ $iphone5: ( min: 320px, max: 568px );
   }
 }
 @include device($tabletMobile) {
+  .request-form {
+    width: 310px;
+    height: 607px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
   .section-title {
     text-transform: uppercase;
     display : inline-block;
@@ -152,6 +173,13 @@ $iphone5: ( min: 320px, max: 568px );
   }
 }
 @include device($iphone6) {
+  .request-form {
+    width: 350px;
+    height: 380px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
   .section-title {
     text-transform: uppercase;
     display : inline-block;
@@ -186,6 +214,13 @@ $iphone5: ( min: 320px, max: 568px );
   }
 }
 @include device($iphone5) {
+  .request-form {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
   .section-title {
     text-transform: uppercase;
     display : inline-block;

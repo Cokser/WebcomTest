@@ -16,7 +16,6 @@ $iphone5: ( min: 320px, max: 568px );
     @content;
   }
 }
-
 @include device($DesktopsLaptop) {
   .separator {
     display: block;

@@ -40,11 +40,11 @@ const common = merge([
         $: 'jquery',
         jQuery: 'jquery'
       }),
-      // new tinyPngWebpackPlugin({
-      //   key:"S8Y3nrAwzSsgodns26HHFAFtJJnjJeFb",
-      //   relativePath:"./images/",
-      //   ext: ['png', 'jpg']
-      // })
+      new tinyPngWebpackPlugin({
+        key:"S8Y3nrAwzSsgodns26HHFAFtJJnjJeFb",
+        relativePath:"./images/",
+        ext: ['png', 'jpg']
+      })
     ]
   },
   pug(),
