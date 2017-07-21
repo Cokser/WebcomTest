@@ -1,7 +1,7 @@
-# WebcomTest
+# WorkTest
 ### Installation
 ```sh
-$ cd WebcomTest
+$ cd WorkTest
 $ npm install -d
 ```
 ### Development
