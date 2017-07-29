@@ -15,7 +15,6 @@
     setNavigationEvents( bombitSlider );
     startSliderTimer( bombitSlider );
     bombitSlider.getCurrentValues();
-
   }
   function getCurrentButton( clickedButton , bombitSlider ) {
     for( var i = 0; i < bombitSlider.buttons.length; i++ ) {

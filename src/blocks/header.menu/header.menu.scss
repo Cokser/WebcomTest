@@ -224,41 +224,32 @@ $height: 120px;
 }
 
 
-/*------------------Navigation Bar by FullPage.js--------------*/
-#fp-nav {
+/*------------------My Navigation Bar--------------*/
+#left-nav-bar {
   height: 185px;
   top: 50%;
   right: 15px;
   position: fixed;
   z-index: 100;
-  ul {
+  .nav-bar-items {
     height: 185px;
     width: 18px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-
   }
-  span {
+  .bar-item {
     width: 18px;
     height: 18px;
-    border: 1px solid #000;
     background: rgba(0, 0, 0, 0.6);
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
+
     z-index: 1;
-    visibility: hidden;
+    outline: none;
   }
-  .fp-tooltip {
-    position: absolute;
-    color: #fff;
-    font-size: 14px;
-    font-family: arial, helvetica, sans-serif;
-    top: -2px;
-    visibility: hidden;
-  }
-  li a {
+  .bar-link {
     outline: none;
     display: block;
     position: relative;
@@ -274,7 +265,7 @@ $height: 120px;
       background-color: #ff8207;
     }
   }
-  a.active  {
+  .bar-link.active-link  {
     opacity: 0.8;
     background-color: #ff8207;
   }
