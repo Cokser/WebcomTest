@@ -5,18 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Webcom Media</title>
   <body>
-    <div id="fullpage">
-      <div class="section fp-auto-height" id="header">
+    <div>
+      <div class="section" id="header">
 <header id="header-menu">
   <div class="logo"></div>
   <nav class="nav-menu">
     <ul class="menu-items">
-      <li class="item" data-menuanchor="second-page"><a class="item-link" href="#second-page">главная</a></li>
-      <li class="item" data-menuanchor="third-page"><a class="item-link" href="#third-page">портфолио</a></li>
-      <li class="item" data-menuanchor="fourth-page"><a class="item-link" href="#fourth-page">преимущества</a></li>
+      <li class="item"><a class="item-link" href="#second-page">главная</a></li>
+      <li class="item"><a class="item-link" href="#third-page">портфолио</a></li>
+      <li class="item"><a class="item-link" href="#fourth-page">преимущества</a></li>
       <li class="fake-item"><a class="item-link" href="#">схема работы</a></li>
-      <li class="item" data-menuanchor="fifth-page"><a class="item-link" href="#fifth-page">отзывы</a></li>
-      <li class="item" data-menuanchor="sixth-page"><a class="item-link" href="#sixth-page">контакты</a></li>
+      <li class="item"><a class="item-link" href="#fifth-page">отзывы</a></li>
+      <li class="item"><a class="item-link" href="#sixth-page">контакты</a></li>
     </ul>
   </nav>
   <div class="phones"><a class="phone-link" href="href">+375(29)123-45-67</a><a class="phone-link" href="href">+375(29)123-45-67</a></div>
@@ -45,7 +45,7 @@
   </div>
 </header>
       </div>
-      <div class="section fp-auto-height">
+      <div class="section" id="second-page">
 <main id="main">
   <section class="slider-wrapper">
     <div id="bomit-slider"><img class="bombit-slide active-slide" src="images/bg-1.jpg"><img class="bombit-slide" src="images/bg-2.jpg"><img class="bombit-slide" src="images/bg-3.jpg"><img class="bombit-slide" src="images/bg-4.jpg"></div>
@@ -63,12 +63,12 @@
         <button class="slider-nav-button bombit-nav-button-click"></button>
         <button class="slider-nav-button bombit-nav-button-click"></button>
         <button class="slider-nav-button bombit-nav-button-click"></button>
-      </section><a id="scroll-below" href="#portfolio"></a>
+      </section><a class="custom-item" id="scroll-below" href="#portfolio"></a>
     </article>
   </section>
 </main>
       </div>
-      <div class="section fp-auto-height">
+      <div class="section" id="third-page">
         <div id="portfolio">
           <article class="portfolio-article">
             <h2 class="section-title">НАША РАБОТА</h2>
@@ -133,7 +133,7 @@
           </article>
         </div>
       </div>
-      <div class="section fp-auto-height">
+      <div class="section" id="fourth-page">
         <article id="advantages">
           <h2 class="section-title">почему мы</h2>
           <div class="separator"></div>
@@ -182,7 +182,7 @@
           </section>
         </article>
       </div>
-      <div class="section fp-auto-height">
+      <div class="section" id="fifth-page">
         <article id="reviews-block">
           <h2 class="section-title">оставьте отзыв</h2>
           <div class="separator"></div>
@@ -230,10 +230,10 @@
               </form>
             </section>
           </section>
-          <div id="pg-up"><a class="scroll-up" href="#header"></a></div>
+          <div id="pg-up"><a class="custom-item scroll-up" href="#header"></a></div>
         </article>
       </div>
-      <div class="section fp-auto-height">
+      <div class="section" id="sixth-page">
 <footer id="footer">
   <div class="footer-info">
     <div class="footer-box">
@@ -255,6 +255,16 @@
   <div class="footer-copyright"><small class="copyright">copyright 2015 © webcom media</small></div>
 </footer>
       </div>
+    </div>
+    <div id="left-nav-bar">
+      <ul class="nav-bar-items">
+        <li class="bar-item"><a class="bar-link active-link" href="#header"></a></li>
+        <li class="bar-item"><a class="bar-link" href="#second-page"></a></li>
+        <li class="bar-item"><a class="bar-link" href="#third-page"></a></li>
+        <li class="bar-item"><a class="bar-link" href="#fourth-page"></a></li>
+        <li class="bar-item"><a class="bar-link" href="#fifth-page"></a></li>
+        <li class="bar-item"><a class="bar-link" href="#sixth-page"></a></li>
+      </ul>
     </div>
     <div class="modal" data-toggle="true" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
       <div class="modal-window">

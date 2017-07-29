@@ -21,11 +21,23 @@ const PATHS = {
 const common = merge([
   {
     entry: {
-      'index': PATHS.source + '/index.js'
+      'index': PATHS.source + '/index.ts'
     },
     output: {
       path: PATHS.build,
       filename: 'js/[name].js',
+    },
+    resolve: {
+      extensions: [".tsx", ".ts", ".js"]
+    },
+    module: {
+      rules: [
+        {
+          test: /\.tsx?$/,
+          use: 'ts-loader',
+          exclude: /node_modules/
+        }
+      ]
     },
     plugins: [
       new HtmlWebpackPlugin({
@@ -40,11 +52,11 @@ const common = merge([
         $: 'jquery',
         jQuery: 'jquery'
       }),
-      new tinyPngWebpackPlugin({
-        key:"S8Y3nrAwzSsgodns26HHFAFtJJnjJeFb",
-        relativePath:"./images/",
-        ext: ['png', 'jpg']
-      })
+      // new tinyPngWebpackPlugin({
+      //   key:"S8Y3nrAwzSsgodns26HHFAFtJJnjJeFb",
+      //   relativePath:"./images/",
+      //   ext: ['png', 'jpg']
+      // })
     ]
   },
   pug(),

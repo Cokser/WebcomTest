@@ -5,19 +5,34 @@ html
   meta(name="viewport", content="width=device-width, initial-scale=1")
   title Webcom Media
   body
-    div#fullpage
-      div.section.fp-auto-height#header
+    div
+      div.section#header
         include blocks/header.menu/header.menu.pug
-      div.section.fp-auto-height
+      div.section#second-page
         include blocks/main/main.pug
-      div.section.fp-auto-height
+      div.section#third-page
         include blocks/portfolio/portfolio.pug
-      div.section.fp-auto-height
+      div.section#fourth-page
         include blocks/advantages/advantages.pug
-      div.section.fp-auto-height
+      div.section#fifth-page
         include blocks/reviews/reviews.pug
-      div.section.fp-auto-height
+      div.section#sixth-page
         include blocks/footer/footer.pug
+    div#left-nav-bar
+      ul.nav-bar-items
+        li.bar-item
+          a(href="#header").bar-link.active-link
+        li.bar-item
+          a(href="#second-page").bar-link
+        li.bar-item
+          a(href="#third-page").bar-link
+        li.bar-item
+          a(href="#fourth-page").bar-link
+        li.bar-item
+          a(href="#fifth-page").bar-link
+        li.bar-item
+          a(href="#sixth-page").bar-link
+
     .modal(data-toggle='true', role='dialog', aria-labelledby='modalTitle', aria-describedby='modalDescription')
       .modal-window
         div.modal-header
